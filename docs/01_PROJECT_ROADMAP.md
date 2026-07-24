@@ -51,7 +51,13 @@ Development order:
 12. Development
 13. Testing
 14. Deployment
-
+const COLORS = {
+  background: "#08111F",
+  surface: "#0F172A",
+  gold: "#D4AF37",
+  text: "#FFFFFF",
+  secondary: "#CBD5E1",
+};
 ---
 
 # Phase 2 — Sitemap

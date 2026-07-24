@@ -83,6 +83,7 @@ Public
 
 Indexed
 
+
 ---
 
 ## Journeys
@@ -588,3 +589,45 @@ Administrator
 - User Profiles
 
 - Membership
+
+
+
+Home page
+
+Navbar ✅
+
+↓
+
+Hero Section
+
+↓
+
+Statistics
+
+↓
+
+Featured Reviews
+
+↓
+
+Featured Stories
+
+↓
+
+Latest Articles
+
+↓
+
+Journey Map
+
+↓
+
+Countries
+
+↓
+
+CTA
+
+↓
+
+Footer
