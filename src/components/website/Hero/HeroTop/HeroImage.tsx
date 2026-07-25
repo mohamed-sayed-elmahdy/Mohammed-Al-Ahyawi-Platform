@@ -4,7 +4,7 @@ import HeroStats from './HeroStats'
 
 export default function HeroImage() {
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-6 ps-2">
       <div className="relative z-10">
         <Image src="/mohamed.png" alt="profile" width={270} height={320} className="rounded-xl object-cover" />
       </div>
