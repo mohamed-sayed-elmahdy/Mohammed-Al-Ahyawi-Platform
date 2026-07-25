@@ -1,53 +1,29 @@
-"use client";
 
-import { useRef } from "react";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 interface PrimaryButtonProps {
   children: React.ReactNode;
-  href: string;
   className?: string;
-  icon?: React.ReactNode;
   ariaLabel?: string;
   animation?: string;
   borderWidth?: number;
 }
 
-export default function PrimaryButton({
-  children,
-  href,
-  className,
-  icon,
-  ariaLabel,
-  animation,
-
-  // القيمة الافتراضية = نفس p-0.5 تقريباً
-  borderWidth = 2,
-}: PrimaryButtonProps) {
-  const buttonRef = useRef<HTMLAnchorElement>(null);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    buttonRef.current?.style.setProperty("--x", `${x}px`);
-    buttonRef.current?.style.setProperty("--y", `${y}px`);
-  };
-
+function AccentBorder(
+  { children,
+    className,
+    ariaLabel,
+    animation,
+    // القيمة الافتراضية = نفس p-0.5 تقريباً
+    borderWidth = 2,
+  }: PrimaryButtonProps) {
   return (
-    <Link
-      ref={buttonRef}
-      href={href}
+    <div
       aria-label={ariaLabel}
-      onMouseMove={handleMouseMove}
       className={cn(
         "group relative overflow-hidden rounded-[14px]",
         className
-      )}
-    >
+      )}>
       {/* Gold Border */}
       <div
         className="
@@ -67,7 +43,7 @@ export default function PrimaryButton({
           className="
             h-full
             w-full
-            rounded-xl
+            rounded-[12px]
             bg-(--color-button-surface)
           "
         />
@@ -91,8 +67,8 @@ export default function PrimaryButton({
       <div
         className="
           absolute
-          inset-0.5
-          rounded-xl
+          inset-[2px]
+          rounded-[12px]
           bg-[radial-gradient(circle_at_50%_30%,#27231b_10%,#171717_55%,#0c0c0c_100%)]
         "
       />
@@ -134,8 +110,8 @@ export default function PrimaryButton({
           items-center
           justify-center
           gap-2
-          px-5
-          py-2
+          px-0.5
+          py-0.5
           text-base
           font-bold
           text-(--color-text)
@@ -145,18 +121,10 @@ export default function PrimaryButton({
         "
       >
         {children}
-
-        {icon && (
-          <span
-            className={cn(
-              "text-(--color-accent) transition-transform duration-500",
-              animation
-            )}
-          >
-            {icon}
-          </span>
-        )}
       </span>
-    </Link>
-  );
+
+    </div>
+  )
 }
+
+export default AccentBorder
