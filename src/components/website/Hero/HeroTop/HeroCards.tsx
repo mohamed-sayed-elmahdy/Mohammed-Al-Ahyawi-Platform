@@ -12,7 +12,6 @@ export default function HeroCards() {
           </div>
           <div className="absolute bottom-2 left-0 right-0">
             <div className="mt-2 text-sm text-amber-200">{c.title}</div>
-            <div className="text-xs text-amber-400">{c.subtitle}</div>
           </div>
         </AccentBorder>
       ))}

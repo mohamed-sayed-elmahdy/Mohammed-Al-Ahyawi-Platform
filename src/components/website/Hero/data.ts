@@ -1,7 +1,7 @@
 export const heroCards = [
-	{ id: 1, title: 'مطاعم ومطابخ', subtitle: 'تجارب مذاق أصيلة', img: '/card1.png' },
-	{ id: 2, title: 'كافيهات', subtitle: 'أجواء مختلفة وتفاصيل تهم', img: '/card2.png' },
-	{ id: 3, title: 'استراحات', subtitle: 'راحة واسترخاء مستحق', img: '/card3.png' },
+	{ id: 1, title: 'مطاعم ', img: '/card1.png' },
+	{ id: 2, title: 'كافيهات', img: '/card2.png' },
+	{ id: 3, title: 'معالم سياحية', img: '/card3.png' },
 ];
 
 export const heroStats = [

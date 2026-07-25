@@ -8,7 +8,7 @@ const timelineItems = [
   {
     type: "sa",
     title: "السعودية",
-    subtitle: "الرياض - جدة - العلا",
+    subtitle: "الرياض - جدة ",
     description: "وأكثر من 20 مدينة",
     flag: "/flags/sa.svg",
     scale: true,

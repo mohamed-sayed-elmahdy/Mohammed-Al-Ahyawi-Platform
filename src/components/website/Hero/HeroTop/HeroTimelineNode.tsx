@@ -55,7 +55,7 @@ export default function HeroTimelineNode({
 
         ${
           isSaudi
-            ? "w-12 h-12 shadow-[0_0_20px_var(--color-accent)]"
+            ? "w-14 h-14 shadow-[0_0_20px_var(--color-accent)]"
             : "w-8 h-8 hover:shadow-[0_0_20px_var(--color-accent)] transition-all duration-300"
         }
       `}
