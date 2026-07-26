@@ -1,6 +1,6 @@
 import HeroContent from "./HeroContent";
-import HeroCountries from "./HeroCountries";
-import HeroImage from "./HeroImage";
+import HeroCountries from "@/components/website/Hero/HeroTop/HeroCountries";
+import HeroImage from "@/components/website/Hero/HeroTop/HeroImage";
 
 export default function HeroTop() {
   return (

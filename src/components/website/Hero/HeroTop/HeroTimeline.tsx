@@ -15,7 +15,7 @@ const timelineItems = [
   },
   {
     type: "world",
-    title: "وجهات عالمية",
+    title: "وجهاته العالمية",
    
   },
   {
@@ -30,7 +30,13 @@ const timelineItems = [
     flag: "/flags/ae.png",
       scale: true,
   },
-
+  {
+      type: "tr",
+    title: "تركيا",
+    flag: "/flags/tr.png",
+      scale: true,
+  }
+,
   {
     type: "ge",
     title: "جورجيا",
@@ -45,10 +51,11 @@ const timelineItems = [
 ];
 const timelineStops = [
   0.00, // السعودية
-  0.28, // وجهات عالمية (نزلت لتحت)
-  0.48, // مصر
-  0.66, // الإمارات
-  0.84, // جورجيا
+  0.18, // وجهات عالمية
+  0.34, // مصر
+  0.50, // الإمارات
+  0.66, // تركيا
+  0.82, // جورجيا
   0.98, // الطائرة
 ];
 export default function HeroTimeline() {

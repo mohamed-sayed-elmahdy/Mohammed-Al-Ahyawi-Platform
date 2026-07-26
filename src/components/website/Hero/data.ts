@@ -6,52 +6,18 @@ export const heroCards = [
 
 export const heroStats = [
 	{ id: 1, value: '+1300', label: 'تقييم وتجربة موثقة' },
-	{ id: 2, value: '+100', label: 'مدينة تمت زيارتها' },
-	{ id: 3, value: '5+', label: 'دول حول العالم' },
+	{ id: 2, value: '+70M', label: "مشاهدة" },
+	// { id: 3, value: '5+', label: 'دول حول العالم' },
 ];
 
-export const heroCountries = [
-  {
-    id: 1,
-    name: "السعودية",
-    subtitle: "الرياض - جدة - العلا",
-    description: "وأكثر من 20 مدينة",
-    flag: "https://flagcdn.com/w80/sa.png",
-    featured: true,
-  },
-  {
-    id: 2,
-    name: "وجهات عالمية",
-    icon: "🌍",
-    divider: true,
-  },
-  {
-    id: 3,
-    name: "مصر",
-    flag: "/flags/egypt.png",
-  },
-  {
-    id: 4,
-    name: "الإمارات",
-    flag: "/flags/uae.png",
-  },
-  {
-    id: 5,
-    name: "تركيا",
-    flag: "/flags/turkey.png",
-  },
-  {
-    id: 6,
-    name: "جورجيا",
-    flag: "/flags/georgia.png",
-  },
-];
+
 
 export const heroFeatures = [
-	{ id: 1, title: 'محتوى موثوق', desc: 'لرحلاتك واختياراتك' },
-	{ id: 2, title: 'تحسين مستمر', desc: 'من أجل خدمة أفضل' },
-	{ id: 3, title: 'تقييم موضوعي', desc: 'بكل أمانة وشفافية' },
-	{ id: 4, title: 'تجارب حقيقية', desc: 'من أرض الواقع' },
+	{ id: 1, title: 'محتوى موثق', desc: "" },
+  { id: 2, title: 'تجارب حقيقية', desc: "" },
+  { id: 3, title: 'تقييم واقعي', desc: "" },
+	{ id: 4, title: 'تحسين مستمر', desc: "" },
+
 ];
 
 export const heroSocial = [

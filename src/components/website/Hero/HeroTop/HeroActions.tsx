@@ -22,8 +22,8 @@ export default function HeroActions() {
         className="flex gap-2 justify-center items-center py-0.5"
         borderWidth={1.8}
         href="/request-visit"
-        children="اطلب زيارة لمكانك"
-        icon={<CalendarDays size={20} />}
+        children="استعرض ملفه على خرائط جوجل"
+        
       />
 
     </div>

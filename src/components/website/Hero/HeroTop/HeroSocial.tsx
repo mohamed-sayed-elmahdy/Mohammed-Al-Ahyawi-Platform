@@ -4,13 +4,14 @@ import {
   FaTiktok,
   FaXTwitter,
 } from "react-icons/fa6";
-import { HiOutlineMapPin } from "react-icons/hi2";
-import  PremiumBorder  from './PremiumBorder';
+import {  HiOutlineMap} from "react-icons/hi";
+import { FaGoogle } from "react-icons/fa";
+import  PremiumBorder  from '@/components/website/Hero/HeroTop/PremiumBorder';
 export default function HeroSocial() {
   const icons: Record<string, any> = {
     tiktok: FaTiktok,
     ig: FaInstagram,
-    map: HiOutlineMapPin,
+    map: FaGoogle,
     x: FaXTwitter,
   }
 
@@ -22,8 +23,8 @@ export default function HeroSocial() {
          {heroSocial.map((s) => {
         const Comp = icons[s.id]
         return (
-          <button key={s.id} aria-label={s.label} className="rounded-full bg-black/20 border border-amber-200/20 p-2 text-(--color-text) transition-colors">
-            <Comp size={20} className={`${s.id === "map" ? "text-(--color-accent)" : ""}`} />
+          <button key={s.id} aria-label={s.label} className="cursor-pointer rounded-full bg-black/20 border border-amber-200/20 p-2 text-(--color-text) transition-colors">
+            <Comp size={20} className={`${s.id === "googleMapProfile" ? "text-(--color-accent)" : ""}`} />
           </button>
         )
       })}

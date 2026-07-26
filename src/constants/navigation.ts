@@ -4,6 +4,14 @@ export const navLinks  = [
     href: "/",
   },
   {
+      title: "نبذة عنا",
+    href: "/about",
+  },
+  {
+      title: "الرسالة والأهداف",
+    href: "/mission-and-goals",
+  },
+  {
     title: "الجولات",
     href: "/journeys",
   },
@@ -14,10 +22,6 @@ export const navLinks  = [
   {
     title: "القصص",
     href: "/stories",
-  },
-  {
-    title: "المقالات",
-    href: "/articles",
   },
   {
     title: "طلب زيارة",
