@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <Link
       href="/"
-      className="flex items-center gap-2 select-none"
+      className="flex items-center gap-2 select-none mb-6"
       aria-label="الانتقال إلى الصفحة الرئيسية">
       <Image src="/logo2.png"
         alt="شعار محمد الإحيـوى"

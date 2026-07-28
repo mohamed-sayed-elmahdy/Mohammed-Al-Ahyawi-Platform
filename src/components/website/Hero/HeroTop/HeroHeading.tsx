@@ -13,10 +13,10 @@ function HeroHeading() {
       </h1>
 
       {/* Description */}
-      <p className="mt-6 max-w-3xl text-[16px] leading-8 text-(--color-secondary-text)">
-        منصة إعلامية مستقلة توثق التجارب والجولات داخل المملكة وخارجها
-        <br />
-   لتنقل لك التجربة كما هي بواقعية
+      <p className="mt-6  max-w-3xl text-[16px] leading-8 text-(--color-secondary-text)">
+        منصة إعلامية مستقلة توثق التجارب والجولات داخل المملكة وخارجها{" "}
+     <br className="max-xl:hidden" />
+   لتنقل لك التجربة كما هي بواقعية 
       </p>
     </div>
   )
