@@ -1,5 +1,5 @@
 import FeatureItem from './FeatureItem'
-import { heroFeatures } from '@/components/website/Hero/data'
+import { heroFeatures } from '@/components/website/Home/Hero/data'
 
 export default function HeroFeatures() {
   return (

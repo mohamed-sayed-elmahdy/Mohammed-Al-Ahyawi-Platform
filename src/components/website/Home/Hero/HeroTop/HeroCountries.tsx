@@ -2,7 +2,7 @@ import Image from "next/image";
 import {  FaMapMarkerAlt } from "react-icons/fa";
 
 
-import HeroTimeline from "@/components/website/Hero/HeroTop/HeroTimeline";
+import HeroTimeline from "@/components/website/Home/Hero/HeroTop/HeroTimeline";
 
 export default function HeroCountries() {
     return (

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import HeroTimelineNode from "@/components/website/Hero/HeroTop/HeroTimelineNode";
+import HeroTimelineNode from "@/components/website/Home/Hero/HeroTop/HeroTimelineNode";
 
 
 const timelineItems = [

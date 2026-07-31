@@ -1,4 +1,4 @@
-import Hero from "@/components/website/Hero/Hero";
+import Hero from "@/components/website/Home/Hero/Hero";
 import FeaturedReviews from "@/components/website/Home/FeaturedReviews/FeaturedReviews";
 import FeaturedCategories from "@/components/website/Home/FeaturedCategories/FeaturedCategories";
 import FeaturedStories from "@/components/website/Home/FeaturedStories/FeaturedStories";

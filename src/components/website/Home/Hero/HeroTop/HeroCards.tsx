@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { heroCards } from '@/components/website/Hero/data'
+import { heroCards } from '@/components/website/Home/Hero/data'
 import AccentBorder from '@/components/shared/AccentBorder'
 
 export default function HeroCards() {
