@@ -19,7 +19,7 @@ export default function Home() {
       <JourneyMap />
       <CountriesDestinations />
       <HomeCTA />
-      <Footer />
+    
     </>
   );
 }
