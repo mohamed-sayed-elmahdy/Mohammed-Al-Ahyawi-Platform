@@ -14,7 +14,6 @@ function AccentBorder(
     className,
     ariaLabel,
     animation,
-    // القيمة الافتراضية = نفس p-0.5 تقريباً
     borderWidth = 2,
   }: PrimaryButtonProps) {
   return (
