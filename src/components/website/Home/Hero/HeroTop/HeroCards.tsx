@@ -46,7 +46,7 @@ export default function HeroCards() {
           <ChevronLeft className="size-5" />
         </button>
 
-        <div className="relative min-w-0 flex-1 overflow-hidden py-3" dir="rtl">
+        <div className="relative min-w-0 flex-1 overflow-visible py-3" dir="rtl">
           <div className="aspect-[2.92/1]" aria-hidden="true" />
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
