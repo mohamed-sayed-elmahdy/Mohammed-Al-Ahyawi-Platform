@@ -2,6 +2,9 @@ export const heroCards = [
 	{ id: 1, title: 'مطاعم ', img: '/card1.png' },
 	{ id: 2, title: 'كافيهات', img: '/card2.png' },
 	{ id: 3, title: 'معالم سياحية', img: '/card3.png' },
+	{ id: 4, title: 'مطاعم ', img: '/card1.png' },
+	{ id: 5, title: 'كافيهات', img: '/card2.png' },
+	{ id: 6, title: 'معالم سياحية', img: '/card3.png' },
 ];
 
 export const heroStats = [
