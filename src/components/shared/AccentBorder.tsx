@@ -101,8 +101,9 @@ function AccentBorder(
       />
 
       {/* Content */}
-      <span
+      <div
         className="
+        h-full
           relative
           z-20
           flex
@@ -120,7 +121,7 @@ function AccentBorder(
         "
       >
         {children}
-      </span>
+      </div>
 
     </div>
   )

@@ -1,12 +1,12 @@
-import Hero from "@/components/website/Home/Hero/Hero";
-import FeaturedReviews from "@/components/website/Home/FeaturedReviews/FeaturedReviews";
-import FeaturedCategories from "@/components/website/Home/FeaturedCategories/FeaturedCategories";
-import FeaturedStories from "@/components/website/Home/FeaturedStories/FeaturedStories";
-import LatestArticles from "@/components/website/Home/LatestArticles/LatestArticles";
-import JourneyMap from "@/components/website/Home/JourneyMap/JourneyMap";
-import CountriesDestinations from "@/components/website/Home/CountriesDestinations/CountriesDestinations";
-import HomeCTA from "@/components/website/Home/HomeCTA/HomeCTA";
-import Footer from "@/components/website/Footer/Footer";
+import Hero from "@/components/website/home/Hero/Hero";
+import FeaturedReviews from "@/components/website/home/FeaturedReviews/FeaturedReviews";
+import FeaturedCategories from "@/components/website/home/FeaturedCategories/FeaturedCategories";
+import FeaturedStories from "@/components/website/home/FeaturedStories/FeaturedStories";
+import LatestArticles from "@/components/website/home/LatestArticles/LatestArticles";
+import JourneyMap from "@/components/website/home/JourneyMap/JourneyMap";
+import CountriesDestinations from "@/components/website/home/CountriesDestinations/CountriesDestinations";
+import HomeCTA from "@/components/website/home/HomeCTA/HomeCTA";
+import Footer from "@/components/website/footer/Footer";
 
 export default function Home() {
   return (

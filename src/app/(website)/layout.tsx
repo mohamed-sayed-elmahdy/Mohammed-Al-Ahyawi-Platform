@@ -6,8 +6,8 @@ import {
   IBM_Plex_Sans_Arabic,
 } from "next/font/google";
 import "@/app/globals.css";
-import Navbar from "@/components/website/Navbar/Navbar";
-import Footer from "@/components/website/Footer/Footer";
+import Navbar from "@/components/website/navbar/Navbar";
+import Footer from "@/components/website/footer/Footer";
 import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
@@ -59,7 +59,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-1">
+        <main className="flex-1 ">
           {children}
         </main>
         <Footer />

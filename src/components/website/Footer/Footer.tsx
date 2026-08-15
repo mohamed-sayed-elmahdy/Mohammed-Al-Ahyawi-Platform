@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import FooterLinksCard from "@/components/website/Footer/FooterLinksCard";
+import FooterLinksCard from "@/components/website/footer/FooterLinksCard";
 import { categories, navigation, officialLinks, socialLinks } from "@/constants/footer";
 import {
   FaLocationDot,
@@ -34,7 +34,7 @@ function FooterTitle({ children }: { children: React.ReactNode }) {
 
 export default function Footer() {
   return (
-    <footer className="overflow-hidden border-t border-white/20 bg-[#07111e] text-(--color-text)">
+    <footer className="mt-6 overflow-hidden border-t border-white/20 bg-[#07111e] text-(--color-text)">
       <div className="mx-auto px-6 py-12 sm:px-10 lg:px-14 xl:px-[72px] xl:py-[42px]">
         <div className="grid gap-12 text-center md:grid-cols-2 md:text-right xl:grid-cols-[1.05fr_1.3fr_.92fr_.92fr_1.08fr] xl:items-start xl:gap-9">
           <section className="order-1">
@@ -58,8 +58,8 @@ export default function Footer() {
           ))}
           <section className="order-5 text-center">
             <Link href="/" aria-label="الصفحة الرئيسية" className="inline-flex flex-col items-center">
-              <Image src="/logo2.png" alt="شعار محمد الأحيوي" width={110} height={110} className="h-[94px] w-auto object-contain" />
-              <span className="mt-1 text-[16px] text-slate-100">الإعلامي</span><strong className="font-alexandria mt-1 text-[25px] leading-none">محمد الأحيوي</strong>
+              <Image src="/logo2.png" alt="شعار محمد الإحيوي" width={110} height={110} className="h-[94px] w-auto object-contain" />
+              <span className="mt-1 text-[16px] text-slate-100">الإعلامي</span><strong className="font-alexandria mt-1 text-[25px] leading-none">محمد الإحيوي</strong>
               <span className="mt-7 flex items-center gap-2 text-(--color-accent)"><i className="h-px w-16 bg-(--color-accent)/30" /><span className="rotate-45 border border-(--color-accent) p-1"><i className="block h-1 w-1 bg-(--color-accent)" /></span><i className="h-px w-16 bg-(--color-accent)/30" /></span>
             </Link>
             <p className="mx-auto mt-8 max-w-62.5 text-[15px] leading-8 text-slate-300">منصة إعلامية توثق التجارب الحقيقية وتنقلها بمصداقية، بهدف دعم جودة الخدمات وإلهام الآخرين لاكتشاف أفضل الوجهات.</p>
@@ -100,7 +100,7 @@ export default function Footer() {
         <div className="relative mt-14 border-t border-(--color-accent)/80 pt-10 before:absolute before:right-1/2 before:top-[-5px] before:size-2 before:rotate-45 before:border before:border-(--color-accent) before:bg-[#07111e]">
           <div className="flex flex-col items-center justify-between gap-5 text-[15px] text-slate-300 lg:flex-row">
             <p>صُنع بحب <HiHeart className="mr-3 inline text-xl text-(--color-accent)" /></p>
-            <span className="hidden h-7 w-px bg-(--color-accent)/70 lg:block" /><a href="#" className="transition hover:text-(--color-accent)">الشروط والأحكام</a><span className="hidden h-7 w-px bg-(--color-accent)/70 lg:block" /><a href="#" className="transition hover:text-(--color-accent)">سياسة الخصوصية</a><span className="hidden h-7 w-px bg-(--color-accent)/70 lg:block" /><p>© جميع الحقوق محفوظة للإعلامي محمد الأحيوي.</p>
+            <span className="hidden h-7 w-px bg-(--color-accent)/70 lg:block" /><a href="#" className="transition hover:text-(--color-accent)">الشروط والأحكام</a><span className="hidden h-7 w-px bg-(--color-accent)/70 lg:block" /><a href="#" className="transition hover:text-(--color-accent)">سياسة الخصوصية</a><span className="hidden h-7 w-px bg-(--color-accent)/70 lg:block" /><p>© جميع الحقوق محفوظة للإعلامي محمد الإحيوي.</p>
           </div>
         </div>
       </div>

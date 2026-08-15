@@ -4,8 +4,8 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { heroCards } from "@/components/website/Home/Hero/data";
-
+import { heroCards } from "@/components/website/home/Hero/data";
+import AccentBorder from "@/components/shared/AccentBorder";
 const getCardAt = (index: number) => {
   return heroCards[(index + heroCards.length) % heroCards.length];
 };
@@ -63,9 +63,12 @@ export default function HeroCards() {
                 const featured = index === 1;
 
                 return (
-                  <article
+
+                  
+                  <AccentBorder
+                  borderWidth={featured ? 2 : 1.2}
                     key={`${card.id}-${featured ? "featured" : "side"}`}
-                    className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 ${
+                    className={`group relative overflow-hidden rounded-2xl transition-all duration-500 ${
                       featured
                         ? "z-10 aspect-[1/1.08] border-[#f3c15c] shadow-[0_0_24px_rgba(243,193,92,0.42)] sm:scale-105"
                         : "aspect-[1/1.04] border-[#9f6926]/80 opacity-85 shadow-[0_0_14px_rgba(243,193,92,0.16)]"
@@ -79,7 +82,7 @@ export default function HeroCards() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#07101b] via-[#07101b]/20 to-transparent" />
-                    <div className="absolute inset-x-2 bottom-2 text-center sm:inset-x-3 sm:bottom-3">
+                    <div className="z-10 absolute inset-x-2 bottom-2 text-center sm:inset-x-3 sm:bottom-3">
                       <h3 className={`font-alexandria font-bold text-white drop-shadow-md ${featured ? "text-sm sm:text-lg" : "text-[11px] sm:text-sm"}`}>
                         {card.title}
                       </h3>
@@ -87,13 +90,12 @@ export default function HeroCards() {
                         <p className="mt-1 hidden text-xs text-amber-100/85 sm:block">اكتشف أفضل التجارب المختارة</p>
                       ) : null}
                     </div>
-                  </article>
+                  </AccentBorder>
                 );
               })}
             </motion.div>
           </AnimatePresence>
         </div>
-
         <button
           type="button"
           onClick={() => moveCarousel(1)}

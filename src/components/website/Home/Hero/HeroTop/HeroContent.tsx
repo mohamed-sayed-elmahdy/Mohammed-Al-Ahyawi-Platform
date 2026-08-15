@@ -1,7 +1,7 @@
-import HeroActions from "@/components/website/Home/Hero/HeroTop/HeroActions";
-import HeroBadge from "@/components/website/Home/Hero/HeroTop/HeroBadge";
-import HeroCards from "@/components/website/Home/Hero/HeroTop/HeroCards";
-import HeroHeading from "@/components/website/Home/Hero/HeroTop/HeroHeading";
+import HeroActions from "@/components/website/home/Hero/HeroTop/HeroActions";
+import HeroBadge from "@/components/website/home/Hero/HeroTop/HeroBadge";
+import HeroCards from "@/components/website/home/Hero/HeroTop/HeroCards";
+import HeroHeading from "@/components/website/home/Hero/HeroTop/HeroHeading";
 
 export default function HeroContent() {
   return (

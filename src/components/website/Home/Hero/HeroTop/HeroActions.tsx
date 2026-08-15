@@ -1,6 +1,6 @@
 import {  Search } from "lucide-react";
 import { Plane } from "lucide-react";
-import PrimaryButton from "@/components/website/Navbar/PrimaryButton";
+import PrimaryButton from "@/components/website/navbar/PrimaryButton";
 
 
 export default function HeroActions() {

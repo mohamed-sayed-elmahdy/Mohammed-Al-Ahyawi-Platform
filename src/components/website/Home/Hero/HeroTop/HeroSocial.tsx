@@ -1,4 +1,4 @@
-import { heroSocial } from '@/components/website/Home/Hero/data'
+import { heroSocial } from '@/components/website/home/Hero/data'
 import {
   FaInstagram,
   FaTiktok,
@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa6";
 import {  HiOutlineMap} from "react-icons/hi";
 import { FaGoogle } from "react-icons/fa";
-import  PremiumBorder  from '@/components/website/Home/Hero/HeroTop/PremiumBorder';
+import  PremiumBorder  from '@/components/website/home/Hero/HeroTop/PremiumBorder';
 export default function HeroSocial() {
   const icons: Record<string, any> = {
     tiktok: FaTiktok,

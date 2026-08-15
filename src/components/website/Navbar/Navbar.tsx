@@ -1,15 +1,23 @@
-import Logo from "./Logo";
-import NavLinks from "@/components/website/Navbar/NavLinks";
-import ThemeToggle from "./ThemeToggle";
-import LanguageSwitcher from "./LanguageSwitcher";
-import PrimaryButton from "./PrimaryButton";
+"use client";
+import Logo from "@/components/website/navbar/Logo";
+import NavLinks from "@/components/website/navbar/NavLinks";
+import ThemeToggle from "@/components/website/navbar/ThemeToggle";
+import LanguageSwitcher from "@/components/website/navbar/LanguageSwitcher";
+import PrimaryButton from "@/components/website/navbar/PrimaryButton";
 import { Plane } from "lucide-react";
+import { usePathname } from "next/navigation";
 export default function Navbar() {
+  const pathname = usePathname();
+  let navbarAbsoulte = false;
+  if (pathname === "/") {
+    navbarAbsoulte = true;
+  };
+
   return (
     <header>
       <div
-        className="
-        absolute
+        className={`
+        ${navbarAbsoulte ? "absolute" : "relative"}
         top-0
         left-0
         w-full
@@ -20,7 +28,7 @@ export default function Navbar() {
         items-center
         justify-between
         px-6
-        "
+        `}
       >
         {/* Right */}
 
@@ -38,15 +46,15 @@ export default function Navbar() {
           </span>
           <LanguageSwitcher />
 
-          <PrimaryButton 
-          href="/request-visit"
-          ariaLabel="طلب زيارة" 
-          animation="group-hover:animate-plane-fly"
-          icon={<Plane
-            size={18}
-            strokeWidth={2.2}
-            className="fill-[#f3c15c] text-[#f3c15c] "
-          />}
+          <PrimaryButton
+            href="/request-visit"
+            ariaLabel="طلب زيارة"
+            animation="group-hover:animate-plane-fly"
+            icon={<Plane
+              size={18}
+              strokeWidth={2.2}
+              className="fill-[#f3c15c] text-[#f3c15c] "
+            />}
           >
 
             <span>طلب زيارة</span>
