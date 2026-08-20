@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { MapPin, Star, UtensilsCrossed, ChartNoAxesCombined, Users } from "lucide-react";
+import {
+  ChartNoAxesCombined,
+  MapPin,
+  Star,
+  Users,
+  UtensilsCrossed,
+} from "lucide-react";
 
 const methods = [
   { label: "نزور", icon: MapPin },
@@ -10,24 +16,74 @@ const methods = [
 
 export function AboutHero() {
   return (
-    <section className="relative isolate min-h-[630px] overflow-hidden border-b border-(--color-accent)/30 bg-[radial-gradient(circle_at_72%_28%,color-mix(in_srgb,var(--color-surface)_84%,transparent),transparent_40%),linear-gradient(110deg,var(--color-background),var(--color-surface))] px-4 pt-18 sm:px-8 lg:min-h-[700px] lg:px-10 lg:pt-22">
-      <div className="absolute -right-12 -top-56 size-[900px] rounded-full border-[3px] border-(--color-accent)/75" />
-      <div className="absolute -right-16 -top-52 size-[890px] rounded-full border border-(--color-accent)/20" />
-      <div className="absolute left-5 top-6 z-20 flex items-center gap-2 rounded-r-none rounded-[18px] border border-(--color-accent)/75 px-6 py-3 text-lg font-bold"><Users className="size-5 text-(--color-accent)" />نبذة عنا</div>
-      <div dir="ltr" className="relative mx-auto grid max-w-[1780px] items-center lg:grid-cols-[1.12fr_.88fr]">
-        <div dir="rtl" className="order-2 pt-14 text-center lg:order-1 lg:pt-6 lg:text-right">
-          <p className="font-alexandria text-2xl font-bold text-(--color-accent)">من هو</p>
-          <h1 className="font-alexandria mt-5 text-4xl font-bold leading-[1.5] tracking-tight sm:text-5xl xl:text-7xl">الإعلامي محمد الإحيوي</h1>
-          <p className="mt-6 text-xl leading-10 text-(--color-secondary-text) sm:text-2xl">إعلامي يوثق التجارب، ينقل الواقع، ويسعى للتحسين</p>
-          <div className="mx-auto mt-9 flex w-fit divide-x divide-x-reverse divide-(--color-accent)/50 overflow-hidden rounded-[18px] border border-(--color-accent)/75 lg:mx-0">
-            {methods.map(({ label, icon: Icon }) => <div key={label} className="flex items-center gap-2 px-5 py-4 text-lg font-semibold sm:px-7 sm:text-xl"><Icon className="size-6 text-(--color-accent)" />{label}</div>)}
-          </div>
+    <section className="mb-3 bg-[url('/hero7.png')] bg-position-[700px_-420px] 
+     bg-no-repeat relative isolate min-h-[clamp(330px,33vw,630px)] overflow-hidden">
+      <div className="relative z-10 mx-auto grid min-h-[inherit] max-w-[1780px] grid-cols-1 md:grid-cols-[40%_60%]">
+
+        <div className="relative min-h-92.5  md:min-h-0 ">
+          <Image
+            src="/mohamedwhite1.png"
+            alt="الإعلامي محمد الإحيوي"
+            fill
+            priority
+            className="z-20 object-contain object-bottom"
+
+          />
         </div>
-        <div className="relative order-1 mx-auto h-[400px] w-full max-w-[520px] lg:order-2 lg:h-[680px] lg:max-w-[720px]">
-          <div className="absolute inset-x-8 bottom-2 h-32 rounded-full bg-(--color-accent)/15 blur-3xl" />
-          <Image src="/mohamedwhite.png" alt="الإعلامي محمد الإحيوي" fill priority className="object-contain object-bottom drop-shadow-[0_20px_26px_rgba(0,0,0,.48)]" sizes="(max-width: 1024px) 520px, 720px" />
+
+        <div className=" rounded-br-full border-r-4 border-(--color-accent)/85 rounded-tr-full bg-(--color-background) z-20 flex min-h-92.5 flex-col items-center justify-center px-6 pb-8 pt-24 text-center sm:px-10 md:py-12 lg:px-14">
+          <p className="font-alexandria text-2xl font-bold text-(--color-accent) sm:text-3xl">
+            من هو
+          </p>
+          <h1 className="font-alexandria mt-4 text-2xl font-bold leading-[1.35] tracking-tight text-(--color-text) sm:text-5xl md:whitespace-nowrap lg:text-[clamp(2.7rem,4.35vw,4.7rem)]">
+            الإعلامي محمد الإحيوي
+          </h1>
+          <p className="mt-4 text-lg leading-8 text-(--color-secondary-text) sm:text-2xl sm:leading-10">
+            إعلامي يوثق التجارب، ينقل الواقع، ويسعى للتحسين
+          </p>
+          <div className="mt-7 flex w-fit divide-x divide-x-reverse divide-(--color-accent)/50 overflow-hidden rounded-[18px] border border-(--color-accent)/75 ">
+            {methods.map(({ label, icon: Icon }) => (
+              <div key={label} className="flex items-center gap-2 px-4 py-3 text-base font-semibold text-(--color-text) sm:px-6 sm:text-xl">
+                <Icon className="size-5 text-(--color-accent) sm:size-6" />
+                {label}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
+  );
+}
+
+
+
+
+
+export default function AboutSectionTitle() {
+  return (
+    <div className="relative inline-block">
+      {/* Bottom Border Extension */}
+      <div className="absolute left-0 right-12 top-full h-px bg-[#9C6A17]" />
+
+      <div
+        className="
+          flex items-center gap-3
+          px-8 py-4
+          rounded-[24px]
+          border border-[#9C6A17]
+          bg-[#010C24]
+        "
+      >
+        <Users
+          size={22}
+          strokeWidth={1.8}
+          className="text-[#9C6A17]"
+        />
+
+        <span className="text-white text-[22px] font-semibold">
+          نبذة عنا
+        </span>
+      </div>
+    </div>
   );
 }

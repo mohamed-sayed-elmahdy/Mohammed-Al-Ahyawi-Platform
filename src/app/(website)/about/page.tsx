@@ -9,7 +9,7 @@ import { DigitalPresence } from "@/components/website/about/DigitalPresence";
 
 export default function AboutPage() {
   return (
-    <div dir="rtl" className="about-page overflow-hidden bg-(--color-background) text-(--color-text)">
+    <div  className="about-page overflow-hidden bg-(--color-background) text-(--color-text)">
       <AboutHero />
       <AboutIntro />
       <AboutTimeline />

@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathname = usePathname();
   let navbarAbsoulte = false;
-  if (pathname === "/") {
+  if (pathname === "/" ) {
     navbarAbsoulte = true;
   };
 
@@ -28,6 +28,7 @@ export default function Navbar() {
         items-center
         justify-between
         px-6
+      
         `}
       >
         {/* Right */}
