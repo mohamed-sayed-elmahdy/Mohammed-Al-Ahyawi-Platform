@@ -6,8 +6,8 @@ import {
   IBM_Plex_Sans_Arabic,
 } from "next/font/google";
 import "@/app/globals.css";
-import Navbar from "@/components/website/navbar/Navbar";
-import Footer from "@/components/website/footer/Footer";
+import Navbar from "@/components/website/Navbar/Navbar";
+import Footer from "@/components/website/Footer/Footer";
 import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
