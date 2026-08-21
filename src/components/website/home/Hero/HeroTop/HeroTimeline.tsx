@@ -15,7 +15,7 @@ const timelineItems = [
   },
   {
     type: "world",
-    title: "وجهاته العالمية",
+    title: "وجهاتي العالمية",
    
   },
   {

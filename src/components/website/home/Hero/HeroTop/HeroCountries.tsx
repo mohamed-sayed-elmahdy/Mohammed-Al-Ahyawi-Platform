@@ -15,7 +15,7 @@ export default function HeroCountries() {
                 </span>
 
                 <h3 className="text-lg font-bold">
-                    رحلاته داخل المملكة
+                    رحلاتي داخل المملكة
                 </h3>
             </div>
 

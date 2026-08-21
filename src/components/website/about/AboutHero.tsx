@@ -32,14 +32,14 @@ export function AboutHero() {
         </div>
 
         <div className=" rounded-br-full border-r-4 border-(--color-accent)/85 rounded-tr-full bg-(--color-background) z-20 flex min-h-92.5 flex-col items-center justify-center px-6 pb-8 pt-24 text-center sm:px-10 md:py-12 lg:px-14">
-          <p className="font-alexandria text-2xl font-bold text-(--color-accent) sm:text-3xl">
+          <p className=" text-2xl font-bold text-(--color-accent) sm:text-3xl">
             من هو
           </p>
-          <h1 className="font-alexandria mt-4 text-2xl font-bold leading-[1.35] tracking-tight text-(--color-text) sm:text-5xl md:whitespace-nowrap lg:text-[clamp(2.7rem,4.35vw,4.7rem)]">
+          <h1 className=" mt-4 text-2xl font-bold leading-[1.35] tracking-tight text-(--color-text) sm:text-5xl md:whitespace-nowrap lg:text-[clamp(2.7rem,4.35vw,4.7rem)]">
             الإعلامي محمد الإحيوي
           </h1>
           <p className="mt-4 text-lg leading-8 text-(--color-secondary-text) sm:text-2xl sm:leading-10">
-            إعلامي يوثق التجارب، ينقل الواقع، ويسعى للتحسين
+            إعلامي يوثق التجارب وينقل الواقع ويسعى للتحسين
           </p>
           <div className="mt-7 flex w-fit divide-x divide-x-reverse divide-(--color-accent)/50 overflow-hidden rounded-[18px] border border-(--color-accent)/75 ">
             {methods.map(({ label, icon: Icon }) => (
