@@ -32,7 +32,7 @@ export function AboutHero() {
         </div>
 
         <div className=" rounded-br-full border-r-4 border-(--color-accent)/85 rounded-tr-full bg-(--color-background) z-20 flex min-h-92.5 flex-col items-center justify-center px-6 pb-8 pt-24 text-center sm:px-10 md:py-12 lg:px-14">
-          <p className=" text-2xl font-bold text-(--color-accent) sm:text-3xl">
+          <p className=" text-2xl font-bold text-(--color-accent) sm:text-5xl">
             من هو
           </p>
           <h1 className=" mt-4 text-2xl font-bold leading-[1.35] tracking-tight text-(--color-text) sm:text-5xl md:whitespace-nowrap lg:text-[clamp(2.7rem,4.35vw,4.7rem)]">

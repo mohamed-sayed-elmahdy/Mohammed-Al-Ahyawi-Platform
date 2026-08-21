@@ -86,9 +86,9 @@ export default function HeroCards() {
                       <h3 className={`font-alexandria font-bold text-white drop-shadow-md ${featured ? "text-sm sm:text-lg" : "text-[11px] sm:text-sm"}`}>
                         {card.title}
                       </h3>
-                      {featured ? (
+                      {/* {featured ? (
                         <p className="mt-1 hidden text-xs text-amber-100/85 sm:block">اكتشف أفضل التجارب المختارة</p>
-                      ) : null}
+                      ) : null} */}
                     </div>
                   </AccentBorder>
                 );
