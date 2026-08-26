@@ -41,7 +41,7 @@ export default function Footer() {
             <FooterTitle>تواصل</FooterTitle>
             <p className="mt-10 text-[16px] leading-9 text-slate-200">هل لديك تجربة تستحق المشاركة؟<br />أرسل لي دعوتك لزيارتها وتوثيقها.</p>
             <address className="mt-16 space-y-6 not-italic text-[15px] text-slate-200">
-              <a href="mailto:info@mohammed-al-ahyawi.com" className="flex items-center justify-center gap-4 transition hover:text-(--color-accent) md:justify-start"><FaRegEnvelope className="shrink-0 text-xl text-(--color-accent)" /><span dir="ltr">info@mohammed-al-ahyawi.com</span></a>
+              <a href="mailto:Alaqari2006@hotmail.com" className="flex items-center justify-center gap-4 transition hover:text-(--color-accent) md:justify-start"><FaRegEnvelope className="shrink-0 text-xl text-(--color-accent)" /><span dir="ltr">Alaqari2006@hotmail.com</span></a>
               <a href="tel:+966501234567" className="flex items-center justify-center gap-4 transition hover:text-(--color-accent) md:justify-start"><FaPhone className="shrink-0 text-xl text-(--color-accent)" /><span dir="ltr">+966 50 123 4567</span></a>
               <p className="flex items-center justify-center gap-4 md:justify-start"><FaLocationDot className="shrink-0 text-xl text-(--color-accent)" />الرياض، المملكة العربية السعودية</p>
             </address>
