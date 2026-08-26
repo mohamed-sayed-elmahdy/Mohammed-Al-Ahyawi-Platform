@@ -8,8 +8,8 @@ export const navLinks  = [
     href: "/about",
   },
   {
-      title: "الرسالة والأهداف",
-    href: "/mission-and-goals",
+      title: "الرسالة",
+    href: "/mission",
   },
   {
     title: "الجولات",

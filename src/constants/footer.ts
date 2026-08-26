@@ -31,8 +31,8 @@ export const navigation = [
     icon: HiUser,
   },
   {
-    label: "الرسالة والأهداف",
-    href: "/mission-and-goals",
+    label: "الرسالة",
+    href: "/mission",
     icon: HiFlag,
   },
   {
