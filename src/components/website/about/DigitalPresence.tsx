@@ -6,7 +6,7 @@ import { socialLinks } from "@/constants/social";
 const socialMap = Object.fromEntries(
     socialLinks.map((link) => [link.id, link.href])
 );
-const channels = [
+const socialChannels = [
     {
         id: "google-maps",
         name: "Google Maps",
@@ -47,7 +47,7 @@ export function DigitalPresence() {
             </h2>
 
             <div className="mt-9 grid grid-cols-5 gap-5">
-                {channels.map(({ id, name, label, icon }) => (
+                {socialChannels.map(({ id, name, label, icon }) => (
 
                     <Link target="_blank"
                         rel="noopener noreferrer"

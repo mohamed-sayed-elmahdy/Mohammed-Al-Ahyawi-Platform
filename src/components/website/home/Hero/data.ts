@@ -28,9 +28,3 @@ export const heroFeatures = [
 
 ];
 
-export const heroSocial = [
-	{ id: 'ig', label: 'instagram' },
-	{ id: 'tiktok', label: 'tiktok' },
-	{ id: 'map', label: 'location' },
-	{ id: 'x', label: 'x' },
-];
