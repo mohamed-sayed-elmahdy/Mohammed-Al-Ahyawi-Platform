@@ -19,8 +19,9 @@ export default function AboutPage() {
         <MissionVision />
       </div>
       <div className="mx-auto grid max-w-[1780px] gap-7 px-4 pb-20 sm:px-8 lg:px-10 lg:grid-cols-2">
+         <DigitalPresence />
         <GlobalJourneys />
-        <DigitalPresence />
+      
       </div>
     </div>
   );

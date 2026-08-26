@@ -31,7 +31,7 @@ export function AboutHero() {
           />
         </div>
 
-        <div className=" rounded-br-full border-r-4 border-(--color-accent)/85 rounded-tr-full bg-(--color-background) z-20 flex min-h-92.5 flex-col items-center justify-center px-6 pb-8 pt-24 text-center sm:px-10 md:py-12 lg:px-14">
+        <div  className=" rounded-br-full border-r-4 border-(--color-accent)/85 rounded-tr-full bg-(--color-background) z-20 flex min-h-92.5 flex-col items-center justify-center px-6 pb-8 pt-24 text-center sm:px-10 md:py-12 lg:px-14">
           <p className=" text-2xl font-bold text-(--color-accent) sm:text-5xl">
             من هو
           </p>

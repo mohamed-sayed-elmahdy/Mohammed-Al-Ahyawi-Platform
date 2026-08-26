@@ -8,14 +8,10 @@ export default function FeaturedCategories() {
   const [featured, ...cards] = discoveryCategories;
 
   return (
-    <section className="overflow-hidden  bg-gradient-to-b from-black via-[#050d16] to-[#08111f] py-16 text-white sm:py-24" dir="rtl">
+    <section className="overflow-hidden  bg-gradient-to-b from-black via-[#050d16] to-[#08111f] py-16 text-white sm:py-24">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         <div className="grid items-center gap-12 xl:grid-cols-[.9fr_1.4fr]">
           <div className="text-right xl:pr-6">
-            <div className="mb-5 flex items-center justify-start gap-3 text-sm text-[#e9a52d]">
-              <span className="h-px w-8 bg-[#e9a52d]" />
-              ابدأ رحلتك
-            </div>
             <h2 className="font-alexandria text-4xl font-semibold leading-[1.35] sm:text-5xl">
               استكشف التجارب<br />
               <span className="text-[#d9982d]">حسب الفئة</span>
