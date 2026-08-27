@@ -5,7 +5,10 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { PiSnapchatLogoLight } from "react-icons/pi";
-import { FaGoogle } from "react-icons/fa";
+import { IoLocation } from "react-icons/io5";
+import { GrMapLocation } from "react-icons/gr";
+import { MdOutlineLocationOn } from "react-icons/md";
+
 import PremiumBorder from '@/components/website/home/Hero/HeroTop/PremiumBorder';
 import Link from 'next/link';
 export default function HeroSocial() {
@@ -13,13 +16,14 @@ export default function HeroSocial() {
   const socialMap = Object.fromEntries(
     socialLinks.map((link) => [link.id, link.href])
   );
-const socialChannels = [
-  { id: "google-maps", name: "Google Maps", icon: FaGoogle },
-  { id: "tiktok", name: "TikTok", icon: FaTiktok },
-  { id: "instagram", name: "Instagram", icon: FaInstagram },
-  { id: "snapchat", name: "Snapchat", icon: PiSnapchatLogoLight },
-  { id: "x", name: "X", icon: FaXTwitter },
-] as const;
+  const socialChannels = [
+    { id: "snapchat", name: "Snapchat", icon: PiSnapchatLogoLight },
+    { id: "x", name: "X", icon: FaXTwitter },
+    { id: "instagram", name: "Instagram", icon: FaInstagram },
+    { id: "tiktok", name: "TikTok", icon: FaTiktok },
+    { id: "google-maps", name: "Google Maps", icon: GrMapLocation },
+
+  ] as const;
 
 
   return (
@@ -27,7 +31,7 @@ const socialChannels = [
 
 
       <PremiumBorder className="rounded-full w-full ">
-        {socialChannels.map((s ) => {
+        {socialChannels.map((s) => {
 
           return (
             <Link
@@ -39,8 +43,8 @@ const socialChannels = [
              hover:-translate-y-1 hover:scale-100 
              hover:text-(--color-accent)"
               key={s.id} href={socialMap[s.id] ?? "#"}
-              >
-              <s.icon size={20}  />
+            >
+              <s.icon size={20} />
             </Link>
           )
         })}
