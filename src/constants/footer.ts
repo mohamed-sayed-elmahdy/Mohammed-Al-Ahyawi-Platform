@@ -1,4 +1,13 @@
-import { FaFacebookF, FaInstagram, FaTiktok, FaXTwitter } from "react-icons/fa6";
+import {
+  FaInstagram,
+  FaTiktok,
+  FaXTwitter,
+} from "react-icons/fa6";
+import { PiSnapchatLogoLight } from "react-icons/pi";
+import { IoLocation } from "react-icons/io5";
+import { GrMapLocation } from "react-icons/gr";
+import { MdOutlineLocationOn } from "react-icons/md";
+
 import {
   HiBuildingOffice2,
   HiCamera,
@@ -151,28 +160,38 @@ export const officialLinks = [
 ] as const;
 
 export const socialLinks = [
+
   {
+    label: "Snapchat",
+    href: "https://www.snapchat.com/add/Alaqari2006",
+    icon: PiSnapchatLogoLight,
+    external: true,
+  },
+  
+  {
+    label: "X",
+    href: "https://x.com/Alaqari2006",
+    icon: FaXTwitter,
+    external: true,
+  },
+     {
     label: "TikTok",
-    href: "#",
+    href: "https://www.tiktok.com/@Alaqari2006",
     icon: FaTiktok,
     external: true,
   },
   {
     label: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/noon_jeddah_rest_cafe",
     icon: FaInstagram,
     external: true,
   },
   {
-    label: "X",
-    href: "#",
-    icon: FaXTwitter,
+    label: "Google Maps",
+    href: "https://www.google.com/maps/contrib/100054163876261320161/",
+    icon: MdOutlineLocationOn,
     external: true,
   },
-  {
-    label: "Facebook",
-    href: "#",
-    icon: FaFacebookF,
-    external: true,
-  },
+
+ 
 ] as const;
