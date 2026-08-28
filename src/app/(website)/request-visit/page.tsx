@@ -280,7 +280,7 @@ export default function RequestVisitPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="group relative overflow-hidden  inline-flex w-full items-center justify-center gap-3 rounded-2xl border border-(--color-accent)/60 px-4 py-1 text-base font-bold text-[#08111f] shadow-[0_10px_30px_rgba(212,175,55,0.2)] transition duration-300 hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto sm:min-w-50"
+                className="cursor-pointer group relative overflow-hidden  inline-flex w-full items-center justify-center gap-3 rounded-2xl border border-(--color-accent)/60 px-4 py-1 text-base font-bold text-[#08111f] shadow-[0_10px_30px_rgba(212,175,55,0.2)] transition duration-300 hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto sm:min-w-50"
               >
                 {/* Gold Border */}
                 <div
