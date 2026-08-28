@@ -21,13 +21,13 @@ const timelineItems = [
   {
     type: "eg",
     title: "مصر",
-    flag: "/flags/eg.png",
+    flag: "/flags/eg2.png",
       scale: true,
   },
   {
     type: "ae",
     title: "الإمارات",
-    flag: "/flags/ae.png",
+    flag: "/flags/uea5.png",
       scale: true,
   },
   {
