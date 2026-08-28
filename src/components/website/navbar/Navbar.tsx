@@ -22,7 +22,8 @@ export default function Navbar() {
         left-0
         w-full
         mx-auto
-        flex
+        grid
+        grid-cols-[1fr_auto_1fr]
         py-2
         max-w-[1600px]
         items-center
@@ -41,7 +42,7 @@ export default function Navbar() {
 
         {/* Left */}
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-end gap-4">
           <ThemeToggle />
           <span className=" text-white/60 border-l border-white/30  h-6">
           </span>

@@ -78,7 +78,7 @@ const result = timelineStops.map((stop) =>
   }, []);
 
   return (
-    <div className="relative w-[120px] h-[430px] mt-10 mr-16">
+    <div className="relative w-[120px] h-[430px] mt-5 ">
       <svg
         width="120"
       height="430"
