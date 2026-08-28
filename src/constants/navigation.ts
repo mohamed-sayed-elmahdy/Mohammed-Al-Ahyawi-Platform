@@ -23,10 +23,6 @@ export const navLinks  = [
     title: "القصص",
     href: "/stories",
   },
-  {
-    title: "طلب زيارة",
-    href: "/request-visit",
-  },
 ];
 
 export const footerLinks = [
