@@ -1,13 +1,16 @@
-import {  Search } from "lucide-react";
+  import Link from "next/link";
+  import PrimaryButton from "@/components/website/navbar/PrimaryButton";
 import { Plane } from "lucide-react";
-import PrimaryButton from "@/components/website/navbar/PrimaryButton";
+import { GrMapLocation } from "react-icons/gr";
 
 
 export default function HeroActions() {
   return (
     <div className="mt-6 flex gap-4">
-
-      <button
+      <Link
+        href="https://www.google.com/maps/contrib/100054163876261320161/"
+        target="_blank"
+        aria-label="استكشف التجارب"
         className="discoveryButton discoveryButton-colors
         flex gap-2 justify-center items-center
         relative py-2 px-6 text-sm font-semibold
@@ -15,9 +18,9 @@ export default function HeroActions() {
          rounded-[10px]"
       >
         استكشف التجارب
-        <Search size={20} />
+        <GrMapLocation size={20} />
 
-      </button>
+      </Link>
          <PrimaryButton 
           href="/request-visit"
           className="px-6"
