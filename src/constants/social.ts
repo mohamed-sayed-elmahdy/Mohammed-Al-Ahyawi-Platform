@@ -1,5 +1,3 @@
-// src/constants/social.ts
-
 export const socialLinks = [
   {
     id: "tiktok",
