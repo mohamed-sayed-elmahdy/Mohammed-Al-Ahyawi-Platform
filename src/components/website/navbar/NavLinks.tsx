@@ -1,14 +1,25 @@
+
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks } from "@/constants/navigation";
 
-export default function NavLinks() {
+type NavLinksProps = {
+  onNavigate?: () => void;
+  className?: string;
+  itemClassName?: string;
+};
+
+export default function NavLinks({
+  onNavigate,
+  className = "hidden items-center gap-8 lg:flex xl:gap-12",
+  itemClassName,
+}: NavLinksProps) {
   const pathname = usePathname();
 
   return (
-    <ul className="flex items-center gap-12">
+    <ul className={className}>
       {navLinks.map((link) => {
         const isActive =
           link.href === "/"
@@ -19,7 +30,10 @@ export default function NavLinks() {
           <li key={link.href}>
             <Link
               href={link.href}
-              className={`
+              onClick={onNavigate}
+              className={
+                itemClassName ??
+                `
                 relative
                 px-1
                 pb-2
@@ -33,7 +47,8 @@ export default function NavLinks() {
                     ? "text-(--color-accent) border-(--color-accent)"
                     : "text-(--color-text) border-transparent hover:text-(--color-accent) hover:border-(--color-accent)"
                 }
-              `}
+              `
+              }
             >
               {link.title}
             </Link>

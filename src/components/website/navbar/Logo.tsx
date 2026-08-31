@@ -5,18 +5,22 @@ export default function Logo() {
   return (
     <Link
       href="/"
-      className="flex items-center gap-2 select-none mb-6"
-      aria-label="الانتقال إلى الصفحة الرئيسية">
-      <Image src="/logo2.png"
+      className="flex items-center gap-2 select-none"
+      aria-label="الانتقال إلى الصفحة الرئيسية"
+    >
+      <Image
+        src="/logo2.png"
         alt="شعار محمد الإحيـوى"
         width={45}
         height={45}
-        priority />
+        priority
+        className="size-9 sm:size-11"
+      />
       <div className="flex flex-col leading-none">
-        <span className="text-xs font-medium text-(--color-text)">
+        <span className="text-[10px] font-medium text-(--color-text) sm:text-xs">
           الإعلامي
         </span>
-        <p className="text-xl font-extrabold text-(--color-text) leading-5">
+        <p className="text-base font-extrabold leading-5 text-(--color-text) sm:text-xl">
           محمد الإحيـوى
         </p>
       </div>
