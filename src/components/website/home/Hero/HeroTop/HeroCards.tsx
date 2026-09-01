@@ -35,7 +35,7 @@ export default function HeroCards() {
   };
 
   return (
-    <section className="mt-8 w-full max-w-[680px]" aria-label="استكشف التجارب">
+    <section className="mt-4 w-full max-w-170" aria-label="استكشف التجارب">
       <div className="flex items-center gap-2 sm:gap-3" dir="ltr">
         <button
           type="button"
@@ -46,8 +46,8 @@ export default function HeroCards() {
           <ChevronLeft className="size-5" />
         </button>
 
-        <div className="relative min-w-0 flex-1 overflow-visible py-3" dir="rtl">
-          <div className="aspect-[2.92/1]" aria-hidden="true" />
+        <div className="relative min-w-0 flex-1 overflow-visible">
+          <div className="aspect-[3.5/2.3] sm:aspect-[2.92/1.3]" aria-hidden="true" />
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={activeIndex}
@@ -57,7 +57,7 @@ export default function HeroCards() {
               animate="center"
               exit="exit"
               transition={{ duration: 0.58, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute inset-x-0 top-3 grid grid-cols-[minmax(0,1fr)_minmax(0,1.16fr)_minmax(0,1fr)] items-center gap-2 sm:gap-3"
+              className="absolute inset-x-0 top-3 grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.8fr)_minmax(0,0.9fr)] sm:grid-cols-[minmax(0,1fr)_minmax(0,1.16fr)_minmax(0,1fr)] items-center gap-2 sm:gap-3"
             >
               {visibleCards.map((card, index) => {
                 const featured = index === 1;
@@ -70,7 +70,7 @@ export default function HeroCards() {
                     key={`${card.id}-${featured ? "featured" : "side"}`}
                     className={`group relative overflow-hidden rounded-2xl transition-all duration-500 ${
                       featured
-                        ? "z-10 aspect-[1/1.08] border-[#f3c15c] shadow-[0_0_24px_rgba(243,193,92,0.42)] sm:scale-105"
+                        ? "z-10 aspect-[1.2/1.4] border-[#f3c15c] shadow-[0_0_24px_rgba(243,193,92,0.42)] sm:scale-105"
                         : "aspect-[1/1.04] border-[#9f6926]/80 opacity-85 shadow-[0_0_14px_rgba(243,193,92,0.16)]"
                     }`}
                   >
@@ -86,9 +86,6 @@ export default function HeroCards() {
                       <h3 className={`font-alexandria font-bold text-white drop-shadow-md ${featured ? "text-sm sm:text-lg" : "text-[11px] sm:text-sm"}`}>
                         {card.title}
                       </h3>
-                      {/* {featured ? (
-                        <p className="mt-1 hidden text-xs text-amber-100/85 sm:block">اكتشف أفضل التجارب المختارة</p>
-                      ) : null} */}
                     </div>
                   </AccentBorder>
                 );
