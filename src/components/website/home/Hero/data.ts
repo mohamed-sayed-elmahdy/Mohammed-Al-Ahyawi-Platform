@@ -13,7 +13,7 @@ export const heroCards = [
 ];
 
 export const heroStats = [
-	{ id: 1, value: '+1300', label: 'تقييم وتجربة موثقة' },
+	{ id: 1, value: '+1300', label: 'تقييم ' },
 	{ id: 2, value: '+75M', label: "مشاهدة" },
 	// { id: 3, value: '5+', label: 'دول حول العالم' },
 ];
