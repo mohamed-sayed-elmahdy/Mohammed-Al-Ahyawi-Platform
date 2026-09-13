@@ -5,7 +5,7 @@ const features = [
   { title: 'ثقة مستدامة', icon: Handshake },
   { title: 'تأثير فوري', icon: Zap },
   { title: 'استثمار استراتيجي', icon: TrendingUp },
-  { title: 'ثبات رقمي', icon: ShieldCheck },
+  { title: 'أولوية رقمية', icon: ShieldCheck },
 ]
 
 export default function HeroFeatures() {
