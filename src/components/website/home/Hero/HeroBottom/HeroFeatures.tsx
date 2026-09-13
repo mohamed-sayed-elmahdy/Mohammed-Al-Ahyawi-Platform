@@ -2,10 +2,10 @@ import { Compass, Handshake, ShieldCheck, TrendingUp, Zap } from 'lucide-react'
 
 const features = [
   { title: 'قوة توجيه', icon: Compass },
-  { title: 'بناء ثقة مستدامة', icon: Handshake },
+  { title: 'ثقة مستدامة', icon: Handshake },
   { title: 'تأثير فوري', icon: Zap },
   { title: 'استثمار استراتيجي', icon: TrendingUp },
-  { title: 'أولوية وثبات رقمي', icon: ShieldCheck },
+  { title: 'ثبات رقمي', icon: ShieldCheck },
 ]
 
 export default function HeroFeatures() {
