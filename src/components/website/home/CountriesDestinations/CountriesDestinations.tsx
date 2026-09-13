@@ -10,7 +10,7 @@ export default function CountriesDestinations() {
         <SectionHeader
           eyebrow="العالم بأكمله"
           title="دليل البلدان والوجهات المختارة"
-          description="وجهات مختارة تمثل هوية الرحلات الفاخرة، مع تركيز على البلدان السعودية والإقليمية والعالمية."
+          description="وجهات مختارة تمثل هوية الرحلات الفاخرة، مع تركيز على البلدان السعودية والإقليمية والعالمية"
         />
 
         <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr] xl:gap-10">

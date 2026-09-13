@@ -12,7 +12,7 @@ export const discoveryCategories: DiscoveryCategory[] = [
   {
     id: "restaurants",
     title: "مطاعم",
-    description: "تجارب طعام استثنائية في أفضل المطاعم المحلية والعالمية.",
+    description: "تجارب طعام استثنائية في أفضل المطاعم المحلية والعالمية",
     count: 128,
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
     href: "/categories/restaurants",
@@ -57,7 +57,7 @@ export const discoveryCategories: DiscoveryCategory[] = [
   {
     id: "entertainment",
     title: "أماكن ترفيهية",
-    description: "لحظات ممتعة وتجارب ترفيهية متنوعة.",
+    description: "لحظات ممتعة وتجارب ترفيهية متنوعة",
     count: 63,
     image: "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?auto=format&fit=crop&w=800&q=85",
     href: "/categories/entertainment",

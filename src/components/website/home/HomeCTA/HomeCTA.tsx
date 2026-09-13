@@ -2,7 +2,7 @@ import type { CTA } from "@/types/website";
 
 const cta: CTA = {
   title: "دعوة لزيارة بعين محمد الإحيوي",
-  description: "دعوة راقية للعلامات التجارية لاستضافة تجربة مدعومة بسردية وهوية مرئية فريدة.",
+  description: "دعوة راقية للعلامات التجارية لاستضافة تجربة مدعومة بسردية وهوية مرئية فريدة",
   primaryLabel: "اطلب زيارة",
   primaryHref: "/request-visit",
   secondaryLabel: "تعرّف على التجربة",

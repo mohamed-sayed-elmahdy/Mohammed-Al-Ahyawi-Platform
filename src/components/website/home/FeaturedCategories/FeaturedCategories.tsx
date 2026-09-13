@@ -17,7 +17,7 @@ export default function FeaturedCategories() {
               <span className="text-[#d9982d]">حسب الفئة</span>
             </h2>
             <p className="mt-5 max-w-xl text-base leading-8 text-slate-300">
-              كل تجربة تروي قصة مختلفة، وكل فئة تمنحك زاوية جديدة لاستكشاف العالم بأسلوب محمد الإحيوي. اختر ما يهمك اليوم وابدأ رحلة جديدة.
+              كل تجربة تروي قصة مختلفة، وكل فئة تمنحك زاوية جديدة لاستكشاف العالم بأسلوب محمد الإحيوي. اختر ما يهمك اليوم وابدأ رحلة جديدة
             </p>
             <a href="/categories" className="mt-7 inline-flex items-center gap-4 rounded-lg border border-[#bc7620] px-7 py-3.5 font-semibold text-[#e5a234] transition hover:bg-[#e5a234] hover:text-[#06101b]">
               استعرض جميع الفئات <ArrowLeft className="h-5 w-5" />
