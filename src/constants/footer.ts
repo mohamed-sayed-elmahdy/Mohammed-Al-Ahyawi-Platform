@@ -188,7 +188,7 @@ export const socialLinks = [
   },
   {
     label: "Google Maps",
-    href: "https://www.google.com/maps/contrib/100054163876261320161/",
+    href: "https://maps.app.goo.gl/K5RruLyekHvbg8qx6?g_st=iw",
     icon: MdOutlineLocationOn,
     external: true,
   },

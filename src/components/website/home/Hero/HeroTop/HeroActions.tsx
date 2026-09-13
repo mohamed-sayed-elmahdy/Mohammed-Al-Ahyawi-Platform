@@ -7,7 +7,7 @@ export default function HeroActions() {
   return (
     <div className=" mt-5 flex flex-wrap w-full max-w-md  items-stretch justify-center gap-3 sm:mt-6 sm:max-w-none sm:flex-row sm:items-center sm:justify-center sm:gap-4">
       <Link
-        href="https://www.google.com/maps/contrib/100054163876261320161/"
+        href="https://maps.app.goo.gl/K5RruLyekHvbg8qx6?g_st=iw"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="استكشف التجارب"
