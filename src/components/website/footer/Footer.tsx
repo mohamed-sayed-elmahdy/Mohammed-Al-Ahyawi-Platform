@@ -81,7 +81,7 @@ export default function Footer() {
 
               <p className="flex items-center justify-center gap-4 md:justify-start">
                 <FaLocationDot className="shrink-0 text-xl text-(--color-accent)" />
-                الرياض، المملكة العربية السعودية
+                جدة، المملكة العربية السعودية
               </p>
             </address>
 
