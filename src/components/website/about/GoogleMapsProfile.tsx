@@ -7,23 +7,20 @@ import {
 
 const features = [
   {
-    title: "رتبة الحساب ومستواه",
-    text: "مرشد محلي من المستوى التاسع على قوقل ماب (Level 9 Local Guide)، وقد وصل إلى هذا المستوى بعد تجاوز 75,500 نقطة من المساهمات.",
-    icon: Trophy,
-  },
-  {
     title: "التخصص والمنهجية في التقييم",
-    text: "نزور، نجرب، نقيم، ونحسن. توصيات تطويرية عملية تساعد النشاط على تحسين التجربة والخدمة",
+    text: "نزور، نجرّب، نقيّم، نحسّن. توصيات تطويرية عملية تساعد النشاط على تحسين التجربة والخدمة",
     icon: ClipboardCheck,
+    border: "sm:border-e border-(--color-accent)/35",
   },
   {
     title: "نبرة التقييم",
-    text: "أسلوب إعلامي مهني ودقيق يشرح تجربة المكان والخدمة بوضوح، ويقدم ملاحظات قابلة للتحسين.",
+    text: "أسلوب إعلامي مهني ودقيق يشرح تجربة المكان والخدمة بوضوح، ويقدم ملاحظات قابلة للتحسين",
     icon: MessageCircleMore,
+    border: "md:border-e border-(--color-accent)/35",
   },
   {
     title: "التكامل الرقمي والانتشاري",
-    text: "يستثمر خلفيته الصحفية في مراجعات منظمة، وينشر التجارب عبر منصات التواصل للوصول إلى شريحة أوسع.",
+    text: "يستثمر خلفيته الصحفية في مراجعات منظمة، وينشر التجارب عبر منصات التواصل للوصول إلى شريحة أوسع",
     icon: Share2,
   },
 ];
@@ -62,22 +59,22 @@ export function GoogleMapsProfile() {
               </p>
             </div>
             <p className="mt-6 text-sm leading-7 text-(--color-secondary-text)">
-              تم تحقيقها عبر مراجعات موثوقة وتجارب حقيقية على مدى سنوات.
+              تم تحقيقها عبر مراجعات موثوقة وتجارب حقيقية على مدى سنوات
             </p>
           </aside>
           <div
             dir="rtl"
-            className="rounded-[26px] border border-(--color-accent)/35 bg-(--color-background)/25 p-7 sm:p-9"
+            className="rounded-[26px] border border-(--color-accent)/35 bg-(--color-background)/25 p-6 md:p-6"
           >
             <p className="text-center text-lg leading-10 text-(--color-secondary-text) sm:text-xl">
-              ويُعد حساب الإعلامي والصحفي السعودي محمد الإحيوي واحدًا من أبرز
+              ويُعد حساب الإعلامي والصحفي السعودي محمد الإحيوي واحداً من أبرز
               وأقوى حسابات التقييم والمراجعات الموثوقة على قوقل ماب
             </p>
-            <div className="mt-9 grid gap-6 md:grid-cols-4">
-              {features.map(({ title, text, icon: Icon }) => (
+            <div className="mt-9 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+              {features.map(({ title, text, icon: Icon, border }) => (
                 <article
                   key={title}
-                  className="border-t border-(--color-accent)/35 pt-5 text-center md:border-l md:border-t-0 md:border-l-(--color-accent)/35 md:pl-5 md:first:border-0"
+                  className={`border-(--color-accent)/35 pt-5 text-center ${border} md:border-t-0 md:border-l-(--color-accent)/35 md:pl-5 md:first:border-e`}
                 >
                   <Icon className="mx-auto size-11 text-(--color-accent)" />
                   <h3 className="mt-4 text-lg font-bold text-(--color-accent)">

@@ -69,9 +69,7 @@ export function DigitalPresence() {
                             {name}
                         </h3>
 
-                        <p className="mt-2 text-sm text-(--color-secondary-text)">
-                            {label}
-                        </p>
+                   
                     </Link>
                 ))}
             </div>
