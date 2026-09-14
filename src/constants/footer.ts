@@ -116,15 +116,15 @@ export const categories = [
 
 export const officialLinks = [
   {
-    label: "الهيئة العامة للترفيه",
-    href: "https://www.gea.gov.sa",
-    icon: HiSparkles,
-    external: true,
-  },
-  {
     label: "وزارة الإعلام",
     href: "https://www.media.gov.sa",
     icon: GiPalmTree,
+    external: true,
+  },
+  {
+    label: "الهيئة العامة للترفيه",
+    href: "https://www.gea.gov.sa",
+    icon: HiSparkles,
     external: true,
   },
   {
@@ -143,12 +143,6 @@ export const officialLinks = [
     label: "الهيئة السعودية للسياحة",
     href: "https://www.sta.gov.sa",
     icon: HiGlobeAlt,
-    external: true,
-  },
-  {
-    label: "منصة معروف",
-    href: "https://maroof.sa",
-    icon: HiMapPin,
     external: true,
   },
   {
