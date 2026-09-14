@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import FooterLinksCard from "@/components/website/footer/FooterLinksCard";
 import PrimaryButton from "@/components/website/navbar/PrimaryButton";
 
@@ -14,18 +13,18 @@ import {
 import {
   FaLocationDot,
   FaPhone,
+
   FaRegEnvelope,
 } from "react-icons/fa6";
 
 import {
-  HiArrowTopRightOnSquare,
-  HiChevronLeft,
-  HiHeart,
-  HiPaperAirplane,
+  HiHeart
 } from "react-icons/hi2";
 
-import { Plane } from "lucide-react";
-
+import {
+  PhoneCall,
+  Plane,
+} from "lucide-react";
 const footerColumns = [
   {
     title: "روابط تهمك",
@@ -56,7 +55,16 @@ export default function Footer() {
       <div className="mx-auto px-6 py-12 sm:px-10 lg:px-14 xl:px-[72px] xl:py-[42px]">
         <div className="grid gap-12 text-center md:grid-cols-2 md:text-right xl:grid-cols-[1.05fr_1.3fr_.92fr_.92fr_1.08fr] xl:items-start xl:gap-9">
           <section className="order-1">
-            <FooterTitle>تواصل</FooterTitle>
+            <FooterTitle>
+              <span className="inline-flex items-center gap-2">
+                تواصل
+                <span className="inline-flex items-center gap-1.5 text-(--color-accent)">
+            
+                  <PhoneCall className="size-5" />
+             
+                </span>
+              </span>
+            </FooterTitle>
 
             <p className="mt-6 text-[16px] leading-9 text-slate-200">
               هل لديك تجربة تستحق النقل والتوثيق؟
@@ -72,11 +80,11 @@ export default function Footer() {
               </a>
 
               <a
-                href="tel:+966501234567"
+                href="tel:+00966551946666"
                 className="flex items-center justify-center gap-4 transition hover:text-(--color-accent) md:justify-start"
               >
                 <FaPhone className="shrink-0 text-xl text-(--color-accent)" />
-                <span dir="ltr">+966 50 123 4567</span>
+                <span dir="ltr">+00966 55 194 6666</span>
               </a>
 
               <p className="flex items-center justify-center gap-4 md:justify-start">
