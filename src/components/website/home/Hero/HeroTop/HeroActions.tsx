@@ -1,7 +1,7 @@
 import Link from "next/link";
 import PrimaryButton from "@/components/website/navbar/PrimaryButton";
 import { Plane } from "lucide-react";
-import { GrMapLocation } from "react-icons/gr";
+import { MdOutlineLocationOn } from "react-icons/md";
 
 export default function HeroActions() {
   return (
@@ -14,7 +14,7 @@ export default function HeroActions() {
         className="discoveryButton discoveryButton-colors min-w-38.75  relative flex items-center justify-center gap-2 rounded-[14px] px-2 sm:px-6 py-3 text-sm font-semibold text-(--color-text) sm:py-2"
       >
         استكشف التجارب
-        <GrMapLocation size={20} />
+        <MdOutlineLocationOn size={20} />
       </Link>
 
       <PrimaryButton

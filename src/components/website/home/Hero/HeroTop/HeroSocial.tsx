@@ -5,8 +5,6 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { PiSnapchatLogoLight } from "react-icons/pi";
-import { IoLocation } from "react-icons/io5";
-import { GrMapLocation } from "react-icons/gr";
 import { MdOutlineLocationOn } from "react-icons/md";
 
 import PremiumBorder from '@/components/website/home/Hero/HeroTop/PremiumBorder';
@@ -21,7 +19,7 @@ export default function HeroSocial() {
     { id: "x", name: "X", icon: FaXTwitter },
     { id: "instagram", name: "Instagram", icon: FaInstagram },
     { id: "tiktok", name: "TikTok", icon: FaTiktok },
-    { id: "google-maps", name: "Google Maps", icon: GrMapLocation },
+    { id: "google-maps", name: "Google Maps", icon: MdOutlineLocationOn },
 
   ] as const;
 
