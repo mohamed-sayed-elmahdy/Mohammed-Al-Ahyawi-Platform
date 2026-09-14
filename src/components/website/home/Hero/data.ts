@@ -1,5 +1,4 @@
 export const heroCards = [
-	{ id: 1, title: 'مطاعم بحرية', img: '/hero-slider-images/seafood.jpg' },
 	{ id: 2, title: 'مطاعم', img: '/hero-slider-images/restaurants.jpg' },
 	{ id: 3, title: 'كافيهات', img: '/hero-slider-images/cafes.jpg' },
 	{ id: 4, title: 'ساندويتشات', img: '/hero-slider-images/fast-food.jpg' },
