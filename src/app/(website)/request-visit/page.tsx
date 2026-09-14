@@ -2,12 +2,14 @@
 
 import { useState, type FormEvent, type ChangeEvent } from "react";
 import { countries } from "@/constants/countries";
+import { countryDialCodes } from "@/constants/countryDialCodes";
 import {
   Building2,
   CheckCircle2,
   Mail,
   MapPin,
   Phone,
+  PhoneCall,
   Send,
   User,
   X,
@@ -15,18 +17,35 @@ import {
 
 type FormData = {
   name: string;
-  phone: string;
+  phoneCode: string;
+  phoneNumber: string;
   email: string;
   country: string;
   city: string;
   details: string;
 };
 
+const defaultCountry = "المملكة العربية السعودية";
+const defaultPhoneCode =
+  countryDialCodes.find(({ country }) => country === defaultCountry)?.code ??
+  "";
+
+const countryFlags: Record<string, string> = {
+  "المملكة العربية السعودية": "🇸🇦",
+  مصر: "🇪🇬",
+  "الإمارات العربية المتحدة": "🇦🇪",
+  تركيا: "🇹🇷",
+  جورجيا: "🇬🇪",
+};
+
+const getCountryFlag = (country: string) => countryFlags[country] ?? "🌐";
+
 const initialForm: FormData = {
   name: "",
-  phone: "",
+  phoneCode: defaultPhoneCode,
+  phoneNumber: "",
   email: "",
-  country: "المملكة العربية السعودية",
+  country: defaultCountry,
   city: "",
   details: "",
 };
@@ -43,7 +62,17 @@ export default function RequestVisitPage() {
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
+    setForm((prev) => {
+      if (name === "country") {
+        const phoneCode =
+          countryDialCodes.find(({ country }) => country === value)?.code ??
+          "";
+
+        return { ...prev, country: value, phoneCode };
+      }
+
+      return { ...prev, [name]: value };
+    });
     if (errors[name as keyof FormData]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
@@ -53,9 +82,10 @@ export default function RequestVisitPage() {
     const next: Partial<Record<keyof FormData, string>> = {};
 
     if (!form.name.trim()) next.name = "الاسم مطلوب";
-    if (!form.phone.trim()) next.phone = "رقم الجوال مطلوب";
-    else if (!/^[\d+\s()-]{8,20}$/.test(form.phone.trim()))
-      next.phone = "رقم الجوال غير صحيح";
+    if (!form.phoneCode.trim()) next.phoneCode = "مفتاح الدولة مطلوب";
+    if (!form.phoneNumber.trim()) next.phoneNumber = "رقم الجوال مطلوب";
+    else if (!/^[\d\s()-]{6,20}$/.test(form.phoneNumber.trim()))
+      next.phoneNumber = "رقم الجوال غير صحيح";
 
     if (!form.email.trim()) next.email = "البريد الإلكتروني مطلوب";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim()))
@@ -94,10 +124,10 @@ export default function RequestVisitPage() {
     "mb-2 block text-sm font-medium text-(--color-secondary-text)";
 
   return (
-    <div className="relative min-h-[70vh] overflow-hidden bg-(--color-background) text-(--color-text)">
+    <div className=" relative min-h-[70vh] overflow-hidden bg-(--color-background) text-(--color-text)">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(ellipse_at_top,rgba(212,175,55,0.12),transparent_65%)]" />
 
-      <section className="relative mx-auto max-w-[1280px] px-4 py-12 sm:px-8 lg:px-10 lg:py-16">
+      <section className="relative mx-auto max-w-[1280px] py-12  lg:py-16">
         {/* Desktop: 2 columns | Mobile: 1 column */}
         <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-16">
           {/* Intro column */}
@@ -171,25 +201,47 @@ export default function RequestVisitPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className={labelClass}>
+                  <label htmlFor="phoneNumber" className={labelClass}>
                     <span className="inline-flex items-center gap-2">
-                      <Phone className="size-4 text-(--color-accent)" />
-                      الجوال
+                      <PhoneCall className="size-4 text-(--color-accent)" />
+                      رقم الجوال
                     </span>
                   </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    dir="ltr"
-                    value={form.phone}
-                    onChange={handleChange}
-                    placeholder="+966 5X XXX XXXX"
-                    className={`${fieldClass} text-left`}
-                    autoComplete="tel"
-                  />
-                  {errors.phone && (
-                    <p className="mt-2 text-sm text-red-400">{errors.phone}</p>
+                  <div className="flex gap-2 relative" dir="ltr">
+                    <select
+                      id="phoneCode"
+                      name="phoneCode"
+                      value={form.phoneCode}
+                      onChange={handleChange}
+                      className={`${fieldClass} max-w-24 focus:border-none! focus:outline-none! focus:ring-0! focus-visible:outline-none bg-none! ps-1! pe-0! py-2! top-1 ms-1 border-0  absolute shrink-0 cursor-pointer  text-left`}
+                    >
+                      <option value="">الكود</option>
+                      {countryDialCodes.map(({ country, code }) => (
+                        <option key={`${country}-${code}`} value={code}>
+                          {getCountryFlag(country)} {code}
+                        </option>
+                      ))}
+                    </select>
+                    <input
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      type="tel"
+                      value={form.phoneNumber}
+                      onChange={handleChange}
+                      placeholder="5X XXX XXXX"
+                      className={`${fieldClass} ps-26  min-w-0 flex-1 text-left`}
+                      autoComplete="tel-national"
+                    />
+                  </div>
+                  {errors.phoneCode && (
+                    <p className="mt-2 text-sm text-red-400">
+                      {errors.phoneCode}
+                    </p>
+                  )}
+                  {errors.phoneNumber && (
+                    <p className="mt-2 text-sm text-red-400">
+                      {errors.phoneNumber}
+                    </p>
                   )}
                 </div>
               </div>
