@@ -4,8 +4,6 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { PiSnapchatLogoLight } from "react-icons/pi";
-import { IoLocation } from "react-icons/io5";
-import { GrMapLocation } from "react-icons/gr";
 import { MdOutlineLocationOn } from "react-icons/md";
 
 import {
@@ -154,7 +152,24 @@ export const officialLinks = [
 ] as const;
 
 export const socialLinks = [
-
+  {
+    label: "Google Maps",
+    href: "https://maps.app.goo.gl/K5RruLyekHvbg8qx6?g_st=iw",
+    icon: MdOutlineLocationOn,
+    external: true,
+  },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@Alaqari2006",
+    icon: FaTiktok,
+    external: true,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/noon_jeddah_rest_cafe",
+    icon: FaInstagram,
+    external: true,
+  },
   {
     label: "Snapchat",
     href: "https://www.snapchat.com/add/Alaqari2006",
@@ -168,24 +183,4 @@ export const socialLinks = [
     icon: FaXTwitter,
     external: true,
   },
-     {
-    label: "TikTok",
-    href: "https://www.tiktok.com/@Alaqari2006",
-    icon: FaTiktok,
-    external: true,
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/noon_jeddah_rest_cafe",
-    icon: FaInstagram,
-    external: true,
-  },
-  {
-    label: "Google Maps",
-    href: "https://maps.app.goo.gl/K5RruLyekHvbg8qx6?g_st=iw",
-    icon: MdOutlineLocationOn,
-    external: true,
-  },
-
- 
 ] as const;

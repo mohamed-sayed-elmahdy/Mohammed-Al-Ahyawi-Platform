@@ -15,12 +15,11 @@ export default function HeroSocial() {
     socialLinks.map((link) => [link.id, link.href])
   );
   const socialChannels = [
+    { id: "google-maps", name: "Google Maps", icon: MdOutlineLocationOn },
+    { id: "tiktok", name: "TikTok", icon: FaTiktok },
+    { id: "instagram", name: "Instagram", icon: FaInstagram },
     { id: "snapchat", name: "Snapchat", icon: PiSnapchatLogoLight },
     { id: "x", name: "X", icon: FaXTwitter },
-    { id: "instagram", name: "Instagram", icon: FaInstagram },
-    { id: "tiktok", name: "TikTok", icon: FaTiktok },
-    { id: "google-maps", name: "Google Maps", icon: MdOutlineLocationOn },
-
   ] as const;
 
 
