@@ -91,11 +91,6 @@ export const categories = [
     icon: GiPalmTree,
   },
   {
-    label: "أنشطة",
-    href: "/categories/activities",
-    icon: HiCamera,
-  },
-  {
     label: "مراكز طبية وتجميل",
     href: "/categories/medical-beauty-centers",
     icon: HiBuildingOffice2,
