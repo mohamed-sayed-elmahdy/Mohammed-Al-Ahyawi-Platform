@@ -18,10 +18,6 @@ import {
 } from "react-icons/fa6";
 
 import {
-  HiHeart
-} from "react-icons/hi2";
-
-import {
   PhoneCall,
   Plane,
 } from "lucide-react";
@@ -52,7 +48,7 @@ function FooterTitle({ children }: { children: React.ReactNode }) {
 export default function Footer() {
   return (
     <footer className="mt-6 overflow-hidden border-t border-white/20 bg-[#07111e] text-(--color-text)">
-      <div className="mx-auto px-6 py-12 sm:px-10 lg:px-14 xl:px-[72px] xl:py-[42px]">
+      <div className="mx-auto px-6 pt-12 sm:px-10 lg:px-14 xl:px-[72px]">
         <div className="grid gap-12 text-center md:grid-cols-2 md:text-right xl:grid-cols-[1.05fr_1.3fr_.92fr_.92fr_1.08fr] xl:items-start xl:gap-9">
           <section className="order-1">
             <FooterTitle>
@@ -195,34 +191,39 @@ export default function Footer() {
           </section>
         </div>
 
-        <div className="relative mt-14 border-t border-(--color-accent)/80 pt-10 before:absolute before:right-1/2 before:top-[-5px] before:size-2 before:rotate-45 before:border before:border-(--color-accent) before:bg-[#07111e]">
-          <div className="flex flex-col items-center justify-between gap-5 text-[15px] text-slate-300 lg:flex-row">
-            <p>
-              صُنع بحب
-              <HiHeart className="mr-3 inline text-xl text-(--color-accent)" />
-            </p>
-
-            <span className="hidden h-7 w-px bg-(--color-accent)/70 lg:block" />
+        {/* Professional accreditation block: registration number and Media Regulation Authority branding. */}
+        <div className="mt-10 border-t border-(--color-accent)/80 py-4">
+          <div
+            dir="ltr"
+            className="grid items-center gap-8 text-left text-[13px] text-slate-300 sm:grid-cols-[1fr_auto]"
+          >
+            <div className="space-y-2">
+              <p className="font-semibold text-(--color-accent)">
+                Professional Registration No. | رقم التسجيل المهني
+              </p>
+              <p className="text-xl font-bold tracking-wide text-slate-100">
+                553901
+              </p>
+              <p dir="rtl" className="text-sm leading-7 text-slate-300">
+                حاصل على شهادة التسجيل المهني للإعلاميين
+              </p>
+            </div>
 
             <a
-              href="#"
-              className="transition hover:text-(--color-accent)"
+              href="https://gmedia.gov.sa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="الهيئة العامة لتنظيم الإعلام"
+              className="justify-self-end transition-opacity hover:opacity-80"
             >
-              الشروط والأحكام
+              <Image
+                src="/media-regulation-logo-white.svg"
+                alt="الهيئة العامة لتنظيم الإعلام"
+                width={220}
+                height={86}
+                className="h-auto w-[180px] sm:w-[220px] text-white!"
+              />
             </a>
-
-            <span className="hidden h-7 w-px bg-(--color-accent)/70 lg:block" />
-
-            <a
-              href="#"
-              className="transition hover:text-(--color-accent)"
-            >
-              سياسة الخصوصية
-            </a>
-
-            <span className="hidden h-7 w-px bg-(--color-accent)/70 lg:block" />
-
-            <p>© جميع الحقوق محفوظة للإعلامي محمد الإحيوى</p>
           </div>
         </div>
       </div>
