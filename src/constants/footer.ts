@@ -96,7 +96,7 @@ export const categories = [
     icon: HiBuildingOffice2,
   },
   {
-    label: "وجهات سياحية",
+    label: "سياحة سعودية",
     href: "/categories/destinations",
     icon: HiMapPin,
   },
