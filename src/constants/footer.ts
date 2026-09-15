@@ -101,11 +101,6 @@ export const categories = [
     icon: HiCamera,
   },
   {
-    label: "جولات داخل المملكة",
-    href: "/categories/saudi-tours",
-    icon: HiMapPin,
-  },
-  {
     label: "جولات عالمية",
     href: "/categories/world-tours",
     icon: HiGlobeAlt,
