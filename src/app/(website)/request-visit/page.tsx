@@ -136,7 +136,7 @@ export default function RequestVisitPage() {
               طلب زيارة
             </p>
             <h1 className="font-alexandria mt-4 text-3xl font-bold leading-relaxed sm:text-4xl lg:text-[2.75rem] xl:text-5xl">
-              ادعُ محمد الإحيوى لتجربة منشأتك
+              ادعُ محمد الإحيوي لتجربة منشأتك
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-(--color-secondary-text) sm:text-lg lg:mx-0">
               املأ النموذج التالي ببيانات المنشأة وتفاصيل الدعوة، وسنراجع الطلب

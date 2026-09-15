@@ -123,7 +123,7 @@ export default function Footer() {
             >
               <Image
                 src="/logo2.png"
-                alt="شعار محمد الإحيوى"
+                alt="شعار محمد الإحيوي"
                 width={110}
                 height={110}
                 className="h-[94px] w-auto object-contain"
@@ -134,7 +134,7 @@ export default function Footer() {
               </span>
 
               <strong className="font-alexandria mt-1 text-[25px] leading-none">
-                محمد الإحيوى
+                محمد الإحيوي
               </strong>
 
               <span className="mt-7 flex items-center gap-2 text-(--color-accent)">
