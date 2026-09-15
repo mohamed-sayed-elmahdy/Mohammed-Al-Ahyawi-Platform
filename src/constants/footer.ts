@@ -91,14 +91,19 @@ export const categories = [
     icon: GiPalmTree,
   },
   {
-    label: "وجهات سياحية",
-    href: "/categories/destinations",
-    icon: HiMapPin,
-  },
-  {
     label: "أنشطة",
     href: "/categories/activities",
     icon: HiCamera,
+  },
+  {
+    label: "مراكز طبية وتجميل",
+    href: "/categories/medical-beauty-centers",
+    icon: HiBuildingOffice2,
+  },
+  {
+    label: "وجهات سياحية",
+    href: "/categories/destinations",
+    icon: HiMapPin,
   },
   {
     label: "جولات عالمية",
