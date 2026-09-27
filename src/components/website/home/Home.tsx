@@ -6,7 +6,7 @@ import LatestArticles from "@/components/website/home/LatestArticles/LatestArtic
 import JourneyMap from "@/components/website/home/JourneyMap/JourneyMap";
 import CountriesDestinations from "@/components/website/home/CountriesDestinations/CountriesDestinations";
 import HomeCTA from "@/components/website/home/HomeCTA/HomeCTA";
-import Footer from "@/components/website/footer/Footer";
+
 
 export default function Home() {
   return (
@@ -19,7 +19,6 @@ export default function Home() {
       <JourneyMap />
       <CountriesDestinations />
       <HomeCTA />
-
     </>
   );
 }

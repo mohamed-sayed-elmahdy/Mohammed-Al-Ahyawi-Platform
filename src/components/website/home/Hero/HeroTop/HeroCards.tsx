@@ -4,10 +4,10 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { heroCards } from "@/components/website/home/Hero/data";
+import { categories } from "@/components/website/home/Hero/data";
 import AccentBorder from "@/components/shared/AccentBorder";
 const getCardAt = (index: number) => {
-  return heroCards[(index + heroCards.length) % heroCards.length];
+  return categories[(index + categories.length) % categories.length];
 };
 
 const carouselVariants = {
@@ -31,7 +31,7 @@ export default function HeroCards() {
 
   const moveCarousel = (direction: number) => {
     setDirection(direction);
-    setActiveIndex((current) => (current + direction + heroCards.length) % heroCards.length);
+    setActiveIndex((current) => (current + direction + categories.length) % categories.length);
   };
 
   return (

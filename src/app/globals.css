@@ -6,8 +6,8 @@
   --color-background: #08111f;
   --color-surface: #0f172a;
   --color-text: #ffffff;
-  --color-secondary-text: #cbd5e1;
-  --color-accent: #f3c15c;
+  --color-secondary-text: #cbd5e1; 
+  --color-accent: #d9982d;
   --color-accent-1: #d4af37;
   --color-button-surface: #131313;
 }
@@ -17,7 +17,7 @@
   --color-surface: #ffffff;
   --color-text: #111827;
   --color-secondary-text: #6b7280;
-  --color-accent: #c89b3c;
+  --color-accent: #d9982d;
   --color-accent-1: #d4af37;
   --color-button-surface: #F8F7F5;
 }

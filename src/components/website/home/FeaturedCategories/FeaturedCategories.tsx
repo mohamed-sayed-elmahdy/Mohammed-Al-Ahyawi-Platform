@@ -1,6 +1,10 @@
+
+import Link from "next/link";
 import { ArrowLeft, Coffee, FerrisWheel, Globe2, Hotel, Landmark, Palmtree, Utensils } from "lucide-react";
 import { discoveryCategories } from "./data";
-import ReviewCard from "./CategoryCard";
+import CategoryCard from "@/components/website/home/FeaturedCategories/CategoryCard";
+import { MdOutlineLocationOn } from "react-icons/md";
+
 
 const categoryIcons = [Utensils, Coffee, Hotel, Palmtree, Landmark, FerrisWheel, Globe2];
 
@@ -8,20 +12,25 @@ export default function FeaturedCategories() {
   const [featured, ...cards] = discoveryCategories;
 
   return (
-    <section className="overflow-hidden  bg-linear-to-b from-black via-[#050d16] to-[#08111f] pb-16 pt-10 text-white sm:pb-24">
+    <section className="overflow-hidden  bg-linear-to-b from-black via-[#050d16] to-[#08111f] pb-16 pt-10 text-[var(--color-text)] sm:pb-24">
       <div className="mx-auto max-w-360 px-5 sm:px-8">
         <div className="grid items-center gap-12 xl:grid-cols-[.9fr_1.4fr]">
           <div className="text-right xl:pr-6">
             <h2 className="font-alexandria text-4xl font-semibold leading-[1.35] sm:text-5xl">
               استكشف التجارب<br />
-              <span className="text-[#d9982d]">حسب الفئة</span>
+              <span className="text-(--color-accent)">حسب الفئة</span>
             </h2>
-            <p className="mt-5 max-w-xl text-base leading-8 text-slate-300">
+            <p className="mt-5 max-w-xl text-base leading-8 text-(--color-secondary-text)">
               كل تجربة تروي قصة مختلفة، وكل فئة تمنحك زاوية جديدة لاستكشاف العالم بأسلوب محمد الإحيوي. اختر ما يهمك اليوم وابدأ رحلة جديدة
             </p>
-            <a href="/categories" className="mt-7 inline-flex items-center gap-4 rounded-lg border border-[#bc7620] px-7 py-3.5 font-semibold text-[#e5a234] transition hover:bg-[#e5a234] hover:text-[#06101b]">
+
+            <Link
+              href="/categories"
+              aria-label=" استعرض جميع الفئات "
+              className="discoveryButton discoveryButton-colors min-w-38.75 mt-4 relative inline-flex items-center justify-center gap-2 rounded-[10px] px-2 sm:px-6 py-3 text-sm font-semibold text-(--color-text) sm:py-2"
+            >
               استعرض جميع الفئات <ArrowLeft className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
 
           <div className="grid grid-cols-3 gap-x-3 gap-y-7 sm:grid-cols-4 lg:grid-cols-7">
@@ -46,16 +55,16 @@ export default function FeaturedCategories() {
         {featured ? (
           <div className="mt-16 grid gap-3 lg:grid-cols-[1.15fr_2fr]" dir="ltr">
             <div className="grid gap-3">
-              <ReviewCard category={featured} featured />
-              <ReviewCard category={{ ...discoveryCategories[3] }} />
+              <CategoryCard category={featured} featured />
+              <CategoryCard category={{ ...discoveryCategories[3] }} />
             </div>
             <div className="grid gap-3">
               <div className="grid gap-3 md:grid-cols-2">
-                <ReviewCard category={discoveryCategories[1]} />
-                <ReviewCard category={discoveryCategories[2]} />
+                <CategoryCard category={discoveryCategories[1]} />
+                <CategoryCard category={discoveryCategories[2]} />
               </div>
               <div className="grid gap-3 grid-cols-2 sm:grid-cols-4">
-                {cards.slice(2).map((category) => <ReviewCard key={category.id} category={category} />)}
+                {cards.slice(2).map((category) => <CategoryCard key={category.id} category={category} />)}
               </div>
             </div>
           </div>
