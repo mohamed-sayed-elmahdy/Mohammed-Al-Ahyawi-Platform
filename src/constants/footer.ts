@@ -52,11 +52,11 @@ export const navigation = [
     href: "/reviews",
     icon: HiStar,
   },
-  {
-    label: "القصص",
-    href: "/stories",
-    icon: HiBookOpen,
-  },
+  // {
+  //   label: "القصص",
+  //   href: "/stories",
+  //   icon: HiBookOpen,
+  // },
   {
     label: "المقالات",
     href: "/articles",

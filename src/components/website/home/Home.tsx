@@ -13,13 +13,13 @@ export default function Home() {
     <>
       <Hero />
       <FeaturedCategories />
-     <FeaturedReviews />
-      <FeaturedStories />  
+      <FeaturedReviews />
+      <FeaturedStories />
       <LatestArticles />
       <JourneyMap />
       <CountriesDestinations />
-      <HomeCTA /> 
-    
+      <HomeCTA />
+
     </>
   );
 }

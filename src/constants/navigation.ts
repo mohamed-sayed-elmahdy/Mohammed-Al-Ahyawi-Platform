@@ -19,9 +19,9 @@ export const navLinks  = [
     title: "التقييمات",
     href: "/reviews",
   },
-  {
-    title: "القصص",
-    href: "/stories",
-  },
+  // {
+  //   title: "القصص",
+  //   href: "/stories",
+  // },
 ];
 
