@@ -1,5 +1,5 @@
 import SectionHeader from "../SectionHeader";
-import { articles } from "./data";
+import { articles } from "@/data/articles";
 import ArticleCard from "./ArticleCard";
 
 export default function LatestArticles() {

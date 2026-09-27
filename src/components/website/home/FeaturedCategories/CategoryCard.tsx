@@ -1,5 +1,5 @@
 import { ArrowLeft, Coffee, FerrisWheel, Hotel, Landmark, Palmtree, Plane, Utensils } from "lucide-react";
-import type { DiscoveryCategory } from "./data";
+import type { DiscoveryCategory } from "@/data/featured-categories";
 
 type CategoryCardProps = {
   category: DiscoveryCategory;

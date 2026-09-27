@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import { ArrowLeft, Coffee, FerrisWheel, Globe2, Hotel, Landmark, Palmtree, Utensils } from "lucide-react";
-import { discoveryCategories } from "./data";
+import { discoveryCategories } from "@/data/featured-categories";
 import CategoryCard from "@/components/website/home/FeaturedCategories/CategoryCard";
 import { MdOutlineLocationOn } from "react-icons/md";
 

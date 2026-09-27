@@ -1,5 +1,5 @@
 import { ArrowLeft, CalendarDays, MapPin, Star } from "lucide-react";
-import type { FeaturedReview } from "./data";
+import type { FeaturedReview } from "@/data/featured-reviews";
 
 type ReviewCardProps = {
   review: FeaturedReview;

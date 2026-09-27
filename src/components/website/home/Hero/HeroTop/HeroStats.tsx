@@ -1,4 +1,4 @@
-import { heroStats } from '@/components/website/home/Hero/data'
+import { heroStats } from '@/data/hero'
 import PremiumBorder from './PremiumBorder';
 export default function HeroStats() {
   return (

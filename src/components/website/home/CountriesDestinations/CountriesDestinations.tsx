@@ -1,5 +1,5 @@
 import SectionHeader from "../SectionHeader";
-import { countries, destinations } from "./data";
+import { countries, destinations } from "@/data/countries-destinations";
 import CountryCard from "./CountryCard";
 import DestinationCard from "./DestinationCard";
 

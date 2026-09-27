@@ -1,5 +1,5 @@
 import { ArrowLeft, Clock3 } from "lucide-react";
-import type { FeaturedStory } from "./data";
+import type { FeaturedStory } from "@/data/featured-stories";
 
 type StoryCardProps = { story: FeaturedStory };
 

@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { stories } from "./data";
+import { stories } from "@/data/featured-stories";
 import StoryCard from "./StoryCard";
 
 export default function StorySlider() {

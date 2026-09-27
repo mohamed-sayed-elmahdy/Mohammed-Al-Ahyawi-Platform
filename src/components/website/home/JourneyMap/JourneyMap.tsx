@@ -1,5 +1,5 @@
 import SectionHeader from "../SectionHeader";
-import { journeys } from "./data";
+import { journeys } from "@/data/journeys";
 import JourneyMarker from "./JourneyMarker";
 
 export default function JourneyMap() {

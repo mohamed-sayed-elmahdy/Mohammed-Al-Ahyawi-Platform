@@ -1,5 +1,5 @@
 import { ArrowLeft } from "lucide-react";
-import { reviews } from "./data";
+import { reviews } from "@/data/featured-reviews";
 import ReviewCard from "./ReviewCard";
 
 export default function FeaturedReviews() {

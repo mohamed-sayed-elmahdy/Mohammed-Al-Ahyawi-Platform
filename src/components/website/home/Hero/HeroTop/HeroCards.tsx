@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { categories } from "@/components/website/home/Hero/data";
+import { categories } from "@/data/hero";
 import AccentBorder from "@/components/shared/AccentBorder";
 const getCardAt = (index: number) => {
   return categories[(index + categories.length) % categories.length];
