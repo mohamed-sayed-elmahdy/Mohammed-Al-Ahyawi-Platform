@@ -57,6 +57,8 @@ export default function RequestVisitPage() {
   );
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [acceptedVisitTerms, setAcceptedVisitTerms] = useState(false);
+  const [visitTermsError, setVisitTermsError] = useState("");
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -103,7 +105,14 @@ export default function RequestVisitPage() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (!validate()) return;
+    const isFormValid = validate();
+    const hasAcceptedVisitTerms = acceptedVisitTerms;
+
+    if (!hasAcceptedVisitTerms) {
+      setVisitTermsError("يجب الموافقة على ضوابط وأحكام الزيارة");
+    }
+
+    if (!isFormValid || !hasAcceptedVisitTerms) return;
 
     setIsSubmitting(true);
 
@@ -113,6 +122,8 @@ export default function RequestVisitPage() {
     setIsSubmitting(false);
     setShowSuccess(true);
     setForm(initialForm);
+    setAcceptedVisitTerms(false);
+    setVisitTermsError("");
   };
 
   const closeSuccess = () => setShowSuccess(false);
@@ -336,6 +347,73 @@ export default function RequestVisitPage() {
                   <p className="mt-2 text-sm text-red-400">{errors.details}</p>
                 )}
               </div>
+
+              <section
+                aria-labelledby="visit-terms-title"
+                className="rounded-2xl border border-(--color-accent)/25 bg-(--color-background)/45 p-4 sm:p-5"
+              >
+                <h3
+                  id="visit-terms-title"
+                  className="font-alexandria text-base font-bold text-(--color-accent)"
+                >
+                  ضوابط وأحكام الزيارة
+                </h3>
+
+                <ul className="mt-3 space-y-2 text-sm leading-7 text-(--color-secondary-text)">
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-3 size-1.5 shrink-0 rounded-full bg-(--color-accent)" />
+                    <span>الزيارة بهدف التقييم والتحسين</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-3 size-1.5 shrink-0 rounded-full bg-(--color-accent)" />
+                    <span>
+                      الزيارة غير مدفوعة، ويشمل التقييم الإيجابيات والملاحظات
+                      بهدف التحسين
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-3 size-1.5 shrink-0 rounded-full bg-(--color-accent)" />
+                    <span>
+                      تتم الزيارة في إطار أهداف برنامج المرشدين المحليين
+                      (Local Guides) على خرائط Google
+                    </span>
+                  </li>
+                </ul>
+
+                <div className="mt-4 border-t border-(--color-accent)/15 pt-4">
+                  <label
+                    htmlFor="acceptVisitTerms"
+                    className="flex cursor-pointer items-start gap-3 text-sm leading-6 text-(--color-text)"
+                  >
+                    <input
+                      id="acceptVisitTerms"
+                      name="acceptVisitTerms"
+                      type="checkbox"
+                      checked={acceptedVisitTerms}
+                      onChange={(event) => {
+                        setAcceptedVisitTerms(event.target.checked);
+                        if (event.target.checked) setVisitTermsError("");
+                      }}
+                      aria-required="true"
+                      aria-invalid={visitTermsError ? true : undefined}
+                      aria-describedby={
+                        visitTermsError ? "visit-terms-error" : undefined
+                      }
+                      className="mt-1 size-4 shrink-0 cursor-pointer accent-(--color-accent)"
+                    />
+                    <span>قرأت وأوافق على ضوابط وأحكام الزيارة</span>
+                  </label>
+                  {visitTermsError ? (
+                    <p
+                      id="visit-terms-error"
+                      role="alert"
+                      className="mt-2 text-sm text-red-400"
+                    >
+                      {visitTermsError}
+                    </p>
+                  ) : null}
+                </div>
+              </section>
 
               <div className="pt-2">
                 <button
