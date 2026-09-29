@@ -1,38 +1,36 @@
-import { ArrowLeft, Coffee, FerrisWheel, Hotel, Landmark, Palmtree, Plane, Utensils } from "lucide-react";
-import type { DiscoveryCategory } from "@/data/featured-categories";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
+import type { Category } from "@/types/website";
 
 type CategoryCardProps = {
-  category: DiscoveryCategory;
+  category: Category;
   featured?: boolean;
 };
 
-const icons = {
-  utensils: Utensils,
-  coffee: Coffee,
-  hotel: Hotel,
-  palms: Palmtree,
-  landmark: Landmark,
-  ferrisWheel: FerrisWheel,
-  plane: Plane,
-};
-
 export default function CategoryCard({ category, featured = false }: CategoryCardProps) {
-  const Icon = icons[category.icon];
+  const Icon = category.icon;
 
   return (
-    <a
+    <Link
       href={category.href}
       dir="rtl"
       className={`group relative isolate block overflow-hidden border border-[#bf7b20]/55 bg-[#07111d] text-right transition duration-500 hover:-translate-y-1 hover:border-[#e5a234] ${
         featured ? "min-h-[330px] rounded-2xl sm:min-h-[430px]" : "min-h-[236px] rounded-xl"
       }`}
     >
-      <img src={category.image} alt="" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110" />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,10,16,.92)_0%,rgba(3,10,16,.55)_58%,rgba(3,10,16,.2)_100%)]" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030a10]/95 via-transparent to-[#030a10]/10" />
+      <Image
+        src={category.featuredCardImage || category.img}
+        alt={category.title}
+        fill
+        sizes={featured ? "(min-width: 1024px) 36vw, 100vw" : "(min-width: 1024px) 24vw, 50vw"}
+        className="object-cover transition duration-700 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,10,16,.52)_0%,rgba(3,10,16,.25)_58%,rgba(3,10,16,.1)_100%)]" />
+      <div className="absolute inset-0 bg-linear-to-t from-[#030a10]/65 via-transparent to-[#030a10]/10" />
 
-      <div className={`relative z-10 flex h-full flex-col ${featured ? "items-end justify-center p-7 sm:p-10" : "justify-end p-5"}`}>
-        <div className={featured ? "max-w-[230px]" : ""}>
+      <div className={`relative z-10 flex h-full flex-col ${featured ? "justify-end   p-7 sm:p-10" : "justify-end p-5"}`}>
+        <div className={featured ? "max-w-57.5" : ""}>
           <div className="flex items-center justify-start gap-2 text-[#e9a52d]">
             <Icon className="h-5 w-5" strokeWidth={1.7} />
             <h3 className={featured ? "text-2xl font-semibold text-white" : "text-lg font-semibold text-white"}>{category.title}</h3>
@@ -44,6 +42,6 @@ export default function CategoryCard({ category, featured = false }: CategoryCar
           </span>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }

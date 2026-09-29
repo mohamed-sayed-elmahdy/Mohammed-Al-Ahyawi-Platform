@@ -1,10 +1,17 @@
-export interface Category {
-  id: string;
-  title: string;
-  description: string;
-  href?: string;
-  image?: string;
-}
+import type { LucideIcon } from "lucide-react";
+
+export type Category = {
+    id: string;
+    title: string;
+    description: string;
+    count: number;
+    img: string;
+    href: string;
+    icon: LucideIcon;
+    featured: boolean;
+    featuredCard: boolean;
+    featuredCardImage?: string;
+};
 
 export interface Review {
   id: string;
@@ -16,7 +23,6 @@ export interface Review {
   image: string;
   href?: string;
 }
-
 export interface Story {
   id: string;
   title: string;
@@ -26,7 +32,6 @@ export interface Story {
   date: string;
   href?: string;
 }
-
 export interface Article {
   id: string;
   title: string;
@@ -35,7 +40,6 @@ export interface Article {
   date: string;
   href?: string;
 }
-
 export interface Journey {
   id: string;
   title: string;
@@ -44,7 +48,6 @@ export interface Journey {
   route: string;
   href?: string;
 }
-
 export interface Country {
   id: string;
   name: string;
@@ -52,7 +55,6 @@ export interface Country {
   image: string;
   href?: string;
 }
-
 export interface Destination {
   id: string;
   name: string;
@@ -60,7 +62,6 @@ export interface Destination {
   image: string;
   href?: string;
 }
-
 export interface CTA {
   title: string;
   description: string;

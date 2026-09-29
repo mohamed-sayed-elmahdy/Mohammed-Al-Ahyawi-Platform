@@ -1,0 +1,165 @@
+
+import { Category } from "@/types/website";
+import {
+    Coffee,
+    CookingPot,
+    Croissant,
+    FerrisWheel,
+    Globe2,
+    Hotel,
+    Landmark,
+    Sandwich,
+    ShoppingBag,
+    Trees,
+    Utensils,
+    Waves,
+} from "lucide-react";
+
+
+
+export const categories: Category[] = [
+    {
+        id: 'restaurants',
+        title: 'مطاعم',
+        description: "تجارب طعام استثنائية في أفضل المطاعم المحلية والعالمية",
+        count: 146,
+        href: '/categories/restaurants',
+        img: '/hero-slider-images/restaurants.jpg',
+        icon: Utensils,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: ""
+    },
+    {
+        id: 'cafes',
+        title: 'كافيهات',
+        description: "مقاهٍ مميزة تقدم القهوة والأجواء التي تناسب مختلف الأذواق",
+        count: 87,
+        href: '/categories/cafes',
+        img: '/hero-slider-images/cafes.jpg',
+        icon: Coffee,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage:""
+    },
+    {
+        id: 'fast-food',
+        title: 'ساندويتشات',
+        description: "خيارات سريعة وشهية لتجربة طعام سهلة وممتعة.",
+        count: 63,
+        href: '/categories/fast-food',
+        img: '/hero-slider-images/fast-food.jpg',
+        icon: Sandwich,
+        featured: false,
+        featuredCard: false,
+        featuredCardImage:""
+    },
+    {
+        id: 'beaches',
+        title: 'شواطئ',
+        description: "وجهات ساحلية للاسترخاء والاستمتاع بإطلالات البحر",
+        count: 37,
+        href: '/categories/beaches',
+        img: '/hero-slider-images/beaches-corniche.jpg',
+        icon: Waves,
+        featured: false,
+        featuredCard: true,
+        featuredCardImage: '/featuredCards/jeddah-beaches.jpg',
+    },
+    {
+        id: 'hotels',
+        title: 'فنادق',
+        description: "أماكن إقامة متنوعة تجمع بين الراحة وجودة الضيافة",
+        count: 74,
+        href: '/categories/hotels',
+        img: '/hero-slider-images/hotels.jpg',
+        icon: Hotel,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: ""
+    },
+    {
+        id: 'traditional-restaurants',
+        title: 'مطاعم شعبية',
+        description: "أطباق محلية ونكهات أصيلة تعكس تنوع المطبخ الشعبي.",
+        count: 42,
+        href: '/categories/traditional-restaurants',
+        img: '/hero-slider-images/traditional-restaurants.jpg',
+        icon: CookingPot,
+        featured: false,
+        featuredCard: false,
+        featuredCardImage: ""
+    },
+    {
+        id: 'sweets-bakeries',
+        title: 'حلويات ومخابز',
+        description: "حلويات طازجة ومخبوزات متنوعة لعشاق المذاق الحلو.",
+        count: 58,
+        href: '/categories/sweets-bakeries',
+        img: '/hero-slider-images/sweets-bakeries.jpg',
+        icon: Croissant,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: ""
+    },
+    {
+        id: 'tourist-attractions',
+        title: 'معالم سياحية',
+        description: "معالم بارزة ووجهات تستحق الزيارة والاستكشاف.",
+        count: 91,
+        href: '/categories/tourist-attractions',
+        img: '/hero-slider-images/elola.jpg',
+        icon: Landmark,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: ""
+    },
+    {
+        id: 'parks',
+        title: 'حدائق ومتنزهات',
+        description: "مساحات خضراء ومتنزهات مناسبة لقضاء وقت ممتع في الهواء الطلق.",
+        count: 69,
+        href: '/categories/parks',
+        img: '/hero-slider-images/parks.jfif',
+        icon: Trees,
+        featured: false,
+        featuredCard: false,
+        featuredCardImage: ""
+    },
+    {
+        id: 'recreation-spaces',
+        title: 'اماكن ترفيهيه',
+        description: "أماكن وأنشطة ترفيهية تناسب مختلف الاهتمامات والأعمار.",
+        count: 45,
+        href: '/categories/recreation-spaces',
+        img: '/hero-slider-images/recreation-spaces.jfif',
+        icon: FerrisWheel,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: "/featuredCards/recreation-spaces.png"
+    },
+    {
+        id: 'international-destinations',
+        title: 'وجهات عالمية',
+        description: "وجهات حول العالم تقدم تجارب جديدة وفرصًا للاستكشاف.",
+        count: 83,
+        href: '/categories/international-destinations',
+        img: '/hero-slider-images/international-destinations.jpg',
+        icon: Globe2,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: "/featuredCards/internationalFeaturedCard.png"
+    },
+    {
+        id: 'malls',
+        title: 'مولات ومراكز تسوق',
+        description: "مراكز تجمع التسوق والمطاعم وخيارات الترفيه في مكان واحد.",
+        count: 52,
+        href: '/categories/malls',
+        img: '/hero-slider-images/malls.jpg',
+        icon: ShoppingBag,
+        featured: false,
+        featuredCard: false,
+        featuredCardImage: ""
+    },
+];
