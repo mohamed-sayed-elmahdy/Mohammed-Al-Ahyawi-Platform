@@ -10,7 +10,7 @@ export default function Logo() {
     >
       <Image
         src="/logo2.png"
-        alt="شعار محمد الإحيـوى"
+        alt="شعار محمد الإحيـوي"
         width={45}
         height={45}
         priority
@@ -21,7 +21,7 @@ export default function Logo() {
           الإعلامي
         </span>
         <p className="text-base font-extrabold leading-5 text-(--color-text) sm:text-xl">
-          محمد الإحيـوى
+          محمد الإحيـوي
         </p>
       </div>
     </Link>
