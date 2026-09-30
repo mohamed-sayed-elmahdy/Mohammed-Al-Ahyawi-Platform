@@ -25,7 +25,7 @@ export default function StorySlider() {
       <div
         ref={railRef}
         onScroll={updateProgress}
-        className="flex snap-x snap-mandatory gap-2 overflow-x-auto px-1 pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="flex snap-x snap-mandatory gap-2 overflow-x-auto px-1 pb-3 scrollbar-none [&::-webkit-scrollbar]:hidden"
       >
         {stories.map((story) => <StoryCard key={story.id} story={story} />)}
       </div>

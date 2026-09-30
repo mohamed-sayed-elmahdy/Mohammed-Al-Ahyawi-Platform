@@ -1,6 +1,5 @@
 export type FeaturedStory = {
   id: string;
-  scene: string;
   category: string;
   title: string;
   location: string;
@@ -12,7 +11,6 @@ export type FeaturedStory = {
 export const stories: FeaturedStory[] = [
   {
     id: "hospitality",
-    scene: "المشهد ٠١",
     category: "قصة خاصة",
     title: "حين غيّر حديث عابر نظرتي لمفهوم الضيافة",
     location: "الرياض",
@@ -22,7 +20,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "coffee",
-    scene: "المشهد ٠٢",
+
     category: "خلف الكواليس",
     title: "تفاصيل لم تظهر في طقوس القهوة الصباحية",
     location: "جدة",
@@ -32,7 +30,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "old-town",
-    scene: "المشهد ٠٣",
+
     category: "رحلة",
     title: "لماذا عدت إلى هذا المكان مرة أخرى؟",
     location: "البحرين",
@@ -42,7 +40,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "hotel",
-    scene: "المشهد ٠٤",
+
     category: "تجربة",
     title: "ليلة لا تُنسى في قلب مدينة لا تنام",
     location: "الرياض",
@@ -52,7 +50,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "mountains",
-    scene: "المشهد ٠٥",
+
     category: "رحلة",
     title: "صباح مختلف بين جبال جورجيا",
     location: "جورجيا",
@@ -62,7 +60,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "resort",
-    scene: "المشهد ٠٦",
+
     category: "منتجع",
     title: "المنتجع الذي فاجأني بكل شيء",
     location: "عُمان",
@@ -72,7 +70,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "desert",
-    scene: "المشهد ٠٧",
+
     category: "خلف الكاميرا",
     title: "خلف الكاميرا كانت هناك قصة أخرى",
     location: "العلا",
@@ -82,7 +80,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "market",
-    scene: "المشهد ٠٨",
+
     category: "تجربة",
     title: "رحلة بدأت بتقييم وانتهت بصداقات",
     location: "مراكش",
@@ -90,9 +88,9 @@ export const stories: FeaturedStory[] = [
     image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85",
     href: "/stories/story-8",
   },
-   {
+  {
     id: "hospitality1",
-    scene: "المشهد ٠١",
+
     category: "قصة خاصة",
     title: "حين غيّر حديث عابر نظرتي لمفهوم الضيافة",
     location: "الرياض",
@@ -102,7 +100,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "coffee1",
-    scene: "المشهد ٠٢",
+
     category: "خلف الكواليس",
     title: "تفاصيل لم تظهر في طقوس القهوة الصباحية",
     location: "جدة",
@@ -112,7 +110,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "old-town1",
-    scene: "المشهد ٠٣",
+
     category: "رحلة",
     title: "لماذا عدت إلى هذا المكان مرة أخرى؟",
     location: "البحرين",
@@ -122,7 +120,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "hotel1",
-    scene: "المشهد ٠٤",
+
     category: "تجربة",
     title: "ليلة لا تُنسى في قلب مدينة لا تنام",
     location: "الرياض",
@@ -132,7 +130,6 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "mountains1",
-    scene: "المشهد ٠٥",
     category: "رحلة",
     title: "صباح مختلف بين جبال جورجيا",
     location: "جورجيا",
@@ -142,7 +139,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "resort1",
-    scene: "المشهد ٠٦",
+
     category: "منتجع",
     title: "المنتجع الذي فاجأني بكل شيء",
     location: "عُمان",
@@ -152,7 +149,6 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "desert1",
-    scene: "المشهد ٠٧",
     category: "خلف الكاميرا",
     title: "خلف الكاميرا كانت هناك قصة أخرى",
     location: "العلا",
@@ -162,7 +158,7 @@ export const stories: FeaturedStory[] = [
   },
   {
     id: "market1",
-    scene: "المشهد ٠٨",
+
     category: "تجربة",
     title: "رحلة بدأت بتقييم وانتهت بصداقات",
     location: "مراكش",

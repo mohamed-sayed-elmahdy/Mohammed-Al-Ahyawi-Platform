@@ -4,7 +4,6 @@ import FeaturedCategories from "@/components/website/home/FeaturedCategories/Fea
 import FeaturedStories from "@/components/website/home/FeaturedStories/FeaturedStories";
 import LatestArticles from "@/components/website/home/LatestArticles/LatestArticles";
 import JourneyMap from "@/components/website/home/JourneyMap/JourneyMap";
-import CountriesDestinations from "@/components/website/home/CountriesDestinations/CountriesDestinations";
 import HomeCTA from "@/components/website/home/HomeCTA/HomeCTA";
 
 
@@ -17,7 +16,7 @@ export default function Home() {
       <FeaturedStories />
       <LatestArticles />
       <JourneyMap />
-      <CountriesDestinations />
+      {/* <CountriesDestinations /> */}
       <HomeCTA />
     </>
   );
