@@ -9,6 +9,7 @@ export const categories = [
 	{ id: 9, title: 'فنادق', img: '/hero-slider-images/hotels.jpg' },
 	{ id: 10, title: 'مولات ومراكز تسوق', img: '/hero-slider-images/malls.jpg' },
 	{ id: 11, title: 'حدائق ومتنزهات', img: '/hero-slider-images/parks.jfif' },
+	{ id: 12, title: 'وجهات عالمية', img: '/hero-slider-images/international-destinations6.jpg' },
 ];
 
 export const heroStats = [
