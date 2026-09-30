@@ -44,10 +44,22 @@ export interface Journey {
   id: string;
   title: string;
   description: string;
+  image: string;
+  href: string;
+  scope: "saudi" | "international";
+  country: string;
+  city?: string;
+  dateLabel: string;
+  placesCount: number;
+  featured?: boolean;
+  /** Retained for the journey map shown on the home page. */
   year: string;
+  /** Retained for the journey map shown on the home page. */
   route: string;
-  href?: string;
 }
+export type JourneyScopeFilter = "saudi" | "international";
+
+export type JourneyCityFilter = string | "all";
 export interface Country {
   id: string;
   name: string;
