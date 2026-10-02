@@ -1,12 +1,13 @@
 import Link from "next/link";
-import { IconType } from "react-icons";
+import type { LucideIcon } from "lucide-react";
+import type { IconType } from "react-icons";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import { cn } from "@/lib/utils";
 
 export interface FooterLinksCardItem {
   label: string;
   href: string;
-  icon: IconType;
+  icon: IconType | LucideIcon;
   external?: boolean;
 }
 

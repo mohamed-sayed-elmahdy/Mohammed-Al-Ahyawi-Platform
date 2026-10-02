@@ -23,7 +23,7 @@ export default function FeaturedCategories() {
             </p>
 
             <Link
-              href="/categories"
+              href="/reviews"
               aria-label=" استعرض جميع الفئات "
               className="discoveryButton discoveryButton-colors min-w-38.75 mt-4 relative inline-flex items-center justify-center gap-2 rounded-[10px] px-2 sm:px-6 py-3 text-sm font-semibold text-(--color-text) sm:py-2"
             >

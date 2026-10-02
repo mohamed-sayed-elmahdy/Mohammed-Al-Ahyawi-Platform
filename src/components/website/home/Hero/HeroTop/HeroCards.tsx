@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
@@ -65,29 +66,35 @@ export default function HeroCards() {
                 return (
 
                   
-                  <AccentBorder
-                  borderWidth={featured ? 2 : 1.2}
+                  <Link
                     key={`${card.id}-${featured ? "featured" : "side"}`}
-                    className={`group relative overflow-hidden rounded-2xl transition-all duration-500 ${
-                      featured
-                        ? "z-10 aspect-[1.2/1.4] border-[#f3c15c] shadow-[0_0_24px_rgba(243,193,92,0.42)] sm:scale-105"
-                        : "aspect-[1/1.04] border-[#9f6926]/80 opacity-85 shadow-[0_0_14px_rgba(243,193,92,0.16)]"
-                    }`}
+                    href={card.href}
+                    aria-label={`استكشف فئة ${card.title}`}
+                    className="block min-w-0 rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--color-accent)"
                   >
-                    <Image
-                      src={card.featuredCardImage || card.img}
-                      alt={card.title}
-                      fill
-                      sizes="(min-width: 640px) 220px, 30vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-linear-to-t from-[#07101b] via-[#07101b]/20 to-transparent" />
-                    <div className="z-10 absolute inset-x-2 bottom-2 text-center sm:inset-x-3 sm:bottom-3">
-                      <h3 className={`font-alexandria font-bold text-white drop-shadow-md ${featured ? "text-sm sm:text-lg" : "text-[11px] sm:text-sm"}`}>
-                        {card.title}
-                      </h3>
-                    </div>
-                  </AccentBorder>
+                    <AccentBorder
+                      borderWidth={featured ? 2 : 1.2}
+                      className={`group relative overflow-hidden rounded-2xl transition-all duration-500 ${
+                        featured
+                          ? "z-10 aspect-[1.2/1.4] border-[#f3c15c] shadow-[0_0_24px_rgba(243,193,92,0.42)] sm:scale-105"
+                          : "aspect-[1/1.04] border-[#9f6926]/80 opacity-85 shadow-[0_0_14px_rgba(243,193,92,0.16)]"
+                      }`}
+                    >
+                      <Image
+                        src={card.featuredCardImage || card.img}
+                        alt={card.title}
+                        fill
+                        sizes="(min-width: 640px) 220px, 30vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-linear-to-t from-[#07101b] via-[#07101b]/20 to-transparent" />
+                      <div className="z-10 absolute inset-x-2 bottom-2 text-center sm:inset-x-3 sm:bottom-3">
+                        <h3 className={`font-alexandria font-bold text-white drop-shadow-md ${featured ? "text-sm sm:text-lg" : "text-[11px] sm:text-sm"}`}>
+                          {card.title}
+                        </h3>
+                      </div>
+                    </AccentBorder>
+                  </Link>
                 );
               })}
             </motion.div>

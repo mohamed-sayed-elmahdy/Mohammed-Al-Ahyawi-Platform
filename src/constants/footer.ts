@@ -5,16 +5,15 @@ import {
 } from "react-icons/fa6";
 import { PiSnapchatLogoLight } from "react-icons/pi";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { categories as categoryData } from "@/data/categories";
 
 import {
   HiBuildingOffice2,
   HiCamera,
   HiGlobeAlt,
-  HiMapPin,
   HiSparkles,
 } from "react-icons/hi2";
-import { GiPalmTree, GiPlateClaw, GiTeapotLeaves } from "react-icons/gi";
-import { MdHotel, MdOutlineRestaurant } from "react-icons/md";
+import { GiPalmTree, GiPlateClaw } from "react-icons/gi";
 import {
   HiHome,
   HiUser,
@@ -69,43 +68,13 @@ export const navigation = [
   },
 ] as const;
 
-export const categories = [
-  {
-    label: "مطاعم",
-    href: "/categories/restaurants",
-    icon: MdOutlineRestaurant,
-  },
-  {
-    label: "مقاهي",
-    href: "/categories/cafes",
-    icon: GiTeapotLeaves,
-  },
-  {
-    label: "فنادق",
-    href: "/categories/hotels",
-    icon: MdHotel,
-  },
-  {
-    label: "منتجعات",
-    href: "/categories/resorts",
-    icon: GiPalmTree,
-  },
-  {
-    label: "مراكز طبية وتجميل",
-    href: "/categories/medical-beauty-centers",
-    icon: HiBuildingOffice2,
-  },
-  {
-    label: "سياحة سعودية",
-    href: "/categories/destinations",
-    icon: HiMapPin,
-  },
-  {
-    label: "جولات عالمية",
-    href: "/categories/world-tours",
-    icon: HiGlobeAlt,
-  },
-] as const;
+export const categories = categoryData
+  .filter((category) => category.featuredCard)
+  .map(({ title, href, icon }) => ({
+    label: title,
+    href,
+    icon,
+  }));
 
 export const officialLinks = [
   {

@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+import { categories } from "@/data/categories";
 import ReviewsHero from "@/components/website/reviews/ReviewsHero";
 import ReviewsPageContent from "@/components/website/reviews/ReviewsPageContent";
+
+type ReviewsPageProps = {
+  searchParams: Promise<{ category?: string | string[] }>;
+};
 
 export const metadata: Metadata = {
   title: "التقييمات",
@@ -46,11 +51,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ReviewsPage() {
+export default async function ReviewsPage({ searchParams }: ReviewsPageProps) {
+  const { category } = await searchParams;
+  const initialCategory =
+    typeof category === "string" &&
+    categories.some((item) => item.id === category)
+      ? category
+      : "all";
+
   return (
     <div className="overflow-hidden bg-(--color-background) text-(--color-text)">
       <ReviewsHero />
-      <ReviewsPageContent />
+      <ReviewsPageContent
+        key={initialCategory}
+        initialCategory={initialCategory}
+      />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { categories } from "@/data/categories";
 import { reviews } from "@/data/reviews";
@@ -12,11 +13,18 @@ import ReviewsMetaRow from "./ReviewsMetaRow";
 
 const reviewCountries = [...new Set(reviews.map((review) => review.country))];
 
-export default function ReviewsPageContent() {
+type ReviewsPageContentProps = {
+  initialCategory: ReviewCategoryFilter;
+};
+
+export default function ReviewsPageContent({
+  initialCategory,
+}: ReviewsPageContentProps) {
+  const router = useRouter();
   const [selectedCountry, setSelectedCountry] = useState("all");
   const [selectedCity, setSelectedCity] = useState("all");
   const [selectedCategory, setSelectedCategory] =
-    useState<ReviewCategoryFilter>("all");
+    useState<ReviewCategoryFilter>(initialCategory);
   const [sort, setSort] = useState<ReviewSort>("newest");
 
   const filteredReviews = useMemo(() => {
@@ -64,11 +72,24 @@ export default function ReviewsPageContent() {
     setSelectedCity("all");
   };
 
+  const handleCategoryChange = (category: ReviewCategoryFilter) => {
+    if (category === selectedCategory) return;
+
+    setSelectedCategory(category);
+    router.push(
+      category === "all"
+        ? "/reviews"
+        : `/reviews?category=${encodeURIComponent(category)}`,
+      { scroll: false },
+    );
+  };
+
   const resetFilters = () => {
     setSelectedCountry("all");
     setSelectedCity("all");
     setSelectedCategory("all");
     setSort("newest");
+    router.push("/reviews", { scroll: false });
   };
 
   return (
@@ -83,7 +104,7 @@ export default function ReviewsPageContent() {
           onCountryChange={handleCountryChange}
           onCityChange={setSelectedCity}
           selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
+          onCategoryChange={handleCategoryChange}
         />
         <div className="mt-6 sm:mt-4">
           <ReviewsMetaRow

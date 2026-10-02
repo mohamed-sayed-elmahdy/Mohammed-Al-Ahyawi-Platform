@@ -15,7 +15,7 @@ export default function FeaturedReviews() {
               <h2 className="mt-5 font-alexandria text-4xl font-semibold leading-tight sm:text-5xl">مختارات من أبرز التجارب</h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-slate-300">مجموعة من التجارب التي نرشحها لك بناءً على جودة المكان وقيمة التجربة والانطباع النهائي</p>
               <Link
-                href="/categories"
+                href="/reviews"
                 aria-label="استعرض جميع التجارب"
                 className="discoveryButton discoveryButton-colors min-w-38.75 mt-4 relative inline-flex items-center justify-center gap-2 rounded-[10px] px-2 sm:px-6 py-3 text-sm font-semibold text-(--color-text) sm:py-2"
               >
