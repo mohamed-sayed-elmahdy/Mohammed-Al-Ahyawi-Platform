@@ -35,15 +35,15 @@ export default function HeroCards() {
   };
 
   return (
-    <section className="mt-4 w-full max-w-170" aria-label="استكشف التجارب">
-      <div className="flex items-center gap-2 sm:gap-3" dir="ltr">
+    <section className="mt-4 w-full max-w-170" aria-label="استكشف التجارب" >
+      <div className="flex items-center gap-2 sm:gap-3" >
         <button
           type="button"
           onClick={() => moveCarousel(-1)}
           aria-label="التجربة السابقة"
           className="grid size-9 shrink-0 place-items-center rounded-full border border-[#b7802f]/80 bg-[#07101b]/80 text-[#f3c15c] transition hover:bg-[#f3c15c] hover:text-[#08111f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f3c15c]"
         >
-          <ChevronLeft className="size-5" />
+        <ChevronRight className="size-5" />
         </button>
 
         <div className="relative min-w-0 flex-1 overflow-visible">
@@ -99,7 +99,8 @@ export default function HeroCards() {
           aria-label="التجربة التالية"
           className="grid size-9 shrink-0 place-items-center rounded-full border border-[#b7802f]/80 bg-[#07101b]/80 text-[#f3c15c] transition hover:bg-[#f3c15c] hover:text-[#08111f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f3c15c]"
         >
-          <ChevronRight className="size-5" />
+         
+             <ChevronLeft className="size-5" />
         </button>
       </div>
     </section>
