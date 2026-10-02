@@ -52,7 +52,7 @@ export function GoogleMapsProfile() {
                 dir="ltr"
                 className="block text-5xl text-(--color-accent)"
               >
-                75,500
+                75,000
               </strong>
               <p className="mt-2 text-xl font-bold text-(--color-accent)">
                 نقطة
