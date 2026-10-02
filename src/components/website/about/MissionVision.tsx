@@ -4,7 +4,7 @@ const pillars = [
 	{ text: "الأمانة في نقل التجربة", icon: ShieldCheck },
 	{ text: "خدمة وإثراء تجربة الزائر", icon: HeartHandshake },
 	{
-		text: "التحسين المستمر لأداء الأنشطة التجارية والخدمات المختلفة",
+		text: "التحسين المستمر للنشاط والخدمة",
 		icon: TrendingUp,
 	},
 	{ text: "تدريب المرشدين المبتدئين", icon: UsersRound },
