@@ -48,7 +48,7 @@ export default function HeroCards() {
 
         <div className="relative min-w-0 flex-1 overflow-visible">
           <div className="aspect-[3.5/2.3] sm:aspect-[2.92/1.3]" aria-hidden="true" />
-          <AnimatePresence initial={false} custom={direction} mode="wait">
+          <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={activeIndex}
               custom={direction}
