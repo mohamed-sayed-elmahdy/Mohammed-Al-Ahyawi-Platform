@@ -7,7 +7,7 @@ export default function FeaturedReviews() {
   const [featured, cafe, hotel, ...moreReviews] = reviews;
 
   return (
-    <section className="bg-[#08111f] py-16 text-white sm:py-24" dir="rtl">
+    <section className="bg-[#08111f] pb-16 text-white sm:pb-24 ">
       <div className="mx-auto max-w-360 px-5 sm:px-8">
         <div className="grid gap-3 lg:grid-cols-[1.05fr_1fr]">
           <div className="grid  gap-3">
