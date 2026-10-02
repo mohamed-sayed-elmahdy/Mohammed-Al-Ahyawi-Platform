@@ -11,8 +11,8 @@ type ReviewsMetaRowProps = {
 const sortOptions: { value: ReviewSort; label: string }[] = [
   { value: "newest", label: "الأحدث" },
   { value: "oldest", label: "الأقدم" },
-  { value: "top-rated", label: "الأعلى تقييمًا" },
-  { value: "lowest-rated", label: "الأقل تقييمًا" },
+  { value: "top-rated", label: "الأعلى تقييما" },
+  { value: "lowest-rated", label: "الأقل تقييما" },
 ];
 
 export default function ReviewsMetaRow({
@@ -28,8 +28,8 @@ export default function ReviewsMetaRow({
     categoryLabel === "الكل" ? null : categoryLabel,
   ].filter((label): label is string => label !== null);
   const resultLabel = activeFilters.length
-    ? `${countLabel} تقييمًا في ${activeFilters.join(" · ")}`
-    : `${countLabel} تقييمًا موثقًا`;
+    ? `${countLabel} تقييما في ${activeFilters.join(" · ")}`
+    : `${countLabel} تقييما موثقًا`;
 
   return (
     <div dir="rtl" className="flex flex-col gap-4 border-y border-(--color-accent)/15 py-4 sm:flex-row sm:items-center sm:justify-between">

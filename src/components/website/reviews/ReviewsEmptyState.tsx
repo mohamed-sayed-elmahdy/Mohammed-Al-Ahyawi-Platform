@@ -9,7 +9,7 @@ export default function ReviewsEmptyState({ onReset }: ReviewsEmptyStateProps) {
         لا توجد تقييمات مطابقة للفلتر الحالي
       </h2>
       <p className="mt-3 text-sm leading-7 text-(--color-secondary-text)">
-        جرّب اختيار فئة أخرى أو أعد عرض جميع التقييمات.
+        جرّب اختيار فئة أخرى أو أعد عرض جميع التقييمات
       </p>
       <button
         type="button"
