@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { categories } from "@/data/hero";
+import { categories } from "@/data/categories";
 import AccentBorder from "@/components/shared/AccentBorder";
 const getCardAt = (index: number) => {
   return categories[(index + categories.length) % categories.length];
@@ -48,7 +48,7 @@ export default function HeroCards() {
 
         <div className="relative min-w-0 flex-1 overflow-visible">
           <div className="aspect-[3.5/2.3] sm:aspect-[2.92/1.3]" aria-hidden="true" />
-          <AnimatePresence initial={false} custom={direction}>
+          <AnimatePresence initial={false} custom={direction} mode="wait">
             <motion.div
               key={activeIndex}
               custom={direction}
@@ -75,13 +75,13 @@ export default function HeroCards() {
                     }`}
                   >
                     <Image
-                      src={card.img}
+                      src={card.featuredCardImage || card.img}
                       alt={card.title}
                       fill
                       sizes="(min-width: 640px) 220px, 30vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#07101b] via-[#07101b]/20 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-[#07101b] via-[#07101b]/20 to-transparent" />
                     <div className="z-10 absolute inset-x-2 bottom-2 text-center sm:inset-x-3 sm:bottom-3">
                       <h3 className={`font-alexandria font-bold text-white drop-shadow-md ${featured ? "text-sm sm:text-lg" : "text-[11px] sm:text-sm"}`}>
                         {card.title}
