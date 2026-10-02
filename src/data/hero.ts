@@ -1,19 +1,5 @@
-export const categories = [
-	{ id: 2, title: 'مطاعم', img: '/hero-slider-images/restaurants.jpg' },
-	{ id: 3, title: 'كافيهات', img: '/hero-slider-images/cafes.jpg' },
-	{ id: 4, title: 'ساندويتشات', img: '/hero-slider-images/fast-food.jpg' },
-	{ id: 5, title: 'مطاعم شعبية', img: '/hero-slider-images/traditional-restaurants.jpg' },
-	{ id: 6, title: 'حلويات ومخابز', img: '/hero-slider-images/sweets-bakeries.jpg' },
-	{ id: 7, title: 'معالم سياحية', img: '/hero-slider-images/elola.jpg' },
-	{ id: 8, title: 'شواطئ', img: '/hero-slider-images/beaches-corniche.jpg' },
-	{ id: 9, title: 'فنادق', img: '/hero-slider-images/hotels.jpg' },
-	{ id: 10, title: 'مولات ومراكز تسوق', img: '/hero-slider-images/malls.jpg' },
-	{ id: 11, title: 'حدائق ومتنزهات', img: '/hero-slider-images/parks.jfif' },
-	{ id: 12, title: 'وجهات عالمية', img: '/hero-slider-images/international-destinations6.jpg' },
-];
-
 export const heroStats = [
-	{ id: 1, value: '+1300', label: 'تقييم ' },
+	{ id: 1, value: '12K', label: 'مساهمة ' },
 	{ id: 2, value: '+75M', label: "مشاهدة" },
 	// { id: 3, value: '5+', label: 'دول حول العالم' },
 ];
