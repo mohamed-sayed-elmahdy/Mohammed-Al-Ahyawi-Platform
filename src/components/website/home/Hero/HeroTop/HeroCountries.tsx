@@ -19,7 +19,7 @@ export default function HeroCountries() {
           <span className="text-base text-(--color-accent)">
             <FaMapMarkerAlt />
           </span>
-          <h3 className="text-base font-bold sm:text-lg">وجهاتي</h3>
+          <h3 className="text-base font-bold sm:text-lg">جولاتي</h3>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-5">
