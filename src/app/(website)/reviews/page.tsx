@@ -1,65 +1,56 @@
 import type { Metadata } from "next";
+import ReviewsHero from "@/components/website/reviews/ReviewsHero";
+import ReviewsPageContent from "@/components/website/reviews/ReviewsPageContent";
 
 export const metadata: Metadata = {
-  title: "Reviews",
-
+  title: "التقييمات",
   description:
-    "Browse authentic reviews of restaurants, cafes, retreats, and destinations by journalist Mohammed Al Ahyawi.",
-
+    "استكشف تقييمات موثقة لتجارب المطاعم والمقاهي والفنادق والوجهات",
   keywords: [
-    "Restaurant Reviews",
-    "Cafe Reviews",
-    "Saudi Arabia",
-    "Mohammed Al Ahyawi",
-    "Travel Reviews",
-    "Real Experiences",
+    "تقييمات مطاعم",
+    "تقييمات مقاهي",
+    "تجارب السعودية",
+    "محمد الإحيوي",
+    "تجارب موثقة",
   ],
-
-  authors: [
-    {
-      name: "Mohammed Al Ahyawi",
-    },
-  ],
-
+  authors: [{ name: "محمد الإحيوي" }],
   openGraph: {
-    title: "Reviews | Mohammed Al Ahyawi",
+    title: "التقييمات | محمد الإحيوي",
     description:
-      "Discover authentic reviews and real experiences documented by journalist Mohammed Al Ahyawi.",
+      "استكشف تقييمات موثقة وتجارب حقيقية في المطاعم والمقاهي والفنادق والوجهات",
     url: "https://mohammedalahyawi.com/reviews",
-    siteName: "Mohammed Al Ahyawi",
+    siteName: "محمد الإحيوي",
     images: [
       {
         url: "/images/og/reviews-cover.jpg",
         width: 1200,
         height: 630,
-        alt: "Reviews by Mohammed Al Ahyawi",
+        alt: "تقييمات محمد الإحيوي",
       },
     ],
     locale: "ar_SA",
     type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Reviews | Mohammed Al Ahyawi",
-    description:
-      "Authentic reviews of restaurants, cafes, retreats, and destinations.",
+    title: "التقييمات | محمد الإحيوي",
+    description: "تقييمات موثقة لتجارب المطاعم والمقاهي والفنادق والوجهات",
     images: ["/images/og/reviews-cover.jpg"],
   },
-
   robots: {
     index: true,
     follow: true,
   },
-
   alternates: {
     canonical: "https://mohammedalahyawi.com/reviews",
   },
 };
-function page() {
-  return (
-    <div>page</div>
-  )
-}
 
-export default page;
+export default function ReviewsPage() {
+  return (
+    <div className="overflow-hidden bg-(--color-background) text-(--color-text)">
+      <ReviewsHero />
+      <ReviewsPageContent />
+    </div>
+  );
+}

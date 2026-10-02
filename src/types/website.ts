@@ -23,6 +23,28 @@ export interface Review {
   image: string;
   href?: string;
 }
+
+export type ReviewItem = {
+  id: string;
+  title: string;
+  excerpt: string;
+  rating: number;
+  categoryId: string;
+  categoryLabel: string;
+  city: string;
+  country: string;
+  locationLabel: string;
+  dateLabel: string;
+  dateISO: string;
+  images: [string, ...string[]];
+  href: string;
+  badge?: string;
+  featured?: boolean;
+};
+
+export type ReviewCategoryFilter = "all" | string;
+
+export type ReviewSort = "newest" | "oldest" | "top-rated" | "lowest-rated";
 export interface Story {
   id: string;
   title: string;
