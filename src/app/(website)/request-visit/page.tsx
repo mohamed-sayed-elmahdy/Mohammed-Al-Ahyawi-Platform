@@ -362,20 +362,24 @@ export default function RequestVisitPage() {
                 <ul className="mt-3 space-y-2 text-sm leading-7 text-(--color-secondary-text)">
                   <li className="flex items-start gap-2.5">
                     <span className="mt-3 size-1.5 shrink-0 rounded-full bg-(--color-accent)" />
-                    <span>الزيارة بهدف التقييم والتحسين</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="mt-3 size-1.5 shrink-0 rounded-full bg-(--color-accent)" />
                     <span>
-                      الزيارة غير مدفوعة، ويشمل التقييم الإيجابيات والملاحظات
-                      بهدف التحسين
+                      مبادرة مستقلة تطوعية يقدمها المرشد المحلي (مستوى 9)
+                      الإعلامي محمد الإحيوي ولا تمثل شركة Google أو خرائط Google
+                      بشكل رسمي.
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="mt-3 size-1.5 shrink-0 rounded-full bg-(--color-accent)" />
                     <span>
-                      تتم الزيارة في إطار أهداف برنامج المرشدين المحليين
-                      (Local Guides) على خرائط Google
+                      تهدف لتقديم الاستشارات الفنية والتقييم المهني لمساعدتكم في
+                      تحسين وتطوير أداء المنشأة وخدماتها.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="mt-3 size-1.5 shrink-0 rounded-full bg-(--color-accent)" />
+                    <span>
+                      الزيارة مجانية بالكامل (غير مدفوعة)، حيث تنقل التجربة
+                      الفعلية والصادقة دون أي وعود مسبقة بتقييمات مصطنعة.
                     </span>
                   </li>
                 </ul>
