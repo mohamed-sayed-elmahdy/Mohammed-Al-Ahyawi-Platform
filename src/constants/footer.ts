@@ -32,7 +32,7 @@ export const navigation = [
     icon: HiHome,
   },
   {
-    label: "نبذة",
+    label: "نبذة عنا",
     href: "/about",
     icon: HiUser,
   },
