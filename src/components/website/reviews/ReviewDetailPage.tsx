@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, CalendarDays, Star } from "lucide-react";
+import { ArrowLeft, CalendarDays, ExternalLink, MapPin, Star } from "lucide-react";
 import type { ReviewItem } from "@/types/website";
 import ReviewCard from "./ReviewCard";
 import ReviewImageGallery from "./ReviewImageGallery";
@@ -13,6 +13,12 @@ export default function ReviewDetailPage({
   review,
   relatedReviews,
 }: ReviewDetailPageProps) {
+  const googleMapsUrl =
+    review.googleMapsUrl ??
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      `${review.title}, ${review.locationLabel}`,
+    )}`;
+
   return (
     <main className="bg-(--color-background) text-(--color-text)" dir="rtl">
       <section className="border-b border-(--color-accent)/15">
@@ -63,6 +69,17 @@ export default function ReviewDetailPage({
                 </span>
                 <span className="text-sm text-(--color-secondary-text)">من 5</span>
               </div>
+
+              <a
+                href={googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex min-h-11 flex-wrap items-center gap-2 rounded-md border border-(--color-accent)/35 bg-(--color-surface)/35 px-4 py-2.5 text-sm font-semibold text-(--color-accent) transition hover:border-(--color-accent)/70 hover:bg-(--color-accent)/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-accent)"
+              >
+                <MapPin className="size-4 shrink-0" aria-hidden="true" />
+                <span>عرض التقييم على خرائط Google</span>
+                <ExternalLink className="size-3.5 shrink-0" aria-hidden="true" />
+              </a>
 
               <Link
                 href="/reviews"

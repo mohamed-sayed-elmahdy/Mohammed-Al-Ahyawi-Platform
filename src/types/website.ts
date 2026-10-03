@@ -37,6 +37,7 @@ export type ReviewItem = {
   dateLabel: string;
   dateISO: string;
   images: [string, ...string[]];
+  googleMapsUrl?: string;
   href: string;
   badge?: string;
   featured?: boolean;
