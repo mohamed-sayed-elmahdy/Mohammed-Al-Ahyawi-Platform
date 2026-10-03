@@ -67,7 +67,7 @@ export function GoogleMapsProfile() {
             className="rounded-[26px] border border-(--color-accent)/35 bg-(--color-background)/25 p-6 md:p-6"
           >
             <p className="text-center text-lg leading-10 text-(--color-secondary-text) sm:text-xl">
-              ويُعد حساب الإعلامي والصحفي السعودي محمد الإحيوي واحداً من أبرز
+              يُعد حساب الإعلامي والصحفي السعودي محمد الإحيوي واحداً من أبرز
               وأقوى حسابات التقييم والمراجعات الموثوقة على قوقل ماب
             </p>
             <div className="mt-9 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
