@@ -13,6 +13,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "الرياض · السعودية",
     dateLabel: "٢٤ مايو ٢٠٢٥",
     dateISO: "2025-05-24",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/restaurants.jpg",
       "/hero-slider-images/seafood.jpg",
@@ -34,6 +35,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "جدة · السعودية",
     dateLabel: "١٨ مايو ٢٠٢٥",
     dateISO: "2025-05-18",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/cafes.jpg",
       "/hero-slider-images/sweets-bakeries.jpg",
@@ -54,6 +56,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "العلا · السعودية",
     dateLabel: "٦ مايو ٢٠٢٥",
     dateISO: "2025-05-06",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/hotels.jpg",
       "/hero-slider-images/elola.jpg",
@@ -74,6 +77,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "جدة · السعودية",
     dateLabel: "٢٨ أبريل ٢٠٢٥",
     dateISO: "2025-04-28",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/beaches-corniche.jpg",
       "/hero-slider-images/hotels.jpg",
@@ -93,6 +97,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "الطائف · السعودية",
     dateLabel: "١٥ أبريل ٢٠٢٥",
     dateISO: "2025-04-15",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/parks.jpg",
       "/hero-slider-images/elola.jpg",
@@ -112,6 +117,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "الدمام · السعودية",
     dateLabel: "٢٩ مارس ٢٠٢٥",
     dateISO: "2025-03-29",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/malls.jpg",
       "/hero-slider-images/parks.jpg",
@@ -131,6 +137,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "مكة · السعودية",
     dateLabel: "١٢ مارس ٢٠٢٥",
     dateISO: "2025-03-12",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/traditional-restaurants.jpg",
       "/hero-slider-images/restaurants.jpg",
@@ -150,6 +157,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "القصيم · السعودية",
     dateLabel: "٢٢ فبراير ٢٠٢٥",
     dateISO: "2025-02-22",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/sweets-bakeries.jpg",
       "/hero-slider-images/cafes.jpg",
@@ -169,6 +177,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "دبي · الإمارات",
     dateLabel: "٩ فبراير ٢٠٢٥",
     dateISO: "2025-02-09",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/international-destinations1.jpg",
       "/hero-slider-images/seafood.jpg",
@@ -190,6 +199,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "إسطنبول · تركيا",
     dateLabel: "٢٥ يناير ٢٠٢٥",
     dateISO: "2025-01-25",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/international-destinations3.jpg",
       "/hero-slider-images/hotels.jpg",
@@ -209,6 +219,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "تبليسي · جورجيا",
     dateLabel: "١١ يناير ٢٠٢٥",
     dateISO: "2025-01-11",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/hero-slider-images/international-destinations6.jpg",
       "/hero-slider-images/parks.jpg",
@@ -228,6 +239,7 @@ export const reviews: ReviewItem[] = [
     locationLabel: "القاهرة · مصر",
     dateLabel: "٢١ ديسمبر ٢٠٢٤",
     dateISO: "2024-12-21",
+    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
     images: [
       "/Gemini_Generated_Image_ap2gwtap2gwtap2g.jfif",
       "/hero-slider-images/international-destinations1.jpg",
