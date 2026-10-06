@@ -99,7 +99,7 @@ export const categories: Category[] = [
         href: '/reviews?category=health-care',
         img: '/hero-slider-images/parks.jpg',
         icon: HeartPulse,
-        featured: false,
+        featured: true,
         featuredCard: true,
         featuredCardImage: ""
     },
