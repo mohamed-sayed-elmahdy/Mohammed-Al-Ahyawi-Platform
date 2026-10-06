@@ -13,7 +13,7 @@ import {
   HiGlobeAlt,
   HiSparkles,
 } from "react-icons/hi2";
-import { GiPalmTree, GiPlateClaw } from "react-icons/gi";
+import { GiPalmTree } from "react-icons/gi";
 import {
   HiHome,
   HiUser,
@@ -51,6 +51,11 @@ export const navigation = [
     href: "/reviews",
     icon: HiStar,
   },
+  {
+    label: "خدمات المنشآت",
+    href: "/services",
+    icon: HiBuildingOffice2,
+  },
   // {
   //   label: "القصص",
   //   href: "/stories",
@@ -84,33 +89,33 @@ export const officialLinks = [
     external: true,
   },
   {
+    label: "وزارة الثقافة",
+    href: "https://www.moc.gov.sa/",
+    icon: HiBuildingOffice2,
+    external: true,
+  },
+  {
+    label: "رؤية السعودية 2030",
+    href: "https://www.vision2030.gov.sa/ar/",
+    icon: HiFlag,
+    external: true,
+  },
+  {
+    label: "الهيئة العامة للسياحة",
+    href: "https://www.sta.gov.sa",
+    icon: HiGlobeAlt,
+    external: true,
+  },
+  {
     label: "الهيئة العامة للترفيه",
     href: "https://www.gea.gov.sa",
     icon: HiSparkles,
     external: true,
   },
   {
-    label: "هيئة التراث",
-    href: "https://heritage.moc.gov.sa",
-    icon: HiBuildingOffice2,
-    external: true,
-  },
-  {
     label: "منصة روح السعودية",
     href: "https://www.visitsaudi.com",
-    icon: HiSparkles,
-    external: true,
-  },
-  {
-    label: "الهيئة السعودية للسياحة",
-    href: "https://www.sta.gov.sa",
-    icon: HiGlobeAlt,
-    external: true,
-  },
-  {
-    label: "هيئة فنون الطهي",
-    href: "https://culinary.moc.gov.sa",
-    icon: GiPlateClaw,
+    icon: HiMap,
     external: true,
   },
 ] as const;

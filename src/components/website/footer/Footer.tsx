@@ -80,7 +80,7 @@ export default function Footer() {
                 className="flex items-center justify-center gap-4 transition hover:text-(--color-accent) md:justify-start"
               >
                 <FaPhone className="shrink-0 text-xl text-(--color-accent)" />
-                <span dir="ltr">+00966 55 194 6666</span>
+                <span dir="ltr">00966 55 194 6666</span>
               </a>
 
               <p className="flex items-center justify-center gap-4 md:justify-start">
