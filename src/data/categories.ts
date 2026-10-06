@@ -6,6 +6,7 @@ import {
     Croissant,
     FerrisWheel,
     Globe2,
+    HeartPulse,
     Hotel,
     Landmark,
     Sandwich,
@@ -42,6 +43,18 @@ export const categories: Category[] = [
         featuredCard: true,
         featuredCardImage:""
     },
+        {
+        id: 'sweets-bakeries',
+        title: 'حلويات ومخابز',
+        description: "حلويات طازجة ومخبوزات متنوعة لعشاق المذاق الحلو.",
+        count: 58,
+        href: '/reviews?category=sweets-bakeries',
+        img: '/hero-slider-images/sweets-bakeries.jpg',
+        icon: Croissant,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: ""
+    },
     {
         id: 'fast-food',
         title: 'ساندويتشات',
@@ -56,8 +69,8 @@ export const categories: Category[] = [
     },
     {
         id: 'beaches',
-        title: 'شواطئ',
-        description: "وجهات ساحلية للاسترخاء والاستمتاع بإطلالات البحر",
+        title: 'شواطئ ومنتجعات',
+        description: "وجهات ساحلية ومنتجعات للاسترخاء والاستمتاع بإطلالات البحر",
         count: 37,
         href: '/reviews?category=beaches',
         img: '/hero-slider-images/beaches-corniche.jpg',
@@ -68,13 +81,25 @@ export const categories: Category[] = [
     },
     {
         id: 'hotels',
-        title: 'فنادق',
+        title: 'فنادق وإقامة',
         description: "أماكن إقامة متنوعة تجمع بين الراحة وجودة الضيافة",
         count: 74,
         href: '/reviews?category=hotels',
         img: '/hero-slider-images/hotels.jpg',
         icon: Hotel,
         featured: true,
+        featuredCard: true,
+        featuredCardImage: ""
+    },
+    {
+        id: 'health-care',
+        title: 'صحة وعناية',
+        description: "مراكز وخدمات تهتم بالصحة والعناية الشخصية",
+        count: 0,
+        href: '/reviews?category=health-care',
+        img: '/hero-slider-images/parks.jpg',
+        icon: HeartPulse,
+        featured: false,
         featuredCard: true,
         featuredCardImage: ""
     },
@@ -90,18 +115,7 @@ export const categories: Category[] = [
         featuredCard: false,
         featuredCardImage: ""
     },
-    {
-        id: 'sweets-bakeries',
-        title: 'حلويات ومخابز',
-        description: "حلويات طازجة ومخبوزات متنوعة لعشاق المذاق الحلو.",
-        count: 58,
-        href: '/reviews?category=sweets-bakeries',
-        img: '/hero-slider-images/sweets-bakeries.jpg',
-        icon: Croissant,
-        featured: true,
-        featuredCard: true,
-        featuredCardImage: ""
-    },
+
     {
         id: 'tourist-attractions',
         title: 'معالم سياحية',
@@ -125,18 +139,6 @@ export const categories: Category[] = [
         featured: false,
         featuredCard: false,
         featuredCardImage: ""
-    },
-    {
-        id: 'recreation-spaces',
-        title: 'اماكن ترفيهيه',
-        description: "أماكن وأنشطة ترفيهية تناسب مختلف الاهتمامات والأعمار.",
-        count: 45,
-        href: '/reviews?category=recreation-spaces',
-        img: '/hero-slider-images/recreation-spaces.jfif',
-        icon: FerrisWheel,
-        featured: true,
-        featuredCard: true,
-        featuredCardImage: "/featuredCards/recreation-spaces.png"
     },
     {
         id: 'international-destinations',
