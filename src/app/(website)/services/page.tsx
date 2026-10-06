@@ -177,7 +177,7 @@ export default function ServicesPage() {
           <div className="absolute -inset-3 rounded-[10px] border border-(--color-accent)/20" />
           <div className="relative overflow-hidden rounded-lg border border-white/10 bg-(--color-surface)">
             <Image
-              src="/services.jpg"
+              src="/services1.jpg"
               alt="تصميم ترويجي لخدمات الملف التجاري على Google أمام مقهى"
               width={1280}
               height={720}
