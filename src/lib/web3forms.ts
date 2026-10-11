@@ -56,13 +56,10 @@ export async function submitVisitRequest(
     if (!response.ok) {
       return { success: false, reason: "request-failed" };
     }
-
     const result: unknown = await response.json();
-
     if (isSuccessfulResponse(result)) {
       return { success: true };
     }
-
     return { success: false, reason: "rejected" };
   } catch {
     return { success: false, reason: "request-failed" };
