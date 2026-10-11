@@ -1,29 +1,23 @@
 "use client";
 
-import { useState, type FormEvent, type ChangeEvent } from "react";
+import { useRef, useState, type FormEvent, type ChangeEvent } from "react";
 import { countries } from "@/constants/countries";
 import { countryDialCodes } from "@/constants/countryDialCodes";
+import { submitVisitRequest } from "@/lib/web3forms";
+import type {
+  VisitRequestFieldErrors,
+  VisitRequestFormValues,
+} from "@/types/website";
 import {
   Building2,
   CheckCircle2,
   Mail,
   MapPin,
-  Phone,
   PhoneCall,
   Send,
   User,
   X,
 } from "lucide-react";
-
-type FormData = {
-  name: string;
-  phoneCode: string;
-  phoneNumber: string;
-  email: string;
-  country: string;
-  city: string;
-  details: string;
-};
 
 const defaultCountry = "المملكة العربية السعودية";
 const defaultPhoneCode =
@@ -40,7 +34,7 @@ const countryFlags: Record<string, string> = {
 
 const getCountryFlag = (country: string) => countryFlags[country] ?? "🌐";
 
-const initialForm: FormData = {
+const initialForm: VisitRequestFormValues = {
   name: "",
   phoneCode: defaultPhoneCode,
   phoneNumber: "",
@@ -51,14 +45,14 @@ const initialForm: FormData = {
 };
 
 export default function RequestVisitPage() {
-  const [form, setForm] = useState<FormData>(initialForm);
-  const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>(
-    {}
-  );
+  const [form, setForm] = useState<VisitRequestFormValues>(initialForm);
+  const [errors, setErrors] = useState<VisitRequestFieldErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionError, setSubmissionError] = useState("");
   const [showSuccess, setShowSuccess] = useState(false);
   const [acceptedVisitTerms, setAcceptedVisitTerms] = useState(false);
   const [visitTermsError, setVisitTermsError] = useState("");
+  const botcheckRef = useRef<HTMLInputElement>(null);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -75,13 +69,13 @@ export default function RequestVisitPage() {
 
       return { ...prev, [name]: value };
     });
-    if (errors[name as keyof FormData]) {
+    if (errors[name as keyof VisitRequestFormValues]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
   };
 
   const validate = () => {
-    const next: Partial<Record<keyof FormData, string>> = {};
+    const next: VisitRequestFieldErrors = {};
 
     if (!form.name.trim()) next.name = "الاسم مطلوب";
     if (!form.phoneCode.trim()) next.phoneCode = "مفتاح الدولة مطلوب";
@@ -106,24 +100,40 @@ export default function RequestVisitPage() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const isFormValid = validate();
-    const hasAcceptedVisitTerms = acceptedVisitTerms;
 
-    if (!hasAcceptedVisitTerms) {
+    if (!acceptedVisitTerms) {
       setVisitTermsError("يجب الموافقة على ضوابط وأحكام الزيارة");
+    } else {
+      setVisitTermsError("");
     }
 
-    if (!isFormValid || !hasAcceptedVisitTerms) return;
+    if (!isFormValid || !acceptedVisitTerms) return;
 
     setIsSubmitting(true);
+    setSubmissionError("");
 
-    // Placeholder — لاحقًا تربطه بـ API / Server Action
-    await new Promise((resolve) => setTimeout(resolve, 900));
+    try {
+      const result = await submitVisitRequest(
+        form,
+        botcheckRef.current?.value ?? ""
+      );
 
-    setIsSubmitting(false);
-    setShowSuccess(true);
-    setForm(initialForm);
-    setAcceptedVisitTerms(false);
-    setVisitTermsError("");
+      if (!result.success) {
+        setSubmissionError(
+          result.reason === "not-configured"
+            ? "نموذج طلب الزيارة غير متاح حاليًا، يرجى التواصل معنا عبر البريد الإلكتروني"
+            : "تعذر إرسال الطلب الآن، يرجى المحاولة مرة أخرى أو التواصل معنا عبر البريد الإلكتروني"
+        );
+        return;
+      }
+
+      setShowSuccess(true);
+      setForm(initialForm);
+      setAcceptedVisitTerms(false);
+      setVisitTermsError("");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const closeSuccess = () => setShowSuccess(false);
@@ -188,6 +198,16 @@ export default function RequestVisitPage() {
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6 px-6 py-8 sm:px-8">
+              <input
+                ref={botcheckRef}
+                type="text"
+                name="botcheck"
+                tabIndex={-1}
+                aria-hidden="true"
+                autoComplete="off"
+                className="hidden"
+              />
+
               <div className="grid gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className={labelClass}>
@@ -420,6 +440,11 @@ export default function RequestVisitPage() {
               </section>
 
               <div className="pt-2">
+                {submissionError && (
+                  <p role="alert" className="mb-4 text-sm leading-7 text-red-400">
+                    {submissionError}
+                  </p>
+                )}
                 <button
                   type="submit"
                   disabled={isSubmitting}

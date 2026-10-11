@@ -97,6 +97,45 @@ export interface Destination {
   image: string;
   href?: string;
 }
+
+export type VisitRequestFormValues = {
+  name: string;
+  phoneCode: string;
+  phoneNumber: string;
+  email: string;
+  country: string;
+  city: string;
+  details: string;
+};
+
+export type VisitRequestFieldErrors = Partial<
+  Record<keyof VisitRequestFormValues, string>
+>;
+
+export type Web3FormsVisitRequestPayload = {
+  access_key: string;
+  subject: string;
+  from_name: string;
+  replyto: string;
+  name: string;
+  email: string;
+  phone: string;
+  country: string;
+  city: string;
+  visit_details: string;
+  visit_terms: string;
+  botcheck: string;
+};
+
+export type Web3FormsApiResponse = {
+  success: boolean;
+  message?: string;
+};
+
+export type VisitRequestSubmissionResult =
+  | { success: true }
+  | { success: false; reason: "not-configured" | "request-failed" | "rejected" };
+
 export interface CTA {
   title: string;
   description: string;
