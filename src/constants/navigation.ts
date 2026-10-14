@@ -20,7 +20,7 @@ export const navLinks  = [
     href: "/reviews",
   },
   {
-    title: "خدمات المنشآت",
+    title: "الخدمات ",
     href: "/services",
   },
   // {

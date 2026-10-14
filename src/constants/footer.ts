@@ -52,7 +52,7 @@ export const navigation = [
     icon: HiStar,
   },
   {
-    label: "خدمات المنشآت",
+    label: "الخدمات ",
     href: "/services",
     icon: HiBuildingOffice2,
   },
