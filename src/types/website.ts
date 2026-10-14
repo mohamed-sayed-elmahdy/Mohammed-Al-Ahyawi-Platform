@@ -119,6 +119,7 @@ export type Web3FormsVisitRequestPayload = {
   replyto: string;
   name: string;
   email: string;
+  category: string;
   phone: string;
   country: string;
   city: string;
@@ -135,6 +136,42 @@ export type Web3FormsApiResponse = {
 export type VisitRequestSubmissionResult =
   | { success: true }
   | { success: false; reason: "not-configured" | "request-failed" | "rejected" };
+
+export type VisitorFeedbackFormValues = {
+  category: VisitorFeedbackCategory;
+  name: string;
+  email: string;
+  message: string;
+};
+
+export type Web3FormsVisitorFeedbackPayload = {
+  access_key: string;
+  subject: string;
+  from_name: string;
+  replyto: string;
+  name: string;
+  email: string;
+  category: string;
+  message: string;
+  botcheck: string;
+};
+
+export type VisitorFeedbackSubmissionResult =
+  | { success: true }
+  | { success: false; reason: "not-configured" | "request-failed" | "rejected" };
+
+export type VisitorTestimonial = {
+  id: string;
+  name: string;
+  quote: string;
+};
+
+export type VisitorFeedbackCategory =
+  | "experience"
+  | "platform"
+  | "suggestion"
+  | "correction"
+  | "question";
 
 export interface CTA {
   title: string;

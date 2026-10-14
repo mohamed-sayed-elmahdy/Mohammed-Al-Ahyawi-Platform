@@ -1,5 +1,6 @@
 import Hero from "@/components/website/home/Hero/Hero";
 import FeaturedReviews from "@/components/website/home/FeaturedReviews/FeaturedReviews";
+import TestimonialsSection from "@/components/website/home/Testimonials/TestimonialsSection";
 import FeaturedCategories from "@/components/website/home/FeaturedCategories/FeaturedCategories";
 import FeaturedStories from "@/components/website/home/FeaturedStories/FeaturedStories";
 import LatestArticles from "@/components/website/home/LatestArticles/LatestArticles";
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <FeaturedCategories />
       <FeaturedReviews />
+      <TestimonialsSection />
       <FeaturedStories />
       <LatestArticles />
       <JourneyMap />
