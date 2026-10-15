@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import FooterAccreditations from "@/components/website/footer/FooterAccreditations";
 import FooterLinksCard from "@/components/website/footer/FooterLinksCard";
 import PrimaryButton from "@/components/website/navbar/PrimaryButton";
 
@@ -191,41 +192,7 @@ export default function Footer() {
           </section>
         </div>
 
-        {/* Professional accreditation block: registration number and Media Regulation Authority branding. */}
-        <div className="mt-10 border-t border-(--color-accent)/80 py-4">
-          <div
-            dir="ltr"
-            className="grid items-center gap-8 text-left text-[13px] text-slate-300 sm:grid-cols-[1fr_auto]"
-          >
-            <div className="space-y-2">
-              <p className="font-semibold text-(--color-accent)">
-                Professional Registration No. | رقم التسجيل المهني
-              </p>
-              <p className="text-xl font-bold tracking-wide text-slate-100">
-                553901
-              </p>
-              <p dir="rtl" className="text-sm leading-7 text-slate-300">
-                حاصل على شهادة التسجيل المهني للإعلاميين
-              </p>
-            </div>
-
-            <a
-              href="https://gmedia.gov.sa/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="الهيئة العامة لتنظيم الإعلام"
-              className="justify-self-end transition-opacity hover:opacity-80"
-            >
-              <Image
-                src="/media-regulation-logo-white.svg"
-                alt="الهيئة العامة لتنظيم الإعلام"
-                width={220}
-                height={86}
-                className="h-auto w-[180px] sm:w-[220px] text-white!"
-              />
-            </a>
-          </div>
-        </div>
+        <FooterAccreditations />
       </div>
     </footer>
   );
