@@ -35,7 +35,7 @@ export default function FooterAccreditations() {
             className="transition-opacity hover:opacity-80"
           >
             <Image
-              src="https://ju.edu.sa/themes/custom/aljouf/images/vision1.png"
+              src="/vision2030.webp"
               alt="رؤية السعودية 2030"
               width={150}
               height={90}

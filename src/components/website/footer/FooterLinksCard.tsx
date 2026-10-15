@@ -70,7 +70,7 @@ export default function FooterLinksCard({
           className="
             relative
             rounded-[inherit]
-            bg-[#0F1520]/75
+            bg-[#0F1525]/75
             backdrop-blur-xl
             px-5
             py-6
