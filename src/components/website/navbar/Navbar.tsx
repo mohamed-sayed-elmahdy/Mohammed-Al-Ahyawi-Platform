@@ -35,11 +35,11 @@ export default function Navbar() {
 
         {/* Left: actions */}
         <div className="flex items-center justify-end gap-2 sm:gap-3 lg:gap-4">
-          <div className="hidden items-center gap-3 md:flex">
+          {/* <div className="hidden items-center gap-3 md:flex">
             <ThemeToggle />
             <span className="h-6 border-l border-white/30" />
             <LanguageSwitcher />
-          </div>
+          </div> */}
 
           {/* CTA: icon-only on very small screens, full on sm+ */}
           <PrimaryButton
