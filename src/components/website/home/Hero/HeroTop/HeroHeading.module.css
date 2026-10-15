@@ -1,0 +1,47 @@
+.goldText {
+  display: inline-block;
+  font-weight: 900;
+  background-image: linear-gradient(90deg, #81500b 0%, #c8891d 42%, #ffe6a0 100%),
+    linear-gradient(
+      105deg,
+      transparent 45%,
+      rgb(255 234 170 / 35%) 47%,
+      #fffdf0 50%,
+      rgb(255 234 170 / 35%) 53%,
+      transparent 55%
+    );
+  background-position: 0 0, 150% 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 4px rgb(212 175 55 / 14%));
+  animation: gold-glint 6.5s cubic-bezier(0.22, 0.61, 0.36, 1) 2s infinite;
+}
+
+@keyframes gold-glint {
+  0%,
+  67% {
+    background-position: 0 0, 150% 0;
+  }
+
+  79% {
+    background-position: 0 0, -50% 0;
+  }
+
+  84%,
+  100% {
+    background-position: 0 0, -50% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goldText {
+    animation: none;
+  }
+
+  .goldText {
+    background-position: 0 0, 150% 0;
+  }
+}

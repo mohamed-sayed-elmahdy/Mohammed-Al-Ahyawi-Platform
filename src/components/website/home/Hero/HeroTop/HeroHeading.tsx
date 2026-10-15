@@ -1,3 +1,5 @@
+import BlurText from "./BlurText";
+
 function HeroHeading() {
   return (
     <div>
@@ -7,11 +9,9 @@ function HeroHeading() {
         <span className="text-(--color-accent)">تحسين مستمر</span>
       </h1>
 
-      <p className="mt-4 max-w-3xl text-sm leading-7 text-(--color-secondary-text) sm:text-[15px] sm:leading-8 lg:mt-6 lg:text-[16px]">
-        منصة إعلامية مستقلة توثق التجارب والجولات داخل المملكة وخارجها{" "}
-        <br className="max-xl:hidden" />
-         بواقعية
-      </p>
+      <BlurText
+        className="mt-4 max-w-3xl text-sm leading-7 text-(--color-secondary-text) sm:text-[15px] sm:leading-8 lg:mt-6 lg:text-[16px]"
+      />
     </div>
   );
 }
