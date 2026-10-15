@@ -1,4 +1,5 @@
 import type { CTA } from "@/types/website";
+import GoldActionLink from "@/components/website/home/GoldActionLink";
 
 const cta: CTA = {
   title: "دعوة لزيارة بعين محمد الإحيوي",
@@ -21,12 +22,11 @@ export default function HomeCTA() {
           {cta.description}
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
+          <GoldActionLink
             href={cta.primaryHref}
-            className="inline-flex rounded-full bg-[#f3c15c] px-8 py-3 text-sm font-semibold text-[#08111f] transition hover:brightness-95"
           >
             {cta.primaryLabel}
-          </a>
+          </GoldActionLink>
           <a
             href={cta.secondaryHref}
             className="inline-flex rounded-full border border-white/10 px-8 py-3 text-sm font-medium text-white transition hover:border-[#f3c15c] hover:text-[#f3c15c]"

@@ -1,6 +1,5 @@
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { visitorTestimonials } from "@/data/visitor-testimonials";
+import GoldActionLink from "@/components/website/home/GoldActionLink";
 import TestimonialCard from "./TestimonialCard";
 
 export default function TestimonialsSection() {
@@ -20,14 +19,12 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="mt-7 flex justify-center sm:mt-9">
-          <Link
+          <GoldActionLink
             href="/share-feedback"
             aria-label="شاركنا رأيك"
-            className="discoveryButton discoveryButton-colors min-w-38.75 relative inline-flex items-center justify-center gap-2 rounded-[10px] px-2 py-3 text-sm font-semibold text-(--color-text) transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--color-accent) sm:px-6 sm:py-2"
           >
             شاركنا رأيك
-            <ArrowLeft aria-hidden="true" className="size-5" />
-          </Link>
+          </GoldActionLink>
         </div>
       </div>
     </section>

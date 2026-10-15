@@ -1,9 +1,8 @@
 
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import CategoryCard from "@/components/website/home/FeaturedCategories/CategoryCard";
 import FeaturedCategoriesItems from "@/components/website/home/FeaturedCategories/FeaturedCategoriesItems";
 import { categories } from "@/data/categories";
+import GoldActionLink from "@/components/website/home/GoldActionLink";
 
 const featuredCardCategories = categories.filter((category) => category.featuredCard);
 const [primaryCategory, topLeftCategory, topRightCategory, lowerLeftCategory, ...bottomCategories] = featuredCardCategories;
@@ -22,13 +21,13 @@ export default function FeaturedCategories() {
               كل تجربة تروي قصة مختلفة، وكل فئة تمنحك زاوية جديدة لاستكشاف العالم بأسلوب محمد الإحيوي. اختر ما يهمك اليوم وابدأ رحلة جديدة
             </p>
 
-            <Link
+            <GoldActionLink
               href="/reviews"
-              aria-label=" استعرض جميع الفئات "
-              className="discoveryButton discoveryButton-colors min-w-38.75 mt-4 relative inline-flex items-center justify-center gap-2 rounded-[10px] px-2 sm:px-6 py-3 text-sm font-semibold text-(--color-text) sm:py-2"
+              aria-label="استعرض جميع الفئات"
+              className="mt-4"
             >
-              استعرض جميع الفئات <ArrowLeft className="h-5 w-5" />
-            </Link>
+              استعرض جميع الفئات
+            </GoldActionLink>
           </div>
 
           <div className="grid grid-cols-3 gap-x-3 gap-y-7 sm:grid-cols-4 lg:grid-cols-7">
