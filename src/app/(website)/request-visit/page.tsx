@@ -27,7 +27,6 @@ const defaultPhoneCode =
 const countryFlags: Record<string, string> = {
   "المملكة العربية السعودية": "🇸🇦",
   مصر: "🇪🇬",
-  "الإمارات العربية المتحدة": "🇦🇪",
   تركيا: "🇹🇷",
   جورجيا: "🇬🇪",
 };

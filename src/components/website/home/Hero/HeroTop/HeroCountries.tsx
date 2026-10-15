@@ -5,7 +5,6 @@ import HeroTimeline from "@/components/website/home/Hero/HeroTop/HeroTimeline";
 const mobileCountries = [
   { name: "السعودية", flag: "/flags/sa.svg" },
   { name: "مصر", flag: "/flags/eg.svg" },
-  { name: "الإمارات", flag: "/flags/ae.svg" },
   { name: "تركيا", flag: "/flags/tr.svg" },
   { name: "جورجيا", flag: "/flags/ge.svg" },
 ];

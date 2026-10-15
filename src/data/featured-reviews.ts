@@ -56,17 +56,6 @@ export const reviews: FeaturedReview[] = [
     href: "/reviews/alula-history",
   },
   {
-    id: "dubai-dining",
-    title: "نكهات عالمية بإبداع محلي",
-    excerpt: "مطعم يقدم مزيجًا فريدًا من النكهات العالمية بلمسة محلية راقية",
-    rating: 4.6,
-    location: "دبي · الإمارات",
-    date: "5 يناير 2025",
-    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85",
-    badge: "تجربة مميزة",
-    href: "/reviews/dubai-dining",
-  },
-  {
     id: "swiss-nature",
     title: "هدوء الجبال وسحر الطبيعة",
     excerpt: "تجربة طبيعية تأخذك إلى عالم من السكينة والمناظر الخلابة",

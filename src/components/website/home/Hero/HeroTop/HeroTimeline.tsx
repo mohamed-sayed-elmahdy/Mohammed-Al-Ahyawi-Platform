@@ -25,12 +25,6 @@ const timelineItems = [
       scale: true,
   },
   {
-    type: "ae",
-    title: "الإمارات",
-    flag: "/flags/uea5.png",
-      scale: true,
-  },
-  {
       type: "tr",
     title: "تركيا",
     flag: "/flags/tr.png",
@@ -51,11 +45,10 @@ const timelineItems = [
 ];
 const timelineStops = [
   0.00, // السعودية
-  0.18, // وجهات عالمية
-  0.34, // مصر
-  0.50, // الإمارات
-  0.66, // تركيا
-  0.82, // جورجيا
+  0.196, // وجهات عالمية
+  0.392, // مصر
+  0.588, // تركيا
+  0.784, // جورجيا
   0.98, // الطائرة
 ];
 export default function HeroTimeline() {

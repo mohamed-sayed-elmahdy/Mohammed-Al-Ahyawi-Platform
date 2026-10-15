@@ -10,10 +10,6 @@ const countries = [
     flag: "/flags/eg.svg",
   },
   {
-    name: "الإمارات",
-    flag: "/flags/uea5.png",
-  },
-  {
     name: "تركيا",
     flag: "/flags/tr.svg",
   },
@@ -30,7 +26,7 @@ export function GlobalJourneys() {
         جولات تمتد عبر عدة وجهات
       </h2>
 
-      <div className="mt-9 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-5 md:gap-5">
+      <div className="mt-9 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 md:gap-5">
         {countries.map(({ flag, name }) => (
           <div key={name} className="flex flex-col items-center text-center">
             <div className="flex size-16 items-center justify-center overflow-hidden rounded-full border border-(--color-accent)/30 bg-(--color-background)/50 shadow-[0_8px_24px_rgba(0,0,0,0.25)] sm:size-18 md:size-20">

@@ -10,14 +10,6 @@ export const countries: Country[] = [
     href: "/countries/saudi",
   },
   {
-    id: "uae",
-    name: "الإمارات",
-    description: "تجارب فوتوغرافية فاخرة في دبي وأبوظبي.",
-    image:
-      "https://images.unsplash.com/photo-1542144582-1ba004d88a6f?auto=format&fit=crop&w=900&q=80",
-    href: "/countries/uae",
-  },
-  {
     id: "georgia",
     name: "جورجيا",
     description: "وجهة خارجية تجمع الجبال والطابع الأوروبي اللطيف.",
@@ -43,14 +35,6 @@ export const destinations: Destination[] = [
     image:
       "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80",
     href: "/destinations/jeddah",
-  },
-  {
-    id: "dubai",
-    name: "دبي",
-    countryId: "uae",
-    image:
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80",
-    href: "/destinations/dubai",
   },
   {
     id: "tbilisi",

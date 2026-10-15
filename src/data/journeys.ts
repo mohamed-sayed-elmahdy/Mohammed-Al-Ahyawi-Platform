@@ -17,7 +17,7 @@ export const saudiJourneyCities = [
   "الخبر",
 ] as const;
 
-export const internationalJourneyCountries = ["مصر", "الإمارات", "تركيا", "جورجيا"] as const;
+export const internationalJourneyCountries = ["مصر", "تركيا", "جورجيا"] as const;
 
 export const journeys: Journey[] = [
   {
@@ -40,9 +40,6 @@ export const journeys: Journey[] = [
   },
   {
     id: "cairo-heritage", title: "القاهرة بين الأصالة والنبض", description: "رحلة تلتقط طاقة القاهرة في مطاعمها وشوارعها وتفاصيل ضيافتها الثرية.", image: "/Gemini_Generated_Image_a8dvvea8dvvea8dv.jfif", href: "/journeys/cairo-heritage", scope: "international", country: "مصر", city: "القاهرة", dateLabel: "مايو ٢٠٢٤", placesCount: 12, year: "2024", route: "القاهرة",
-  },
-  {
-    id: "dubai-details", title: "دبي بعين التجربة", description: "محطات مختارة في مدينة لا تتوقف عن تقديم أفكار جديدة في الضيافة والترفيه.", image: "/hero-slider-images/international-destinations1.jpg", href: "/journeys/dubai-details", scope: "international", country: "الإمارات", city: "دبي", dateLabel: "مارس ٢٠٢٤", placesCount: 13, featured: true, year: "2024", route: "دبي",
   },
   {
     id: "istanbul-streets", title: "إسطنبول من الشارع إلى المائدة", description: "رحلة تجمع نكهات المدينة القديمة مع التجارب العصرية التي تستحق التوثيق.", image: "/hero-slider-images/international-destinations3.jpg", href: "/journeys/istanbul-streets", scope: "international", country: "تركيا", city: "إسطنبول", dateLabel: "أكتوبر ٢٠٢٣", placesCount: 15, year: "2023", route: "إسطنبول",
