@@ -1,6 +1,6 @@
 import { reviews } from "@/data/featured-reviews";
 import ReviewCard from "./ReviewCard";
-import GoldActionLink from "@/components/website/home/GoldActionLink";
+import GoldActionLink from "@/components/shared/GoldActionLink";
 
 export default function FeaturedReviews() {
   const [featured, cafe, hotel, ...moreReviews] = reviews;

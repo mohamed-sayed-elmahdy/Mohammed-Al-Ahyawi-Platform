@@ -1,5 +1,5 @@
 import { visitorTestimonials } from "@/data/visitor-testimonials";
-import GoldActionLink from "@/components/website/home/GoldActionLink";
+import GoldActionLink from "@/components/shared/GoldActionLink";
 import TestimonialCard from "./TestimonialCard";
 
 export default function TestimonialsSection() {

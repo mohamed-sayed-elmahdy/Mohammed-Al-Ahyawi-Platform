@@ -2,7 +2,7 @@
 import CategoryCard from "@/components/website/home/FeaturedCategories/CategoryCard";
 import FeaturedCategoriesItems from "@/components/website/home/FeaturedCategories/FeaturedCategoriesItems";
 import { categories } from "@/data/categories";
-import GoldActionLink from "@/components/website/home/GoldActionLink";
+import GoldActionLink from "@/components/shared/GoldActionLink";
 
 const featuredCardCategories = categories.filter((category) => category.featuredCard);
 const [primaryCategory, topLeftCategory, topRightCategory, lowerLeftCategory, ...bottomCategories] = featuredCardCategories;
