@@ -1,17 +1,14 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import GoldActionLink from "@/components/shared/GoldActionLink";
 import ServicesFaq from "@/components/website/services/ServicesFaq";
+import ServiceCatalog from "@/components/website/services/ServiceCatalog";
 import {
-  ArrowDown,
   ArrowLeft,
-  Camera,
   CircleHelp,
-  FileCheck2,
   MapPin,
   MessageCircle,
-  SearchCheck,
   ShieldCheck,
-  Store,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -22,66 +19,6 @@ export const metadata: Metadata = {
 
 const contactEmail = "Alaqari2006@hotmail.com";
 const contactPhone = "+966551946666";
-
-const serviceGroups = [
-  {
-    number: "1-",
-    title: "التأسيس والتجهيز",
-    icon: Store,
-    services: [
-      {
-        title: "تأسيس حساب",
-        description:
-          "إنشاء الملف التجاري للمنشأة وتجهيزه بالبيانات الأساسية التي تقدمها",
-        icon: Store,
-      },
-      {
-        title: "إثبات الملكية",
-        description:
-          "إرشادك خلال خطوات إثبات ملكية المنشأة الرسمية، مع إتمام التحقق من جانب المالك",
-        icon: ShieldCheck,
-      },
-      {
-        title: "إكمال الملف التجاري",
-        description:
-          "مراجعة بيانات الملف وإضافة المعلومات والصور المتاحة بالتنسيق مع منشأتك",
-        icon: FileCheck2,
-      },
-    ],
-  },
-  {
-    number: "2-",
-    title: "الإدارة والتواصل",
-    icon: MessageCircle,
-    services: [
-      {
-        title: "إدارة المحتوى",
-        description:
-          "تنظيم وتحديث محتوى الملف وفق المعلومات والعروض التي تعتمدها المنشأة",
-        icon: SearchCheck,
-      },
-      {
-        title: "الرد على المراجعات",
-        description:
-          "إعداد ردود مهنية على مراجعات العملاء، بما يعكس أسلوب المنشأة ويحترم تجربتهم",
-        icon: MessageCircle,
-      },
-    ],
-  },
-  {
-    number: "3-",
-    title: "التصوير والتوثيق",
-    icon: Camera,
-    services: [
-      {
-        title: "التصوير والتوثيق",
-        description:
-          "تصوير المكان أو المنتجات وتجهيز صور مناسبة لإضافتها إلى الملف التجاري، وفق نطاق يتم الاتفاق عليه مسبقًا",
-        icon: Camera,
-      },
-    ],
-  },
-];
 
 const processSteps = [
   {
@@ -119,24 +56,6 @@ const faqs = [
   },
 ];
 
-function createServiceEmail(serviceTitles: string[]) {
-  const serviceList = serviceTitles.map((title) => `- ${title}`).join("\n");
-  const requestDescription =
-    serviceTitles.length === 1
-      ? `أرغب في الاستفسار عن خدمة ${serviceTitles[0]}`
-      : `أرغب في الاستفسار عن الخدمات التالية:\n${serviceList}`;
-  const subject = encodeURIComponent(
-    serviceTitles.length === 1
-      ? `طلب خدمة: ${serviceTitles[0]}`
-      : "طلب مجموعة خدمات"
-  );
-  const body = encodeURIComponent(
-    `السلام عليكم،\n\n${requestDescription}\n\nاسم المنشأة:\nنوع النشاط:\nالمدينة:\nرابط الملف التجاري إن وجد:\nتفاصيل إضافية:\n\n`
-  );
-
-  return `mailto:${contactEmail}?subject=${subject}&body=${body}`;
-}
-
 export default function ServicesPage() {
   return (
     <main className="overflow-hidden bg-(--color-background) text-(--color-text)">
@@ -154,13 +73,12 @@ export default function ServicesPage() {
             منشأتك؛ خدمات عملية تساعدك على تقديم معلومات أدق للعملاء
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a
+            <GoldActionLink
               href="#services"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-(--color-accent) px-5 py-3 font-bold text-[#08111f] transition hover:bg-[#e8c76a]"
+              className="min-h-12"
             >
               استعرض الخدمات
-              <ArrowDown aria-hidden="true" className="size-4" />
-            </a>
+            </GoldActionLink>
             <a
               href={`mailto:${contactEmail}?subject=${encodeURIComponent("استفسار عن خدمات المنشآت")}`}
               className="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/20 px-5 py-3 font-semibold transition hover:border-(--color-accent) hover:text-(--color-accent)"
@@ -189,123 +107,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section id="services" className="scroll-mt-16 border-y border-white/10 bg-white/2">
-        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
-          <div className="flex flex-col gap-6 border-b border-white/10 pb-8 sm:flex-row sm:items-end sm:justify-between sm:gap-10 sm:pb-10">
-            <div className="max-w-2xl">
-              <p className="inline-flex items-center gap-3 text-sm font-semibold text-(--color-accent)">
-                <span className="h-px w-8 bg-(--color-accent)" />
-                خدمات المنشآت
-              </p>
-              <h2 className="font-alexandria mt-4 text-2xl font-bold leading-relaxed sm:text-3xl lg:text-4xl">
-                كل ما يحتاجه ملف منشأتك في مكان واحد
-              </h2>
-              <p className="mt-3 max-w-xl leading-8 text-(--color-secondary-text)">
-                من التأسيس والتحقق، إلى الإدارة والتصوير؛ اختر نقطة البداية
-                المناسبة لمنشأتك
-              </p>
-            </div>
-            <div className="flex w-fit items-center gap-3 border rounded-lg border-(--color-accent)/25 bg-(--color-accent)/5 px-4 py-2">
-              <span className="font-alexandria text-2xl font-bold text-(--color-accent)">
-                {String(
-                  serviceGroups.reduce(
-                    (count, group) => count + group.services.length,
-                    0
-                  )
-                )}
-              </span>
-              <span className="text-sm text-(--color-secondary-text)">
-                خدمات متخصصة
-              </span>
-            </div>
-          </div>
-
-          <div className="mt-2">
-            {serviceGroups.map((group) => {
-              const GroupIcon = group.icon;
-
-              return (
-                <section
-                  key={group.number}
-                  aria-labelledby={`service-group-${group.number}`}
-                  className="grid gap-5 border-b border-white/10 py-8 last:border-b-0 sm:py-10 lg:grid-cols-[minmax(220px,0.72fr)_minmax(0,1.8fr)] lg:gap-12 lg:py-12"
-                >
-                  <div>
-                    <div className="flex items-center gap-3">
-                      <span className="flex size-12 items-center justify-center rounded-lg border border-(--color-accent)/30 bg-(--color-accent)/10 text-(--color-accent)">
-                        <GroupIcon aria-hidden="true" className="size-5" />
-                      </span>
-                      <span className="font-alexandria text-base font-semibold tracking-[0.12em] text-(--color-accent)">
-                        {group.number}
-                      </span>
-                              <h3
-                        id={`service-group-${group.number}`}
-                        className="font-alexandria  text-lg font-bold leading-relaxed  sm:text-xl"
-                      >
-                        {group.title}
-                      </h3>
-                    </div>
-                    <div>
-              
-                    </div> 
-                  </div>
-
-                  <div className="grid gap-3 sm:block">
-                    {group.services.map((service) => {
-                      const ServiceIcon = service.icon;
-
-                      return (
-                        <article
-                          key={service.title}
-                          className="group grid grid-cols-[40px_minmax(0,1fr)] items-start gap-x-3 gap-y-3 rounded-lg border border-white/10 bg-(--color-surface)/50 p-4 transition-colors hover:border-(--color-accent)/30 hover:bg-(--color-surface) sm:grid-cols-[48px_minmax(0,1fr)_auto] sm:items-center sm:gap-x-5 sm:rounded-none sm:border-x-0 sm:border-t-0 sm:border-b sm:border-white/20 sm:bg-transparent sm:px-4 sm:py-5 sm:hover:bg-white/[0.03]"
-                        >
-                          <span className="flex size-10 items-center justify-center rounded-lg border border-(--color-accent)/20 bg-(--color-accent)/10 text-(--color-accent) transition-colors group-hover:border-(--color-accent)/40 sm:size-11 sm:border-white/10 sm:bg-(--color-surface)/70 sm:group-hover:bg-(--color-accent)/10">
-                            <ServiceIcon aria-hidden="true" className="size-5" />
-                          </span>
-                          <div>
-                            <h4 className="font-alexandria text-base font-semibold leading-7 sm:text-lg">
-                              {service.title}
-                            </h4>
-                            <p className="mt-1 text-sm leading-7 text-(--color-secondary-text)">
-                              {service.description}
-                            </p>
-                          </div>
-                          <a
-                            // href={createServiceEmail([service.title])}
-                            
-                            className="col-span-2 cursor-pointer inline-flex w-full items-center justify-between rounded-md border-t border-white/10 pt-3 text-sm font-bold text-(--color-accent) transition-colors hover:text-[#e8c76a] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--color-accent) sm:col-span-1 sm:w-fit sm:justify-self-end sm:border-0 sm:py-1"
-                          >
-                            اطلب الخدمة
-                            <ArrowLeft
-                              aria-hidden="true"
-                              className="size-4 transition-transform group-hover:-translate-x-1"
-                            />
-                          </a>
-                        </article>
-                      );
-                    })}
-                  </div>
-                  {group.services.length > 1 && (
-                    <a
-                      href={createServiceEmail(
-                        group.services.map((service) => service.title)
-                      )}
-                      aria-label={`اطلب جميع خدمات ${group.title}`}
-                      className="inline-flex w-fit items-center gap-3 rounded-lg border border-(--color-accent)/35 bg-(--color-accent)/10 px-4 py-3 text-sm font-bold text-(--color-accent) transition-colors hover:border-(--color-accent)/60 hover:bg-(--color-accent)/15 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--color-accent) lg:col-start-2"
-                    >
-                      <span>اطلب جميع خدمات المجموعة</span>
-                      <span className="border-s border-(--color-accent)/30 ps-3 text-xs font-semibold">
-                        {group.services.length}
-                      </span>
-                      <ArrowLeft aria-hidden="true" className="size-4" />
-                    </a>
-                  )}
-                </section>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      <ServiceCatalog />
 
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.5fr] lg:gap-16">
@@ -389,10 +191,11 @@ export default function ServicesPage() {
           <div className="flex flex-wrap gap-3">
             <a
               href={`mailto:${contactEmail}?subject=${encodeURIComponent("استفسار عن خدمات المنشآت")}`}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-(--color-accent) px-5 py-3 font-bold text-[#08111f] transition hover:bg-[#e8c76a]"
+              className="discoveryButton discoveryButton-colors relative inline-flex min-h-12 min-w-38.75 items-center justify-center gap-2 rounded-[10px] px-5 py-3 text-sm font-semibold text-(--color-text) transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--color-accent) sm:px-6 sm:py-2"
             >
               <MessageCircle aria-hidden="true" className="size-4" />
               راسلنا بالبريد
+              <ArrowLeft aria-hidden="true" className="size-5" />
             </a>
             <a
               href={`tel:${contactPhone}`}

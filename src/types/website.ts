@@ -137,6 +137,39 @@ export type VisitRequestSubmissionResult =
   | { success: true }
   | { success: false; reason: "not-configured" | "request-failed" | "rejected" };
 
+export type ServiceRequestFormValues = {
+  name: string;
+  email: string;
+  phone: string;
+  businessName: string;
+  businessType: string;
+  city: string;
+  profileUrl: string;
+  details: string;
+};
+
+export type Web3FormsServiceRequestPayload = {
+  access_key: string;
+  subject: string;
+  from_name: string;
+  replyto: string;
+  name: string;
+  email: string;
+  category: string;
+  phone: string;
+  business_name: string;
+  business_type: string;
+  city: string;
+  profile_url: string;
+  selected_services: string;
+  details: string;
+  botcheck: string;
+};
+
+export type ServiceRequestSubmissionResult =
+  | { success: true }
+  | { success: false; reason: "not-configured" | "request-failed" | "rejected" };
+
 export type VisitorFeedbackFormValues = {
   category: VisitorFeedbackCategory;
   name: string;
