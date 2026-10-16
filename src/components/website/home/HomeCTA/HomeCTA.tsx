@@ -1,5 +1,5 @@
 import type { CTA } from "@/types/website";
-import GoldActionLink from "@/components/website/home/GoldActionLink";
+import GoldActionLink from "@/components/shared/GoldActionLink";
 
 const cta: CTA = {
   title: "دعوة لزيارة بعين محمد الإحيوي",
