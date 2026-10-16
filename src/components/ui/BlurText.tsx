@@ -2,8 +2,8 @@
 
 import { type Easing, motion, type Transition, useReducedMotion } from "motion/react";
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
-import styles from "./HeroHeading.module.css";
-
+import styles from "@/components/website/home/Hero/HeroTop/HeroHeading.module.css";
+import ShimmeringText from "@/components/ui/shimmering-text";
 interface BlurTextProps {
   text?: string;
   delay?: number;
@@ -37,7 +37,7 @@ const buildKeyframes = (
 };
 
 function BlurText({
-  text = "أول منصة رقمية لإعلامي ومرشد سعودي على خرائط قوقل ماب\nلتوثيق وتقييم التجارب والجولات داخل المملكة وخارجها",
+  text = "أول منصة رقمية لإعلامي ومرشد ســعــودي على خرائط قوقل ماب\nلتوثيق وتقييم التجارب والجولات داخل المملكة وخارجها",
   delay = 100,
   className = "",
   animateBy = "words",
@@ -129,8 +129,9 @@ function BlurText({
           );
         }
 
+
         const word = segment.trim();
-        const isGold = word === "أول" || word === "سعودي";
+        const isGold = word === "أول" || word === "ســعــودي";
 
         return (
           <motion.span
@@ -144,9 +145,10 @@ function BlurText({
             initial={shouldReduceMotion ? false : fromSnapshot}
             key={index}
             onAnimationComplete={
-              index === elements.length - 1 ? onAnimationComplete : undefined
+              index === elements.length - 1
+                ? onAnimationComplete
+                : undefined
             }
-            className={isGold ? styles.goldText : undefined}
             style={{
               display: "inline-block",
               whiteSpace: "pre",
@@ -156,9 +158,20 @@ function BlurText({
             }}
             transition={spanTransition}
           >
-            {segment}
+            {isGold ? (
+              <ShimmeringText
+                text={segment}
+                duration={3}
+                color="#d9982d"
+                shimmeringColor="#FFF1B8"
+                aria-label={word}
+              />
+            ) : (
+              segment
+            )}
           </motion.span>
         );
+
       })}
     </p>
   );

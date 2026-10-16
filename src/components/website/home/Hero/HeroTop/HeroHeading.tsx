@@ -1,4 +1,4 @@
-import BlurText from "./BlurText";
+import BlurText from "../../../../ui/BlurText";
 
 function HeroHeading() {
   return (
