@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import FeedbackForm from "@/components/website/feedback/FeedbackForm";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "شاركنا رأيك",
   description:
     "شاركنا انطباعك أو اقتراحك أو ملاحظتك حول منصة محمد الإحيوي",
-};
+  path: "/share-feedback",
+  noIndex: true,
+});
 
 export default function ShareFeedbackPage() {
   return (

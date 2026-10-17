@@ -1,9 +1,20 @@
 
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 
-function page() {
+export const metadata: Metadata = createPageMetadata({
+  title: "رسالة المنصة",
+  description: "رسالة منصة محمد الإحيوي.",
+  path: "/mission",
+  noIndex: true,
+});
+
+function MissionPage() {
   return (
-    <div>page</div>
-  )
+    <main>
+      <h1>رسالة المنصة</h1>
+    </main>
+  );
 }
 
-export default page
+export default MissionPage;

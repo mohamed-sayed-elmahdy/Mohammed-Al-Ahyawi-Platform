@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_ORIGIN } from "@/lib/seo";
 import {
   Geist,
   Geist_Mono,
@@ -31,12 +32,18 @@ const ibmPlexArabic = IBM_Plex_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Mohammed Al Ahyawi",
-    template: "%s | Mohammed Al Ahyawi",
-  },
+  metadataBase: new URL(SITE_ORIGIN),
+  title: "لوحة التحكم | محمد الإحيوي",
   description:
-    " Mohammed Al Ahyawi is a Saudi travel influencer and content creator who shares his experiences exploring the beauty of Saudi Arabia and the world. Follow his journey for travel inspiration, tips, and insights.",
+    "لوحة إدارة منصة محمد الإحيوي.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function RootLayout({

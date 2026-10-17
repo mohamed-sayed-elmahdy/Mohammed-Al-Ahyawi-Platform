@@ -1,9 +1,19 @@
-import React from 'react'
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 
-function page( ) {
+export const metadata: Metadata = createPageMetadata({
+  title: "تفاصيل الجولة",
+  description: "تفاصيل الجولات الموثقة لمحمد الإحيوي.",
+  path: "/journeys",
+  noIndex: true,
+});
+
+function JourneyPage() {
   return (
-    <div>page</div>
-  )
+    <main>
+      <h1>تفاصيل الجولة</h1>
+    </main>
+  );
 }
 
-export default page
+export default JourneyPage;
