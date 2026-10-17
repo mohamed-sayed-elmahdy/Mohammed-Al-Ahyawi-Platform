@@ -4,7 +4,7 @@ export const SITE_ORIGIN = "https://mohammad-alehewi.vercel.app";
 
 export const SITE_NAME = "منصة الإعلامي محمد الإحيوي";
 
-export const DEFAULT_SOCIAL_IMAGE = "/og/default.jpg";
+export const DEFAULT_SOCIAL_IMAGE = "/og/defaultOg.png";
 
 export const DEFAULT_SOCIAL_IMAGE_ALT =
   "صورة تعريفية لمنصة الإعلامي محمد الإحيوي";
