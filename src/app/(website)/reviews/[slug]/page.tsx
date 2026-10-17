@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ReviewDetailPage from "@/components/website/reviews/ReviewDetailPage";
 import { reviews } from "@/data/reviews";
+import { createPageMetadata } from "@/lib/seo";
 
 type ReviewPageProps = {
   params: Promise<{ slug: string }>;
@@ -16,19 +17,20 @@ export async function generateMetadata({ params }: ReviewPageProps): Promise<Met
   const review = reviews.find((item) => item.id === slug);
 
   if (!review) {
-    return { title: "التقييم غير موجود" };
+    return {
+      title: "التقييم غير موجود",
+      robots: { index: false, follow: false },
+    };
   }
 
-  return {
+  return createPageMetadata({
     title: review.title,
     description: review.excerpt,
-    openGraph: {
-      title: `${review.title} | تقييمات محمد الإحيوي`,
-      description: review.excerpt,
-      images: [review.images[0]],
-      type: "article",
-    },
-  };
+    path: `/reviews/${review.id}`,
+    image: review.images[0],
+    imageAlt: `صورة من تجربة ${review.title}`,
+    openGraphType: "article",
+  });
 }
 
 export default async function ReviewRoute({ params }: ReviewPageProps) {

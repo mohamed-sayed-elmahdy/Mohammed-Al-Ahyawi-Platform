@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import ServiceRequestForm from "@/components/website/services/ServiceRequestForm";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "طلب خدمات المنشآت",
-  description: "أرسل تفاصيل منشأتك والخدمات التي تحتاجها لمراجعة طلبك",
-};
+  description:
+    "أرسل بيانات منشأتك والخدمات التي تحتاجها ليراجع فريق محمد الإحيوي نطاق العمل والتكلفة.",
+  path: "/services/request",
+  noIndex: true,
+});
 
 export default function ServiceRequestPage() {
   return (

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { AboutHero } from "@/components/website/about/AboutHero";
 import { AboutIntro } from "@/components/website/about/AboutIntro";
 import { AboutTimeline } from "@/components/website/about/AboutTimeline";
@@ -6,6 +7,14 @@ import { ExperienceImpact } from "@/components/website/about/ExperienceImpact";
 import { MissionVision } from "@/components/website/about/MissionVision";
 import { GlobalJourneys } from "@/components/website/about/GlobalJourneys";
 import { DigitalPresence } from "@/components/website/about/DigitalPresence";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "نبذة عن محمد الإحيوي",
+  description:
+    "تعرّف على الإعلامي محمد الإحيوي ورحلته في توثيق التجارب والجولات والتعريف بالوجهات داخل المملكة وحول العالم.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

@@ -1,9 +1,19 @@
-import React from 'react'
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 
-function page() {
+export const metadata: Metadata = createPageMetadata({
+  title: "المقالات",
+  description: "مقالات محمد الإحيوي.",
+  path: "/articles",
+  noIndex: true,
+});
+
+function ArticlesPage() {
   return (
-    <div>page</div>
-  )
+    <main>
+      <h1>المقالات</h1>
+    </main>
+  );
 }
 
-export default page
+export default ArticlesPage;

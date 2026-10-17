@@ -10,12 +10,16 @@ import {
   MessageCircle,
   ShieldCheck,
 } from "lucide-react";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "خدمات المنشآت على Google",
   description:
     "خدمات تأسيس وإدارة الملف التجاري للمنشآت على بحث Google وخرائط Google، من إثبات الملكية إلى المحتوى والتصوير",
-};
+  path: "/services",
+  image: "/services1.jpg",
+  imageAlt: "خدمات تأسيس وإدارة وتصوير ملفات المنشآت على Google",
+});
 
 const contactEmail = "Alaqari2006@hotmail.com";
 const contactPhone = "+966551946666";
