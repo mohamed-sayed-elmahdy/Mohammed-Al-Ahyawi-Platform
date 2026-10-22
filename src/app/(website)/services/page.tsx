@@ -6,23 +6,21 @@ import ServiceCatalog from "@/components/website/services/ServiceCatalog";
 import {
   ArrowLeft,
   CircleHelp,
-  MapPin,
   MessageCircle,
   ShieldCheck,
 } from "lucide-react";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "خدمات المنشآت على Google",
+  title: "الخدمات الرقمية للمنشآت",
   description:
-    "خدمات تأسيس وإدارة الملف التجاري للمنشآت على بحث Google وخرائط Google، من إثبات الملكية إلى المحتوى والتصوير",
+    "خدمات رقمية للمنشآت تشمل إدارة الملف التجاري على Google وتصوير المنشأة وتصميم الشعار والموقع الإلكتروني",
   path: "/services",
   image: "/services1.jpg",
-  imageAlt: "خدمات تأسيس وإدارة وتصوير ملفات المنشآت على Google",
+  imageAlt: "خدمات إدارة الملف التجاري على Google للمنشآت",
 });
 
 const contactEmail = "Alaqari2006@hotmail.com";
-const contactPhone = "+966551946666";
 
 /* const processSteps = [
   {
@@ -67,7 +65,7 @@ export default function ServicesPage() {
         <div className="relative z-10">
           <p className="inline-flex items-center gap-2 text-sm font-semibold text-(--color-accent)">
         
-            خدمات مخصصة لأصحاب المنشآت
+            خدمات رقمية مخصصة لأصحاب المنشآت
           </p>
           <h1 className="font-alexandria mt-5 max-w-2xl text-3xl font-bold leading-[1.6] sm:text-4xl lg:text-[3.25rem]">
             حضور منشأتك على Google يبدأ من ملف واضح ومتكامل

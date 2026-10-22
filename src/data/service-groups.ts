@@ -62,6 +62,27 @@ export const serviceGroups = [
       },
     ],
   },
+  {
+    number: "4-",
+    title: "التصميم والهوية الرقمية",
+    icon: "Palette",
+    services: [
+      {
+        id: "logo-design",
+        title: "تصميم شعار",
+        description:
+          "تصميم شعار يعبر عن هوية المنشأة ويمكن استخدامه في قنواتها وموادها التعريفية",
+        icon: "PenTool",
+      },
+      {
+        id: "website-design",
+        title: "تصميم موقع إلكتروني",
+        description:
+          "تصميم موقع يعرض خدمات المنشأة ومعلوماتها بطريقة واضحة ومناسبة للهواتف",
+        icon: "Monitor",
+      },
+    ],
+  },
 ] as const;
 
 export type ServiceId =

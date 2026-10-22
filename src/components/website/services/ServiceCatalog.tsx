@@ -3,9 +3,12 @@
 import GoldActionLink from "@/components/shared/GoldActionLink";
 import {
   ArrowLeft,
+  Monitor,
+  Palette,
   Camera,
   FileCheck2,
   MessageCircle,
+  PenTool,
   SearchCheck,
   ShieldCheck,
   Store,
@@ -19,6 +22,9 @@ const serviceIcons: Record<string, LucideIcon> = {
   Camera,
   FileCheck2,
   MessageCircle,
+  Monitor,
+  Palette,
+  PenTool,
   SearchCheck,
   ShieldCheck,
   Store,
@@ -63,11 +69,13 @@ export default function ServiceCatalog() {
                 خدمات المنشآت
               </p>
               <h2 className="font-alexandria mt-4 text-2xl font-bold leading-relaxed sm:text-3xl lg:text-4xl">
-                كل ما يحتاجه ملف منشأتك في مكان واحد
+                كل ما يحتاجه ملف منشأتك علي Google Map في مكان واحد
               </h2>
               <p className="mt-3 max-w-xl leading-8 text-(--color-secondary-text)">
                 من التأسيس والتحقق، إلى الإدارة والتصوير؛ اختر خدمة واحدة أو
                 أضف أكثر من خدمة إلى طلبك
+                         من خدمات تأسيس حساب وإكمال الملف التجاري والتصوير وتصميم الشعار والموقع
+             الإلكتروني 
               </p>
             </div>
             <div className="flex w-fit items-center gap-3 rounded-lg border border-(--color-accent)/25 bg-(--color-accent)/5 px-4 py-2">
