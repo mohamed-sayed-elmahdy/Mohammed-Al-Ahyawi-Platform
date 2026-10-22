@@ -1,1 +1,154 @@
-[]
+[
+  {
+    "id": 1,
+    "category": "malls",
+    "googleMapsUrl": "https://maps.app.goo.gl/ubUCj58KtMTTNu3s7?g_st=iw"
+  },
+  {
+    "id": 2,
+    "category": "malls",
+    "googleMapsUrl": "https://maps.app.goo.gl/zK1WppF2jX1aA8hg8?g_st=iw"
+  },
+    {
+    "id": 3,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/NYUqDnBxpAzSaRAs7?g_st=iw"
+  }
+  ,
+  {
+    "id": 4,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/tE5pkHtdrxcuAkPv9?g_st=iw"
+  }
+  , 
+  {
+    "id": 5,
+    "category": "cafes",
+    "googleMapsUrl": "https://maps.app.goo.gl/8jRUFNLYY31qHjot7?g_st=iw"
+  }, 
+   {
+    "id": 6,
+    "category": "cafes",
+    "googleMapsUrl": "https://maps.app.goo.gl/rCTo3xZEc9dHthoy6?g_st=iw"
+  },
+     {
+    "id": 7,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/WowUTPM65m8YVjpY7?g_st=iw"
+  }, 
+     {
+    "id": 8,
+    "category": "malls",
+    "googleMapsUrl": "https://maps.app.goo.gl/iNnZq4ncCxQVrcon6?g_st=iw"
+  }, 
+     {
+    "id": 9,
+    "category": "hotels",
+    "googleMapsUrl": "https://maps.app.goo.gl/Uw81eKX6jb5L1oVLA?g_st=iw"
+  },
+     {
+    "id": 10,
+    "category": "hotels",
+    "googleMapsUrl": "https://maps.app.goo.gl/4cZ5AxYsdK8WuPsQA?g_st=iw"
+  },
+     {
+    "id": 11,
+    "category": "hotels",
+    "googleMapsUrl": "https://maps.app.goo.gl/CQtZi68EuzF4Qtxt5?g_st=iw"
+  }
+    , {
+    "id": 12,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/dhHk8nCHqMTiBuqj7?g_st=iw"
+  },
+  {
+    "id": 13,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/m4R6A4DLQzTuThw96?g_st=iw"
+  },
+    {
+    "id": 14,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/qyp5DrByEWCyRVqd9?g_st=iw"
+  },
+    {
+    "id": 15,
+    "category": "beaches",
+    "googleMapsUrl": "https://maps.app.goo.gl/Asoe6b1N4GyRY2nu5?g_st=iw"
+  }
+   , {
+    "id": 16,
+    "category": "beaches",
+    "googleMapsUrl": "https://maps.app.goo.gl/fZpBHC5QX2mpJ3HG7?g_st=iw"
+  }
+     , {
+    "id": 17,
+    "category": "health-care",
+    "googleMapsUrl": "https://maps.app.goo.gl/pLjnedtKxp4M62hp8?g_st=iw"
+  }, {
+    "id": 18,
+    "category": "health-care",
+    "googleMapsUrl": "https://maps.app.goo.gl/P5ZgVpXe4pfwQUp39?g_st=iw"
+  }
+     , {
+    "id": 19,
+    "category": "cafes",
+    "googleMapsUrl": "https://maps.app.goo.gl/4z6MM5ofuGZUiESo9?g_st=iw"
+  }
+     , {
+    "id": 20,
+    "category": "cafes",
+    "googleMapsUrl": "https://maps.app.goo.gl/BDWivceicQHbAgY9A?g_st=iw"
+  }
+       , {
+    "id": 21,
+    "category": "cafes",
+    "googleMapsUrl": "https://maps.app.goo.gl/de22SL971kxgucUm9?g_st=iw"
+ }
+    , {
+    "id": 22,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/b3kz4V4BqyaqHXXi9?g_st=iw"
+  }
+
+     , {
+    "id": 23,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/bKHbStwvqfHXZEST7?g_st=iw"
+  }
+   , {
+    "id": 24,
+    "category": "hotels",
+    "googleMapsUrl": "https://maps.app.goo.gl/MhHJf5ZK6XkG8dmR7?g_st=iw"
+  }
+     , {
+    "id": 25,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/8vsaYLYZ1JTRrEcT9?g_st=iw"
+  }
+      , {
+    "id": 26,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/5kLs2dARwiGrfUMa8?g_st=iw"
+  }
+      , {
+    "id": 27,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/3hcHTuZchCrriyNh8?g_st=iw"
+  }
+  , {
+    "id": 28,
+    "category": "restaurants",
+    "googleMapsUrl": "https://maps.app.goo.gl/QQThyHRh3crJnxYM6?g_st=iw"
+  }
+      , {
+    "id": 29,
+    "category": "hotels",
+    "googleMapsUrl": "https://maps.app.goo.gl/C3bRMG7M9yC4EYJC7?g_st=iw"
+  }
+      , {
+    "id": 30,
+    "category": "cafes",
+    "googleMapsUrl": "https://maps.app.goo.gl/WAbyfnAHa2k6RDyc9?g_st=iw"
+  }
+]

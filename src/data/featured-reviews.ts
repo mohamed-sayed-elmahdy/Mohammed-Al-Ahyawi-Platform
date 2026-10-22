@@ -71,7 +71,7 @@ export const reviews: FeaturedReview[] = [
     title: "هدوء الجبال وسحر الطبيعة",
     excerpt: "تجربة طبيعية تأخذك إلى عالم من السكينة والمناظر الخلابة",
     rating: 4.8,
-    location: "زيرمات · سويسرا",
+    location: "القاهرة · مصر",
     date: "12 ديسمبر 2024",
     image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85",
     badge: "تجربة مميزة",

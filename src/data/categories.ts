@@ -16,6 +16,19 @@ import {
     Waves,
 } from "lucide-react";
 
+// Categories: 
+// restaurants, 
+// cafes, 
+// sweets-bakeries, 
+// fast-food, 
+// beaches, 
+// hotels, 
+// health-care, 
+// traditional-restaurants, 
+// tourist-attractions, 
+// parks, 
+// malls, 
+// international-destinations.
 
 
 export const categories: Category[] = [
@@ -41,9 +54,9 @@ export const categories: Category[] = [
         icon: Coffee,
         featured: true,
         featuredCard: true,
-        featuredCardImage:""
+        featuredCardImage: ""
     },
-        {
+    {
         id: 'sweets-bakeries',
         title: 'حلويات ومخابز',
         description: "حلويات طازجة ومخبوزات متنوعة لعشاق المذاق الحلو.",
@@ -65,7 +78,7 @@ export const categories: Category[] = [
         icon: Sandwich,
         featured: false,
         featuredCard: false,
-        featuredCardImage:""
+        featuredCardImage: ""
     },
     {
         id: 'beaches',
@@ -141,18 +154,6 @@ export const categories: Category[] = [
         featuredCardImage: ""
     },
     {
-        id: 'international-destinations',
-        title: 'وجهات عالمية',
-        description: "وجهات حول العالم تقدم تجارب جديدة وفرصًا للاستكشاف.",
-        count: 83,
-        href: '/reviews?category=international-destinations',
-        img: '/hero-slider-images/international-destinations.jpg',
-        icon: Globe2,
-        featured: true,
-        featuredCard: true,
-        featuredCardImage: "/featuredCards/internationalFeaturedCard.png"
-    },
-    {
         id: 'malls',
         title: 'مولات ومراكز تسوق',
         description: "مراكز تجمع التسوق والمطاعم وخيارات الترفيه في مكان واحد.",
@@ -164,4 +165,17 @@ export const categories: Category[] = [
         featuredCard: false,
         featuredCardImage: ""
     },
+    {
+        id: 'international-destinations',
+        title: 'وجهات عالمية',
+        description: "وجهات حول العالم تقدم تجارب جديدة وفرصًا للاستكشاف.",
+        count: 83,
+        href: '/reviews?category=international-destinations',
+        img: '/hero-slider-images/international-destinations.jpg',
+        icon: Globe2,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: "/featuredCards/internationalFeaturedCard.png"
+    },
 ];
+
