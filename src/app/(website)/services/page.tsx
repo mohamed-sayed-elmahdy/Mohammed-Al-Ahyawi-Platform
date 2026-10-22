@@ -201,13 +201,6 @@ export default function ServicesPage() {
               راسلنا بالبريد
               <ArrowLeft aria-hidden="true" className="size-5" />
             </a>
-            <a
-              href={`tel:${contactPhone}`}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-white/20 px-5 py-3 font-semibold transition hover:border-(--color-accent) hover:text-(--color-accent)"
-            >
-              <MapPin aria-hidden="true" className="size-4" />
-              اتصل بنا
-            </a>
           </div>
         </div>
       </section>
