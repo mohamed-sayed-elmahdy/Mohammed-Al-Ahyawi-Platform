@@ -24,7 +24,7 @@ export const metadata: Metadata = createPageMetadata({
 const contactEmail = "Alaqari2006@hotmail.com";
 const contactPhone = "+966551946666";
 
-const processSteps = [
+/* const processSteps = [
   {
     number: "١",
     title: "اختر الخدمة",
@@ -40,7 +40,7 @@ const processSteps = [
     title: "اتفق على التفاصيل",
     description: "نراجع احتياجك ونوضح نطاق العمل والتكلفة قبل البدء",
   },
-];
+]; */
 
 const faqs = [
   {
@@ -113,7 +113,7 @@ export default function ServicesPage() {
 
       <ServiceCatalog />
 
-      <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+      {/* <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.5fr] lg:gap-16">
           <div>
             <p className="text-sm font-semibold text-(--color-accent)">آلية العمل</p>
@@ -141,7 +141,7 @@ export default function ServicesPage() {
             ))}
           </ol>
         </div>
-      </section>
+      </section> */}
 
       <section className="border-y border-(--color-accent)/15 bg-[#0b1726]">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.75fr_1.5fr] lg:px-12 lg:py-20">
