@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import BrandLogo from "@/components/website/BrandLogo";
 
 export default function Logo() {
   return (
@@ -8,9 +8,7 @@ export default function Logo() {
       className="flex items-center gap-2 select-none"
       aria-label="الانتقال إلى الصفحة الرئيسية"
     >
-      <Image
-        src="/logo2.png"
-        alt="شعار محمد الإحيـوي"
+      <BrandLogo
         width={45}
         height={45}
         priority

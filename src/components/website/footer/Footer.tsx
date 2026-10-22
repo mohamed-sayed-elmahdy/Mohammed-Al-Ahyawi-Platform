@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import BrandLogo from "@/components/website/BrandLogo";
 import FooterAccreditations from "@/components/website/footer/FooterAccreditations";
 import FooterLinksCard from "@/components/website/footer/FooterLinksCard";
 import PrimaryButton from "@/components/website/navbar/PrimaryButton";
@@ -122,9 +122,7 @@ export default function Footer() {
               aria-label="الصفحة الرئيسية"
               className="inline-flex flex-col items-center"
             >
-              <Image
-                src="/logo2.png"
-                alt="شعار محمد الإحيوي"
+              <BrandLogo
                 width={110}
                 height={110}
                 className="h-[94px] w-auto object-contain"
