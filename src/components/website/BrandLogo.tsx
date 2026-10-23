@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const brandLogoSrc = "/logo2.png";
+const brandLogoSrc = "/newlogo.png";
 const brandLogoAlt = "شعار محمد الإحيوي";
 
 type BrandLogoProps = {
