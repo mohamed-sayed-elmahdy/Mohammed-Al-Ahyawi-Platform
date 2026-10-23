@@ -35,8 +35,8 @@ export default function CategoryCard({ category, featured = false }: CategoryCar
             <Icon className="h-5 w-5" strokeWidth={1.7} />
             <h3 className={featured ? "text-2xl font-semibold text-white" : "text-lg font-semibold text-white"}>{category.title}</h3>
           </div>
-          <p className={`mt-3 leading-7 text-slate-200/85 ${featured ? "text-sm" : "text-xs"}`}>{category.description}</p>
-          <p className="mt-4 text-sm text-white">تجربة موثقة <span className="text-[#f3bd4c]">{category.count}</span></p>
+          <p className={`mt-3 leading-7 text-slate-200/85 text-sm`}>{category.description}</p>
+          {/* <p className="mt-4 text-sm text-white">تجربة موثقة <span className="text-[#f3bd4c]">{category.count}</span></p> */}
           <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#edaf3b]">
             استكشف التجارب <ArrowLeft className="h-4 w-4" />
           </span>

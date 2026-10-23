@@ -22,8 +22,8 @@ export default function FeaturedCategories() {
                             <Icon className="h-8 w-8" strokeWidth={1.45} />
                         </span>
                         <p className="mt-3 text-sm font-semibold sm:text-base">{category.title}</p>
-                        <p className="mt-1 text-sm text-(--color-accent)">{category.count}</p>
-                        <p className="text-xs text-slate-400">تجربة</p>
+                        {/* <p className="mt-1 text-sm text-(--color-accent)">{category.count}</p> */}
+                        {/* <p className="text-xs text-slate-400">تجربة</p> */}
                         {active ? <span className="mx-auto mt-3 block h-px w-[80%] bg-(--color-accent)" /> : null}
                     </Link>
                 );
