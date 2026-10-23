@@ -97,10 +97,12 @@ export default function ReviewDetailPage({
         <article>
           <div className="flex items-center gap-3">
             <span className="h-7 w-1 rounded-full bg-(--color-accent)" aria-hidden="true" />
-            <h2 className="font-alexandria text-xl font-bold sm:text-2xl">ملخص التجربة</h2>
+            <h2 className="font-alexandria text-xl font-bold sm:text-2xl">
+              {review.reviewText ? "تفاصيل التجربة" : "ملخص التجربة"}
+            </h2>
           </div>
           <p className="mt-5 max-w-3xl text-base leading-9 text-(--color-secondary-text) sm:text-lg sm:leading-10">
-            {review.excerpt}
+            {review.reviewText ?? review.excerpt}
           </p>
         </article>
 

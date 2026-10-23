@@ -28,6 +28,7 @@ export type ReviewItem = {
   id: string;
   title: string;
   excerpt: string;
+  reviewText?: string;
   rating: number;
   categoryId: string;
   categoryLabel: string;
