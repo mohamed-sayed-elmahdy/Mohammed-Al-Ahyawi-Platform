@@ -23,10 +23,12 @@ export default function ReviewsMetaRow({
   onSortChange,
 }: ReviewsMetaRowProps) {
   const countLabel = new Intl.NumberFormat("ar-SA").format(count);
+  
   const activeFilters = [
     locationLabel,
     categoryLabel === "الكل" ? null : categoryLabel,
   ].filter((label): label is string => label !== null);
+
   const resultLabel = activeFilters.length
     ? `${countLabel} تقييما في ${activeFilters.join(" · ")}`
     : `${countLabel} تقييما موثقًا`;
@@ -53,7 +55,7 @@ export default function ReviewsMetaRow({
           ))}
         </div>
       </div>
-      <p className="text-sm font-medium text-(--color-text)">{resultLabel}</p>
+      {/* <p className="text-sm font-medium text-(--color-text)">{resultLabel}</p> */}
     </div>
   );
 }

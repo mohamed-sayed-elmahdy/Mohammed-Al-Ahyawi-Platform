@@ -191,7 +191,7 @@ export default function ReviewsFilters({
             >
               الكل
             </button>
-            {categories.map((category) => (
+            {categories.filter((category) => category.id !== "international-destinations").map((category) => (
               <button
                 key={category.id}
                 type="button"
