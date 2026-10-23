@@ -1,28 +1,34 @@
 import type { ReviewItem } from "@/types/website";
 
 export const reviews: ReviewItem[] = [
-  {
-    id: "riyadh-skyline",
-    title: "حين تلتقي النكهة بإطلالة الرياض",
-    excerpt: "تجربة عشاء متوازنة تجمع بين الخدمة الهادئة والمذاق الدقيق وإطلالة العاصمة.",
-    rating: 4.9,
-    categoryId: "restaurants",
-    categoryLabel: "مطاعم",
-    city: "الرياض",
-    country: "السعودية",
-    locationLabel: "الرياض · السعودية",
-    dateLabel: "٢٤ مايو ٢٠٢٥",
-    dateISO: "2025-05-24",
-    googleMapsUrl: "https://maps.app.goo.gl/aJotR3B8XQ467UQk9",
-    images: [
-      "/hero-slider-images/restaurants.jpg",
-      "/hero-slider-images/seafood.jpg",
-      "/hero-slider-images/traditional-restaurants.jpg",
-    ],
-    href: "/reviews/riyadh-skyline",
-    badge: "تجربة مميزة",
-    featured: true,
-  },
+{
+  id: "village-mall",
+  title: "Village Mall",
+  excerpt:
+    "مركز تسوق عصري شمال جدة يجمع الماركات والكافيهات ومساحات العائلة في أجواء هادئة ومرتبة.",
+  reviewText:
+    "مركز تسوق بتصميم عصري شمال جدة على طريق الحرمين يتكون من ثلاث طوابق يضم ماركات عالمية وكافيهات. توجد ساحات خارجية مفتوحة وألعاب حركية للأطفال، وجلسات استراحة في ممراته ونوافير، ومواقف، ومصاعد وسلالم ولوحات إرشادية، وسوبرماركت ومكتبة ومطاعم ومنطقة مخصصة للطعام وصيدلية ومنطقة ألعاب ومصليات وشاشات ودورات مياه حديثة نظيفة. لاحظنا الهدوء ونسبة العزل في ممراته رغم توافد الزوار. إجمالًا مركز تسوق جميل للعائلة والطفل.",
+  rating: 5,
+  categoryId: "malls",
+  categoryLabel: "مولات ومراكز تسوق",
+  city: "جدة",
+  country: "السعودية",
+  locationLabel: "جدة · السعودية",
+  dateLabel: "١٥ يوليو ٢٠٢٦",
+  dateISO: "2026-07-15",
+  googleMapsUrl: "https://maps.app.goo.gl/ubUCj58KtMTTNu3s7?g_st=iw",
+  images: [
+    "/reviews/village-mall/cover.jpg",
+    "/reviews/village-mall/1.jpg",
+    "/reviews/village-mall/2.jpg",
+    "/reviews/village-mall/3.jpg",
+    "/reviews/village-mall/4.jpg",
+    "/reviews/village-mall/5.jpg",
+  ],
+  href: "/reviews/village-mall",
+  badge: "تجربة مميزة",
+  featured: true,
+},
   {
     id: "riyadh-global-flavors",
     title: "نكهات عالمية بإبداع محلي",
