@@ -147,7 +147,7 @@ export const categories: Category[] = [
         description: "مساحات خضراء ومتنزهات مناسبة لقضاء وقت ممتع في الهواء الطلق.",
         count: 69,
         href: '/reviews?category=parks',
-        img: '/hero-slider-images/parks.jfif',
+        img: '/hero-slider-images/parks4.jpg',
         icon: Trees,
         featured: false,
         featuredCard: false,
