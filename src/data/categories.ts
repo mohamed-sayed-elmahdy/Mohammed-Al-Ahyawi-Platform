@@ -94,11 +94,11 @@ export const categories: Category[] = [
         description: "مراكز وخدمات تهتم بالصحة والعناية الشخصية",
         count: 0,
         href: '/reviews?category=health-care',
-        img: '/hero-slider-images/parks.jpg',
+        img: '/hero-slider-images/health-care2.jpg',
         icon: HeartPulse,
         featured: true,
         featuredCard: true,
-        featuredCardImage: ""
+        featuredCardImage: "/hero-slider-images/health-care.jpg"
     },
     {
         id: 'tourist-attractions',
