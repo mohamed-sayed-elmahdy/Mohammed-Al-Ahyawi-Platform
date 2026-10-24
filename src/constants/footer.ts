@@ -61,11 +61,11 @@ export const navigation = [
   //   href: "/stories",
   //   icon: HiBookOpen,
   // },
-  {
-    label: "المقالات",
-    href: "/articles",
-    icon: HiDocumentText,
-  },
+  // {
+  //   label: "المقالات",
+  //   href: "/articles",
+  //   icon: HiDocumentText,
+  // },
   {
     label: "طلب زيارة",
     href: "/request-visit",

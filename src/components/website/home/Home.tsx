@@ -16,7 +16,7 @@ export default function Home() {
       <FeaturedReviews />
       <TestimonialsSection />
       {/* <FeaturedStories /> */}
-      <LatestArticles />
+      {/* <LatestArticles /> */}
       {/* <JourneyMap /> */}
       {/* <CountriesDestinations /> */}
       <HomeCTA />
