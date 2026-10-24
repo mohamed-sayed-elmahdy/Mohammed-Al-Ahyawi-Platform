@@ -1,5 +1,10 @@
 import { ArrowLeft, CalendarDays, MapPin, Star } from "lucide-react";
-import type { FeaturedReview } from "@/data/featured-reviews";
+import type { ReviewItem } from "@/types/website";
+
+type FeaturedReview = Pick<
+  ReviewItem,
+  "badge" | "dateLabel" | "excerpt" | "href" | "images" | "locationLabel" | "rating" | "title"
+>;
 
 type ReviewCardProps = {
   review: FeaturedReview;
@@ -15,7 +20,7 @@ export default function ReviewCard({ review, featured = false }: ReviewCardProps
       }`}
       dir="rtl"
     >
-      <img src={review.image} alt={review.title} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+      <img src={review.images[0]} alt={review.title} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#020912] via-[#020912]/75 via-45% to-transparent" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,9,18,.64),transparent_70%)]" />
 
@@ -26,12 +31,12 @@ export default function ReviewCard({ review, featured = false }: ReviewCardProps
         <div className="mt-6 flex items-center gap-3 text-sm text-[#e9b04a]">
           <span className="inline-flex items-center gap-1 font-semibold"><Star className="h-4 w-4" fill="currentColor" /> {review.rating}</span>
           <span className="h-4 w-px bg-[#d59a3b]/70" />
-          <span className="inline-flex items-center gap-1 text-slate-200"><MapPin className="h-4 w-4" /> {review.location}</span>
+          <span className="inline-flex items-center gap-1 text-slate-200"><MapPin className="h-4 w-4" /> {review.locationLabel}</span>
         </div>
         <h3 className={`mt-4 font-alexandria font-semibold leading-relaxed text-white ${featured ? "text-2xl sm:text-3xl" : "text-xl"}`}>{review.title}</h3>
         <p className={`mt-2 leading-7 text-slate-300 ${featured ? "max-w-lg text-base" : "text-sm"}`}>{review.excerpt}</p>
         <div className="mt-5 flex items-center justify-between gap-4 text-sm">
-          <span className="inline-flex items-center gap-2 text-slate-300"><CalendarDays className="h-4 w-4" /> {review.date}</span>
+          <span className="inline-flex items-center gap-2 text-slate-300"><CalendarDays className="h-4 w-4" /> {review.dateLabel}</span>
           <span className="inline-flex items-center gap-2 font-semibold text-[#efb447]">اقرأ التجربة <ArrowLeft className="h-4 w-4" /></span>
         </div>
       </div>

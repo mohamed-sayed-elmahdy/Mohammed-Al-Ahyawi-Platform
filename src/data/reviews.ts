@@ -171,6 +171,7 @@ export const reviews: ReviewItem[] = [
       "/reviews/tikka-masala/16.jpg",
     ],
     href: "/reviews/tikka-masala",
+    badge: "تجربة مميزة",
   },
   // 8
   {
@@ -196,7 +197,6 @@ export const reviews: ReviewItem[] = [
       "/reviews/jeddah-park/4.jpg",
     ],
     href: "/reviews/jeddah-park",
-    badge: "تجربة مميزة",
   },
   // 9
   {

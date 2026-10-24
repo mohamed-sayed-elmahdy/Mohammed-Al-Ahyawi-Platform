@@ -1,9 +1,12 @@
-import { reviews } from "@/data/featured-reviews";
+import { reviews } from "@/data/reviews";
 import ReviewCard from "./ReviewCard";
 import GoldActionLink from "@/components/shared/GoldActionLink";
 
 export default function FeaturedReviews() {
-  const [featured, cafe, hotel, ...moreReviews] = reviews;
+  const featuredReviews = reviews
+    .filter((review) => review.badge === "تجربة مميزة")
+    .slice(0, 6);
+  const [featured, cafe, hotel, ...moreReviews] = featuredReviews;
 
   return (
     <section className="bg-[#08111f] pb-16 text-white sm:pb-24 ">
