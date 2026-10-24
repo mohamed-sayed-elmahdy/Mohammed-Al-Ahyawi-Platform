@@ -352,8 +352,8 @@ export const reviews: ReviewItem[] = [
     reviewText:
       "منطقة جميلة ومرتبة وحضارية بلوحات ارشادية وبخدمات متنوعة من مطاعم وكافيهات ومناطق سباحة ودورات مياه مدفوعه واجب علينا المحافظة عليها",
     rating: 5,
-    categoryId: "beaches",
-    categoryLabel: "شواطئ ومنتجعات",
+    categoryId: "tourist-attractions",
+    categoryLabel: "معالم سياحية",
     city: "جدة",
     country: "السعودية",
     locationLabel: "جدة · السعودية",
