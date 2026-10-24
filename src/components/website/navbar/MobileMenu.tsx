@@ -76,10 +76,10 @@ export default function MobileMenu() {
         </nav>
 
         <div className="space-y-4 border-t border-white/10 px-5 py-5">
-          <div className="flex items-center justify-between">
+          {/* <div className="flex items-center justify-between">
             <ThemeToggle />
             <LanguageSwitcher />
-          </div>
+          </div> */}
 
           <PrimaryButton
             href="/request-visit"
