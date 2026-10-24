@@ -1,0 +1,1 @@
+export const reviewCountries = ["السعودية", "مصر", "تركيا", "جورجيا"];

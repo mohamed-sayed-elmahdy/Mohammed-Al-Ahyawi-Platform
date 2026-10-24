@@ -10,8 +10,8 @@ import ReviewsEmptyState from "./ReviewsEmptyState";
 import ReviewsFilters from "./ReviewsFilters";
 import ReviewsGrid from "./ReviewsGrid";
 import ReviewsMetaRow from "./ReviewsMetaRow";
+import { reviewCountries } from "@/constants/visitedCountries";
 
-const reviewCountries = [...new Set(reviews.map((review) => review.country))];
 
 type ReviewsPageContentProps = {
   initialCategory: ReviewCategoryFilter;
