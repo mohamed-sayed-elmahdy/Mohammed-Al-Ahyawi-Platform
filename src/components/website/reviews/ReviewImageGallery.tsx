@@ -66,7 +66,7 @@ export default function ReviewImageGallery({
                   fill
                   priority={index === 0}
                   sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             ))}
