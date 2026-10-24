@@ -506,6 +506,166 @@ export const reviews: ReviewItem[] = [
     ],
     href: "/reviews/panozzo",
   },
+
+  {
+  id: "medical-cupping-center",
+  title: "مركز العلاج الطبي للحجامة",
+  excerpt:
+    "اجمالا خيار موفق في اجراء الحجامة",
+  reviewText:
+    "المكان نظيف ومرتب الاستقبال لطيف حجز مسبق سريع عبر الواتس اب حجامة موفقة في قسم النساء لدى الاخصائية مرام حجامة مميزة موفقة لدى الاخصائي ماجد السيد وكذلك السيد محمد نافذ و عبدالله الشمراني تشريط احترافي نظيفة تعقيم تقديم نصائح مع ضيافة مشروبات صحية الاسعار مقابل التجربة مقبولة اجمالا خيار موفق في اجراء الحجامة",
+  rating: 5,
+  categoryId: "health-care",
+  categoryLabel: "صحة وعناية",
+  city: "جدة",
+  country: "السعودية",
+  locationLabel: "جدة · السعودية",
+  dateLabel: "١٥ اغسطس ٢٠٢٦",
+  dateISO: "2026-08-15",
+  googleMapsUrl: "https://maps.app.goo.gl/uQzhzYBaFvWNz8ek7?g_st=iw",
+  images: [
+    "/reviews/medical-cupping-center/cover.jpg",
+    "/reviews/medical-cupping-center/1.jpg",
+    "/reviews/medical-cupping-center/2.jpg",
+    "/reviews/medical-cupping-center/3.jpg",
+  ],
+  href: "/reviews/medical-cupping-center",
+  badge: "تجربة مميزة",
+},
+{
+  id: "yana-bakery",
+  title: "مخابز يانا",
+  excerpt:
+    "اجمالا تجربة اقل من المتوقع",
+  reviewText:
+    "تجربة جديدة المكان بجلسات داخلية يوفر خيارات المخبوزات والحلى والقهوة وبعض الاطباق والساندوتشات الطلب كلوب ساندوتش مناسبنا تحضيره والمحتوى الشحيح من المكونات مع ملاحظة القلي الجيد للبطاطس دجاج بيستو بخبز الحبوب جيد التحضير والتحميص والمحتوى كيش فطر غير موفق التحضير ومالح للاسف موهيتو باشن منعش وتقديم بهوية المكان حلى الكاسترد جيد التحضير منطقة التحضير مرئية الخدمة مرضية مع التوصية بتحسينها الاسعار مقبولة نوعا ما مقابل التجربة اجمالا تجربة اقل من المتوقع",
+  rating: 4,
+  categoryId: "sweets-bakeries",
+  categoryLabel: "حلويات ومخابز",
+  city: "جدة",
+  country: "السعودية",
+  locationLabel: "جدة · السعودية",
+  dateLabel: "١٥ يوليو ٢٠٢٦",
+  dateISO: "2026-07-15",
+  googleMapsUrl: "https://maps.app.goo.gl/8tEvdZxsWZp2prVz6?g_st=iw",
+  images: [
+    "/reviews/yana-bakery/cover.jpg",
+    "/reviews/yana-bakery/1.jpg",
+    "/reviews/yana-bakery/2.jpg",
+    "/reviews/yana-bakery/3.jpg",
+    "/reviews/yana-bakery/4.jpg",
+    "/reviews/yana-bakery/5.jpg",
+    "/reviews/yana-bakery/6.jpg"
+
+  ],
+  href: "/reviews/yana-bakery",
+},
+{
+  id: "sesam-bakery",
+  title: "سيسام",
+  excerpt:
+    "اجمالا تجربة مقبولة",
+  reviewText:
+    "تجربة جديدة المكان صغير بجلسات داخلية محدودة يقدم تشكيلة من المخبوزات المالحة والحلوة وخيارات من القهوة الطلب كابريسي جيد التحضير والحشوة بان سويس سبانخ جيد التحضير والطعم فيونكة كاسترد وتوت هشة وبحشوة طيبة كروسون تركي جيد التحضير وهش التقديم بهوية المكان الخدمة سريعة الطاقم لطيف الاسعار فوق المتوسط مقابل الكميات منطقة العرض مرتبة اجمالا تجربة مقبولة",
+  rating: 4,
+  categoryId: "sweets-bakeries",
+  categoryLabel: "حلويات ومخابز",
+  city: "جدة",
+  country: "السعودية",
+  locationLabel: "جدة · السعودية",
+  dateLabel: "١٥ يوليو ٢٠٢٦",
+  dateISO: "2026-07-15",
+  googleMapsUrl: "https://maps.app.goo.gl/EZLnJusTR8xcnh6r5?g_st=iw",
+  images: [
+    "/reviews/sesam-bakery/cover.jpg",
+    "/reviews/sesam-bakery/1.jpg",
+  ],
+  href: "/reviews/sesam-bakery",
+},
+{
+  id: "bakery-m",
+  title: "Bakery M",
+  excerpt:
+    "اجمالا زيارة مرضية",
+  reviewText:
+    "تجربة جديدة صباحية المكان لطيف التفاصيل بجلسات داخلية وخارجية يقدم تشكيلة واسعة من الحلى والمخبوزات المبتكرة الطلب بابكا القرفة جيد التحضير والنكهة مع التوصية باضافات اكثر كيكة الموز مع فول سوداني جيد التحضير والاضافات مع امكانية تطوير النكهة قهوة اليوم ساخن محصول اثيوبي جيد الاستخلاص متوازنة الخدمة مقبولة التحضير مرئي الاسعار متوسطة مقابل الكميات والتجربة الطاقم متعاون ونخص السيد اسامة نقترح تطوير التقديم بهوية المكان وتطوير المنيو بعروض مميزة اجمالا زيارة مرضية",
+  rating: 4,
+  categoryId: "sweets-bakeries",
+  categoryLabel: "حلويات ومخابز",
+  city: "جدة",
+  country: "السعودية",
+  locationLabel: "جدة · السعودية",
+  dateLabel: "٢٤ اكتوبر ٢٠٢٦",
+  dateISO: "2026-10-24",
+  googleMapsUrl: "https://maps.app.goo.gl/YxxLejWMbzcALAbB8?g_st=iw",
+  images: [
+    "/reviews/bakery-m/cover.jpg",
+    "/reviews/bakery-m/1.jpg",
+    "/reviews/bakery-m/2.jpg",
+    "/reviews/bakery-m/3.jpg",
+    "/reviews/bakery-m/4.jpg",
+    "/reviews/bakery-m/5.jpg",
+    "/reviews/bakery-m/6.jpg",
+    "/reviews/bakery-m/7.jpg",
+    "/reviews/bakery-m/8.jpg",
+  ],
+  href: "/reviews/bakery-m",
+},
+
+
+{
+  id: "renar-cafe",
+  title: "رينار كافيه",
+  excerpt:
+    "زيارة مستجدة المكان لطيف وواسع من دورين بلمسات متجددة",
+  reviewText:
+    "زيارة مستجدة المكان لطيف وواسع من دورين بلمسات متجددة الطلب تشيز كيك فاناش جيدة الطعم متوازنة السكر وتقديم بهوية المكان كيكة التمر والبيكان ممتازة التحضير والاضافات والنكهة ومتوازنة الحلى مع تقديم لطيف بهوية المكان كيك الكوكيز ممتازة التحضير طرية متوازنة الحلى بطبقات وحجم مقبول قهوة اليوم ساخن محصول كولومبي ممتازة متوازنة الحموضة وفاكهة قهوة اليوم بارد محصول اثيوبي جيدة الاستخلاص والتقديم كركديه مانجو جيد التحضير والطعم والبرودة مع تقديم لطيف كيكة العسل مقبولة التحضير مع التوصية بموازنة افضل للسكر كوكيز بانطباع جيد الخدمة ذاتية المنيو متنوع بخيارات الحلى المتجددة ومشروبات القهوة الباردة والساخنة منطقة التحضير مرتبة الاسعار متوسطة الطواقم بحاجة للتدريب على الاستقبال الافضل نوصي تحسين تقديم الشوكولاته الذائبة معالجة سياسة الجلسات العلوية تدريج الكاشير صيانة ثلج افضل الاهتمام بدورات المياه",
+  rating: 4,
+  categoryId: "cafes",
+  categoryLabel: "كافيهات",
+  city: "مكة",
+  country: "السعودية",
+  locationLabel: "مكة · السعودية",
+  dateLabel: "١٧ اكتوبر ٢٠٢٦",
+  dateISO: "2026-10-17",
+  googleMapsUrl: "https://maps.app.goo.gl/bR4p3K1DH7tA6LZ17?g_st=iw",
+  images: [
+    "/reviews/renar-cafe/cover.jpg",
+    "/reviews/renar-cafe/1.jpg",
+    "/reviews/renar-cafe/2.jpg",
+    "/reviews/renar-cafe/3.jpg",
+    "/reviews/renar-cafe/4.jpg",
+    "/reviews/renar-cafe/5.jpg",
+  ],
+  href: "/reviews/renar-cafe",
+},
+
+
+{
+  id: "jeddah-yacht-club",
+  title: "نادي جدة لليخوت",
+  excerpt:
+    "بشكل عام مكان جميل يستحق الزيارة",
+  reviewText:
+    "زيارة سريعة مكان ومتنفس جميل ومرتب يضم مقاهي ومطاعم وفندق على ساحل البحر الاحمر ومرسى القوارب البحرية الفاخرة والسياحية بالاضافة لمواصلات جدة ونقطة التاكسي البحري موسيقى هادئة مداخل متعددة ومواقف خارجية وخاصة برسوم ولذوي الاحتياجات الخاصة مجانا دورات مياه نظيفة تواجد مميز للحراسات الامنية وتقديم خدمة الارشاد للزوار بشكل عام مكان جميل يستحق الزيارة",
+  rating: 5,
+  categoryId: "beaches",
+  categoryLabel: "شواطئ ومنتجعات",
+  city: "جدة",
+  country: "السعودية",
+  locationLabel: "جدة · السعودية",
+  dateLabel: "١٥ يوليو ٢٠٢٦",
+  dateISO: "2026-07-15",
+  googleMapsUrl: "https://maps.app.goo.gl/TCCbkt2TdCSgHtdEA?g_st=iw",
+  images: [
+    "/reviews/jeddah-yacht-club/cover.jpg",
+    "/reviews/jeddah-yacht-club/1.jpg",
+    "/reviews/jeddah-yacht-club/2.jpg",
+    "/reviews/jeddah-yacht-club/3.jpg",
+  ],
+  href: "/reviews/jeddah-yacht-club",
+  badge: "تجربة مميزة",
+},
 ];
 
 
