@@ -2,12 +2,14 @@
   {
     "id": 1,
     "category": "malls",
-    "googleMapsUrl": "https://maps.app.goo.gl/ubUCj58KtMTTNu3s7?g_st=iw"
+    "googleMapsUrl": "https://maps.app.goo.gl/ubUCj58KtMTTNu3s7?g_st=iw",
+    "status": "done"
   },
   {
     "id": 2,
     "category": "malls",
-    "googleMapsUrl": "https://maps.app.goo.gl/zK1WppF2jX1aA8hg8?g_st=iw"
+    "googleMapsUrl": "https://maps.app.goo.gl/zK1WppF2jX1aA8hg8?g_st=iw",
+    "status": "done"
   },
     {
     "id": 3,
