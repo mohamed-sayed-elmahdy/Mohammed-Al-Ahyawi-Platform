@@ -2,14 +2,12 @@
 import { Category } from "@/types/website";
 import {
     Coffee,
-    CookingPot,
     Croissant,
     FerrisWheel,
     Globe2,
     HeartPulse,
     Hotel,
     Landmark,
-    Sandwich,
     ShoppingBag,
     Trees,
     Utensils,
@@ -20,11 +18,9 @@ import {
 // restaurants, 
 // cafes, 
 // sweets-bakeries, 
-// fast-food, 
 // beaches, 
 // hotels, 
 // health-care, 
-// traditional-restaurants, 
 // tourist-attractions, 
 // parks, 
 // malls, 
@@ -69,18 +65,6 @@ export const categories: Category[] = [
         featuredCardImage: ""
     },
     {
-        id: 'fast-food',
-        title: 'ساندويتشات',
-        description: "خيارات سريعة وشهية لتجربة طعام سهلة وممتعة.",
-        count: 63,
-        href: '/reviews?category=fast-food',
-        img: '/hero-slider-images/fast-food.jpg',
-        icon: Sandwich,
-        featured: false,
-        featuredCard: false,
-        featuredCardImage: ""
-    },
-    {
         id: 'beaches',
         title: 'شواطئ ومنتجعات',
         description: "وجهات ساحلية ومنتجعات للاسترخاء والاستمتاع بإطلالات البحر",
@@ -116,19 +100,6 @@ export const categories: Category[] = [
         featuredCard: true,
         featuredCardImage: ""
     },
-    {
-        id: 'traditional-restaurants',
-        title: 'مطاعم شعبية',
-        description: "أطباق محلية ونكهات أصيلة تعكس تنوع المطبخ الشعبي.",
-        count: 42,
-        href: '/reviews?category=traditional-restaurants',
-        img: '/hero-slider-images/traditional-restaurants.jpg',
-        icon: CookingPot,
-        featured: false,
-        featuredCard: false,
-        featuredCardImage: ""
-    },
-
     {
         id: 'tourist-attractions',
         title: 'معالم سياحية',
@@ -178,4 +149,3 @@ export const categories: Category[] = [
         featuredCardImage: "/featuredCards/internationalFeaturedCard.png"
     },
 ];
-
