@@ -1,7 +1,7 @@
 import type { ReviewItem } from "@/types/website";
 
 export const reviews: ReviewItem[] = [
-  // 1  
+  // 1
   {
     id: "village-mall",
     title: "Village Mall",
@@ -60,9 +60,9 @@ export const reviews: ReviewItem[] = [
     id: "the-california-burger",
     title: "The California Burger",
     excerpt:
-      "Overall an acceptable experience with our recommendation to improve the fries and bring the drink with the order",
+      "اجمالا تجربة مقبولة مع توصيتنا بتحسين البطاطس واحضار المشروب بالتزامن مع الطلب",
     reviewText:
-      "Recent Visit Order Double Beef Burger served in a soft bun The grilling was good the meat had good flavor and the size was acceptable with the bun The toppings were good sauce lettuce tomatoes cheese and caramelized onions with a good level of satiety The food was served hot and pleasantly Cheese Fries We were not satisfied with the quality of the fries the frying or the cheese flavor They need improvement The place has indoor seating on two levels which needs to be reconsidered and the layout improved The service was quick The staff was helpful The food preparation was visible The prices were average Overall an acceptable experience with our recommendation to improve the fries and bring the drink with the order Order type Dine in",
+      "زيارة مستجدة الطلب دبل برجر لحم يقدم بخبز طري درجة الشواء جيدة ونكهة اللحم وحجمه مقبول مع الخبز الاضافات طيبة من الصوص والخس والطماطم والجبنة والبصل المكرمل مع درجة اشباع جيدة التقديم ساخن ولطيف بطاطس بالجبنة ماناسبنا نوعية البطاطس وقليه ونكهة الجبنة وبحاجة للتحسين المكان يضم جلسات داخلية من دورين وبحاجة لاعادة نظر وتحسين توزيع الخدمة سريعة الطاقم متعاون التحضير مرئي الاسعار متوسطة اجمالا تجربة مقبولة مع توصيتنا بتحسين البطاطس واحضار المشروب بالتزامن مع الطلب",
     rating: 4,
     categoryId: "restaurants",
     categoryLabel: "مطاعم",
@@ -86,9 +86,9 @@ export const reviews: ReviewItem[] = [
     id: "coconut-bar",
     title: "كوكونت بار",
     excerpt:
-      "The place is rather small with limited seating It offers coffee and a limited selection of desserts and cookies",
+      "اجمالا زيارة لاباس بها",
     reviewText:
-      "A New Experience The place is rather small with limited seating It offers coffee and a limited selection of desserts and cookies Order Costa Rican drip coffee Acceptable extraction suitable for those who prefer a lighter option Pecan cheesecake Well-prepared with a balanced mix of sweets and toppings The presentation reflects the place's identity Service Satisfactory Staff Friendly Prices Reasonable for the experience Suggestions Improve the visibility of the preparation area Make the menu available Improve the seating area's amenities Overall a decent visit Order type Dine in Food 4 Service 5 Atmosphere 3",
+      "تجربة جديدة المكان صغير نوعا ما محدود الجلسات يقدم القهوة وخيارات معدودة من الحلى والكوكيز الطلب مقطرة كوستاريكي مقبولة الاستخلاص مناسبة لمحبي الخفيفة تشيز البيكان جيدة التحضير متوازنة الحلى والاضافات التقديم بهوية المكان الخدمة مرضية الطاقم لطيف الاسعار مقبولة مقابل التجربة نقترح تحسين مرئية منطقة التحضير اتاحة عرض المنيو تحسين تفاصيل الجلسات اجمالا زيارة لاباس بها",
     rating: 4,
     categoryId: "cafes",
     categoryLabel: "كافيهات",
@@ -107,15 +107,14 @@ export const reviews: ReviewItem[] = [
     ],
     href: "/reviews/coconut-bar",
   },
-
   // 6
   {
     id: "marpik-cafe",
     title: "Marpik Cafe",
     excerpt:
-      "Overall a satisfactory experience worth repeating to try other items",
+      "اجمالا تجربة مقبولة وتستحق التكرار لتجربة اصناف اخرى",
     reviewText:
-      "A New Experience The venue with its well-organized indoor and outdoor seating offers a wide selection of cakes coffee and pastries Order Cheese Madrid Choco Well prepared well-balanced size and sweetness Pestalova Well prepared with a kunafa filling Ethiopian Distilled Coffee Average Coffee of the Day Spicy Brazilian variety well-balanced and acceptable presented in keeping with the venue's identity Service Satisfactory Staff Helpful Prices Moderate Preparation area Visible and well-organized Overall a satisfactory experience worth repeating to try other items Meal type Other Price per person SAR 40-60",
+      "تجربة مستجدة المكان بجلسات داخلية مرتبة وخارجية يقدم تشكيلة واسعة من الكيك وخيارات من القهوة والمخبوزات الطلب تشيز مدريد شوكو جيدة التحضير والحجم متوازنة الحلى بستالوفا جيدة التحضير بحشوة الكنافة مقطرة اثيوبي بانطباع عادي قهوة اليوم حار محصول برازيلي متوازنة وبانطباع لاباس به مع تقديم بهوية المكان الخدمة مرضية الطاقم متعاون الاسعار متوسطة منطقة التحضير مرئية ومرتبة اجمالا تجربة مقبولة وتستحق التكرار لتجربة اصناف اخرى",
     rating: 4,
     categoryId: "cafes",
     categoryLabel: "كافيهات",
@@ -137,15 +136,14 @@ export const reviews: ReviewItem[] = [
     ],
     href: "/reviews/marpik-cafe",
   },
-
   // 7
   {
     id: "tikka-masala",
     title: "Tikka Masala",
     excerpt:
-      "The place offers a selection of Indian cuisine",
+      "اجمالا زيارة موفقة مع ملاحظة تواضع الصورة الخارجية للمطعم خلاف جودة واصالة الطعام",
     reviewText:
-      "A New Experience The place offers a selection of Indian cuisine Ordering Chicken Biryani Excellent preparation flavor and portion size Lamb Biryani Excellent rice cooking and flavor served with fresh lamb Chicken 65 Excellent marinade tenderness and presentation Mixed Grill Authentic Indian flavor pleasant variety and served hot Butter Chicken Good additions tender pieces Chicken Masala Good sauce preparation and pieces Potato Platter Excellent fried potatoes Butter and Garlic Paratha Excellent bread and flavor Vegetable Soup Prepared according to the waiter's instructions with cow's trotters Average impression we recommend increasing its thickness Mojito Well prepared with a lemon flavor The service was pleasant especially Mr Qadir and Mr Mohammed The staff's adherence to wearing masks was commendable",
+      "تجربة جديدة المكان يقدم خيارات من المطبخ الهندي الطلب برياني دجاج ممتاز التحضير والنكهة والكمية برياني لحم ممتاز طهي الارز والنكهة ويقدم بلحم الغنم الطازج تشكن 65 امتياز التتبيلة والطراوة والتقديم مشاوي مشكلة بنكهة هندية اصيلة وتنوع لطيف وتقديم ساخن دجاج بالزبدة جيد الاضافات طري القطع مسالا الدجاج جيد تحضير الصوص والقطع صحن بطاطس امتياز القلي براتا زبدة و ثوم ممتاز الخبز والنكهة شوربة خضار يتم تحضيرها حسب النادل بمقادم البقر بانطباع عادي مع التوصية بزيادة كثافتها موهيتو جيد التحضير بنكهة الليمون الخدمة لطيفة ونخص السيد قادر و محمد امتياز التزام الطاقم بالكمام الاسعار في النطاق العام تتوفر جلسات داخلية من طابقين ومواقف خلفية خاصة مع ضيافة عامة للطاولات من الحمص وزبادي النعناع والحار مع المقرمشات نقترح اضافة الهوية الهندية البصرية على المكان اجمالا زيارة موفقة مع ملاحظة تواضع الصورة الخارجية للمطعم خلاف جودة واصالة الطعام",
     rating: 5,
     categoryId: "restaurants",
     categoryLabel: "مطاعم",
@@ -171,11 +169,9 @@ export const reviews: ReviewItem[] = [
       "/reviews/tikka-masala/14.jpg",
       "/reviews/tikka-masala/15.jpg",
       "/reviews/tikka-masala/16.jpg",
-
     ],
     href: "/reviews/tikka-masala",
   },
-
   // 8
   {
     id: "jeddah-park",
@@ -198,13 +194,10 @@ export const reviews: ReviewItem[] = [
       "/reviews/jeddah-park/2.jpg",
       "/reviews/jeddah-park/3.jpg",
       "/reviews/jeddah-park/4.jpg",
-
-
     ],
     href: "/reviews/jeddah-park",
     badge: "تجربة مميزة",
   },
-
   // 9
   {
     id: "nojom-alrafahiya-chalets",
@@ -229,12 +222,10 @@ export const reviews: ReviewItem[] = [
       "/reviews/nojom-alrafahiya-chalets/3.jpg",
       "/reviews/nojom-alrafahiya-chalets/4.jpg",
       "/reviews/nojom-alrafahiya-chalets/5.jpg",
-
     ],
     href: "/reviews/nojom-alrafahiya-chalets",
     badge: "تجربة مميزة",
   },
-
   // 10
   {
     id: "hotel-al-mohammadiyah",
@@ -263,11 +254,9 @@ export const reviews: ReviewItem[] = [
       "/reviews/hotel-al-mohammadiyah/9.jpg",
       "/reviews/hotel-al-mohammadiyah/10.jpg",
       "/reviews/hotel-al-mohammadiyah/11.jpg",
-
     ],
     href: "/reviews/hotel-al-mohammadiyah",
   },
-
   // 11
   {
     id: "level-nine-hotel",
@@ -293,11 +282,9 @@ export const reviews: ReviewItem[] = [
       "/reviews/level-nine-hotel/4.jpg",
       "/reviews/level-nine-hotel/5.jpg",
       "/reviews/level-nine-hotel/6.jpg",
-   
     ],
     href: "/reviews/level-nine-hotel",
   },
-
   // 12
   {
     id: "meez-restaurant",
@@ -325,7 +312,6 @@ export const reviews: ReviewItem[] = [
     ],
     href: "/reviews/meez-restaurant",
   },
-
   // 13
   {
     id: "tateeba-justina",
@@ -357,7 +343,6 @@ export const reviews: ReviewItem[] = [
     ],
     href: "/reviews/tateeba-justina",
   },
-
   // 15
   {
     id: "obhur-new-waterfront",
@@ -388,7 +373,6 @@ export const reviews: ReviewItem[] = [
     href: "/reviews/obhur-new-waterfront",
     badge: "تجربة مميزة",
   },
-
   // 16
   {
     id: "almahazim-beach",
@@ -415,117 +399,115 @@ export const reviews: ReviewItem[] = [
     href: "/reviews/almahazim-beach",
     badge: "تجربة مميزة",
   },
+  // 19
+  {
+    id: "green-side",
+    title: "GREEN SIDE",
+    excerpt:
+      "اجمالا زيارة موفقة",
+    reviewText:
+      "زيارة جديدة صباحية الطلب كيك الجزر ممتاز التحضير والاضافات والكمية والطعم والتقديم قهوة اليوم محصول كولومبي جيدة الاستخلاص متوازنة الحموضة عطرية مع تقديم بهوية المكان المكان واسع ومريح ولطيف التفاصيل مع جلسات داخلية وخارجية المنيو متنوع بخيارات القهوة والحلى والمخبوزات منطقة التحضير مرتبة الخدمة ذاتية وسريعة الطاقم متعاون نوصي بتنويع خيارات الدفع اجمالا زيارة موفقة",
+    rating: 5,
+    categoryId: "cafes",
+    categoryLabel: "كافيهات",
+    city: "جدة",
+    country: "السعودية",
+    locationLabel: "جدة · السعودية",
+    dateLabel: "١٦ اكتوبر ٢٠٢٦",
+    dateISO: "2026-10-16",
+    googleMapsUrl: "https://maps.app.goo.gl/4z6MM5ofuGZUiESo9?g_st=iw",
+    images: [
+      "/reviews/green-side/cover.jpg",
+      "/reviews/green-side/1.jpg",
+      "/reviews/green-side/2.jpg",
+      "/reviews/green-side/3.jpg",
+      "/reviews/green-side/4.jpg",
+      "/reviews/green-side/5.jpg",
+    ],
+    href: "/reviews/green-side",
+    badge: "تجربة مميزة",
+  },
+  // 20
+  {
+    id: "bridge-cafe",
+    title: "بريدج",
+    excerpt:
+      "اجمالا تجربة موفقة وتستحق التكرار لتجربة اصناف اخرى",
+    reviewText:
+      "تجربة جديدة المكان يقدم خيارات من القهوة والحلويات الساخنة والباردة مع تفاصيل جلسات داخلية باجواء مرتبة ومنطقة تحضير مرئية الطلب قهوة اليوم محصول كولومبي ممتازة الاستخلاص متوازنة الحامضية فرنش توست بلجيكي بالبيكان حشوة الكيري طري خفيف ممتاز التحضير والاضافات والتقديم لطيف بهوية المكان مع توصيتنا بتطوير الكمية واضافات البيكان بشكل اوضح الطاقم متعاون الاسعار في النطاق العام اجمالا تجربة موفقة وتستحق التكرار لتجربة اصناف اخرى",
+    rating: 4,
+    categoryId: "cafes",
+    categoryLabel: "كافيهات",
+    city: "جدة",
+    country: "السعودية",
+    locationLabel: "جدة · السعودية",
+    dateLabel: "١٦ اكتوبر ٢٠٢٦",
+    dateISO: "2026-10-16",
+    googleMapsUrl: "https://maps.app.goo.gl/BDWivceicQHbAgY9A?g_st=iw",
+    images: [
+      "/reviews/bridge-cafe/cover.jpg",
+      "/reviews/bridge-cafe/1.jpg",
+      "/reviews/bridge-cafe/2.jpg",
+      "/reviews/bridge-cafe/3.jpg",
+      "/reviews/bridge-cafe/4.jpg",
+    ],
+    href: "/reviews/bridge-cafe",
+  },
+  // 21
+  {
+    id: "process-cafe",
+    title: "بروسيس مقهى ومحمصة",
+    excerpt:
+      "اجمالا زيارة مقبولة",
+    reviewText:
+      "تجربة جديدة المكان يقدم خيارات من القهوة المختصة الباردة والساخنة بالاضافة لتشكيلة من الحلى البارد والايسكريم الطلب تشيز دولتشي من البسكوت والكراميل والكريمة جيدة التحضير والحشوة والتقديم بهوية المكان مع توصيتنا بموازنة اجود للسكر لحلاها العالي قهوة اليوم حار محصول اثيوبي متوازنة الحموضة مع تقديم باكواب تحاكي المكان الخدمة ذاتية وسريعة التزام الطاقم بالكمام جيد الاسعار مقبولة منطقة التحضير مرتبة تتوفر جلسات داخلية لطيفة التفاصيل وباطلالات مفتوحة على الطريق العام كما تتوفر خارجية تتوفر مبيعات المحمصة نقترح تطوير اصناف الحلى اجمالا زيارة مقبولة",
+    rating: 4,
+    categoryId: "cafes",
+    categoryLabel: "كافيهات",
+    city: "جدة",
+    country: "السعودية",
+    locationLabel: "جدة · السعودية",
+    dateLabel: "١٦ اكتوبر ٢٠٢٦",
+    dateISO: "2026-10-16",
+    googleMapsUrl: "https://maps.app.goo.gl/de22SL971kxgucUm9?g_st=iw",
+    images: [
+      "/reviews/process-cafe/cover.jpg",
+      "/reviews/process-cafe/1.jpg",
+      "/reviews/process-cafe/2.jpg",
+      "/reviews/process-cafe/3.jpg",
+      "/reviews/process-cafe/4.jpg",
+      "/reviews/process-cafe/5.jpg",
+      "/reviews/process-cafe/6.jpg",
+    ],
+    href: "/reviews/process-cafe",
+  },
+  // 27
+  {
+    id: "panozzo",
+    title: "Panozzo بانووزو",
+    excerpt:
+      "اجمالا تجربة جيدة وتستحق التكرار لتجربة اصناف اخرى",
+    reviewText:
+      "تجربة جديدة المكان بجلسات داخلية محدودة يقدم خيارات من المطبخ الايطالي من البيتزا والباستا وبعض الساندوتشات والفرايز والسلطات الطلب دجاج بيستو العجينة ممتازة التحضير والخبز كذلك الاضافات والمحتوى ونكهتها دجاج رانش ممتازة العجينة والتحضير والاضافات والمحتوى التقديم بهوية المكان الخدمة طيبة مع التوصية بجاهزية وسرعه اعلى الاسعار متوسطة نوصي الاهتمام وتحسين مرئية منطقة التحضير تنويع خيارات الدفع اجمالا تجربة جيدة وتستحق التكرار لتجربة اصناف اخرى",
+    rating: 4,
+    categoryId: "restaurants",
+    categoryLabel: "مطاعم",
+    city: "جدة",
+    country: "السعودية",
+    locationLabel: "جدة · السعودية",
+    dateLabel: "١٥ يوليو ٢٠٢٦",
+    dateISO: "2026-07-15",
+    googleMapsUrl: "https://maps.app.goo.gl/3hcHTuZchCrriyNh8?g_st=iw",
+    images: [
+      "/reviews/panozzo/cover.jpg",
+      "/reviews/panozzo/1.jpg",
+      "/reviews/panozzo/2.jpg",
+      "/reviews/panozzo/3.jpg",
+    ],
+    href: "/reviews/panozzo",
+  },
+];
 
-// 19
-{
-  id: "green-side",
-  title: "GREEN SIDE",
-  excerpt:
-    "اجمالا زيارة موفقة",
-  reviewText:
-    "زيارة جديدة صباحية الطلب كيك الجزر ممتاز التحضير والاضافات والكمية والطعم والتقديم قهوة اليوم محصول كولومبي جيدة الاستخلاص متوازنة الحموضة عطرية مع تقديم بهوية المكان المكان واسع ومريح ولطيف التفاصيل مع جلسات داخلية وخارجية المنيو متنوع بخيارات القهوة والحلى والمخبوزات منطقة التحضير مرتبة الخدمة ذاتية وسريعة الطاقم متعاون نوصي بتنويع خيارات الدفع اجمالا زيارة موفقة",
-  rating: 5,
-  categoryId: "cafes",
-  categoryLabel: "كافيهات",
-  city: "جدة",
-  country: "السعودية",
-  locationLabel: "جدة · السعودية",
-  dateLabel: "١٦ اكتوبر ٢٠٢٦",
-  dateISO: "2026-10-16",
-  googleMapsUrl: "https://maps.app.goo.gl/4z6MM5ofuGZUiESo9?g_st=iw",
-  images: [
-    "/reviews/green-side/cover.jpg",
-    "/reviews/green-side/1.jpg",
-    "/reviews/green-side/2.jpg",
-    "/reviews/green-side/3.jpg",
-    "/reviews/green-side/4.jpg",
-    "/reviews/green-side/5.jpg",
-  ],
-  href: "/reviews/green-side",
-  badge: "تجربة مميزة",
-},
-
-// 20
-{
-  id: "bridge-cafe",
-  title: "بريدج",
-  excerpt:
-    "اجمالا تجربة موفقة وتستحق التكرار لتجربة اصناف اخرى",
-  reviewText:
-    "تجربة جديدة المكان يقدم خيارات من القهوة والحلويات الساخنة والباردة مع تفاصيل جلسات داخلية باجواء مرتبة ومنطقة تحضير مرئية الطلب قهوة اليوم محصول كولومبي ممتازة الاستخلاص متوازنة الحامضية فرنش توست بلجيكي بالبيكان حشوة الكيري طري خفيف ممتاز التحضير والاضافات والتقديم لطيف بهوية المكان مع توصيتنا بتطوير الكمية واضافات البيكان بشكل اوضح الطاقم متعاون الاسعار في النطاق العام اجمالا تجربة موفقة وتستحق التكرار لتجربة اصناف اخرى",
-  rating: 4,
-  categoryId: "cafes",
-  categoryLabel: "كافيهات",
-  city: "جدة",
-  country: "السعودية",
-  locationLabel: "جدة · السعودية",
-  dateLabel: "١٦ اكتوبر ٢٠٢٦",
-  dateISO: "2026-10-16",
-  googleMapsUrl: "https://maps.app.goo.gl/BDWivceicQHbAgY9A?g_st=iw",
-  images: [
-    "/reviews/bridge-cafe/cover.jpg",
-    "/reviews/bridge-cafe/1.jpg",
-    "/reviews/bridge-cafe/2.jpg",
-    "/reviews/bridge-cafe/3.jpg",
-    "/reviews/bridge-cafe/4.jpg",
-  ], 
-  href: "/reviews/bridge-cafe",
-},
-
-// 21
-{
-  id: "process-cafe",
-  title: "بروسيس مقهى ومحمصة",
-  excerpt:
-    "اجمالا زيارة مقبولة",
-  reviewText:
-    "تجربة جديدة المكان يقدم خيارات من القهوة المختصة الباردة والساخنة بالاضافة لتشكيلة من الحلى البارد والايسكريم الطلب تشيز دولتشي من البسكوت والكراميل والكريمة جيدة التحضير والحشوة والتقديم بهوية المكان مع توصيتنا بموازنة اجود للسكر لحلاها العالي قهوة اليوم حار محصول اثيوبي متوازنة الحموضة مع تقديم باكواب تحاكي المكان الخدمة ذاتية وسريعة التزام الطاقم بالكمام جيد الاسعار مقبولة منطقة التحضير مرتبة تتوفر جلسات داخلية لطيفة التفاصيل وباطلالات مفتوحة على الطريق العام كما تتوفر خارجية تتوفر مبيعات المحمصة نقترح تطوير اصناف الحلى اجمالا زيارة مقبولة",
-  rating: 4,
-  categoryId: "cafes",
-  categoryLabel: "كافيهات",
-  city: "جدة",
-  country: "السعودية",
-  locationLabel: "جدة · السعودية",
-  dateLabel: "١٦ اكتوبر ٢٠٢٦",
-  dateISO: "2026-10-16",
-  googleMapsUrl: "https://maps.app.goo.gl/de22SL971kxgucUm9?g_st=iw",
-  images: [
-    "/reviews/process-cafe/cover.jpg",
-    "/reviews/process-cafe/1.jpg",
-    "/reviews/process-cafe/2.jpg",
-    "/reviews/process-cafe/3.jpg",
-    "/reviews/process-cafe/4.jpg",
-    "/reviews/process-cafe/5.jpg",
-    "/reviews/process-cafe/6.jpg",
-  ],
-  href: "/reviews/process-cafe",
-},
-
-// 27
-{
-  id: "panozzo",
-  title: "Panozzo بانووزو",
-  excerpt:
-    "اجمالا تجربة جيدة وتستحق التكرار لتجربة اصناف اخرى",
-  reviewText:
-    "تجربة جديدة المكان بجلسات داخلية محدودة يقدم خيارات من المطبخ الايطالي من البيتزا والباستا وبعض الساندوتشات والفرايز والسلطات الطلب دجاج بيستو العجينة ممتازة التحضير والخبز كذلك الاضافات والمحتوى ونكهتها دجاج رانش ممتازة العجينة والتحضير والاضافات والمحتوى التقديم بهوية المكان الخدمة طيبة مع التوصية بجاهزية وسرعه اعلى الاسعار متوسطة نوصي الاهتمام وتحسين مرئية منطقة التحضير تنويع خيارات الدفع اجمالا تجربة جيدة وتستحق التكرار لتجربة اصناف اخرى",
-  rating: 4,
-  categoryId: "restaurants",
-  categoryLabel: "مطاعم",
-  city: "جدة",
-  country: "السعودية",
-  locationLabel: "جدة · السعودية",
-  dateLabel: "١٥ يوليو ٢٠٢٦",
-  dateISO: "2026-07-15",
-  googleMapsUrl: "https://maps.app.goo.gl/3hcHTuZchCrriyNh8?g_st=iw",
-  images: [
-    "/reviews/panozzo/cover.jpg",
-    "/reviews/panozzo/1.jpg",
-    "/reviews/panozzo/2.jpg",
-    "/reviews/panozzo/3.jpg",
-  ],
-  href: "/reviews/panozzo",
-},
 
 
   // {
@@ -730,4 +712,3 @@ export const reviews: ReviewItem[] = [
   //   ],
   //   href: "/reviews/cairo-evening",
   // },
-];
