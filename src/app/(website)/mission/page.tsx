@@ -1,20 +1,21 @@
 
 import type { Metadata } from "next";
+import { MissionStatement } from "@/components/website/mission/MissionStatement";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
   title: "رسالة المنصة",
-  description: "رسالة منصة محمد الإحيوي.",
+  description:
+    "تعرف على رسالة منصة محمد الإحيوي في نقل التجارب وخدمة الزوار وتحسين الخدمات.",
   path: "/mission",
-  noIndex: true,
 });
 
-function MissionPage() {
+export default function MissionPage() {
   return (
-    <main>
-      <h1>رسالة المنصة</h1>
-    </main>
+    <div className="min-h-[65vh] bg-(--color-background) text-(--color-text)">
+      <div className="mx-auto flex min-h-[65vh] max-w-[1780px] items-center px-4 py-12 sm:px-8 sm:py-16 lg:px-10">
+        <MissionStatement />
+      </div>
+    </div>
   );
 }
-
-export default MissionPage;
