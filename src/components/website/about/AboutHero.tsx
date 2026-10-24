@@ -31,20 +31,20 @@ export function AboutHero() {
           />
         </div>
 
-        <div  className=" rounded-br-full border-r-4 border-(--color-accent)/85 rounded-tr-full bg-(--color-background) z-20 flex min-h-92.5 flex-col items-center justify-center px-6 pb-8 pt-24 text-center sm:px-10 md:py-12 lg:px-14">
-          <p className=" text-2xl font-bold text-(--color-accent) sm:text-5xl">
+        <div  className=" rounded-br-full border-r-4 border-(--color-accent)/85 rounded-tr-full bg-(--color-background) z-20 flex min-h-92.5 flex-col items-center justify-center px-5 pb-8 pt-12 md:pt-16 text-center sm:px-10 md:py-12 lg:px-14">
+          <p className="text-lg font-bold text-(--color-accent) sm:text-3xl lg:text-5xl">
             من هو
           </p>
-          <h1 className=" mt-4 text-2xl font-bold leading-[1.35] tracking-tight text-(--color-text) sm:text-5xl md:whitespace-nowrap lg:text-[clamp(2.7rem,4.35vw,4.7rem)]">
+          <h1 className="mt-3 text-xl font-bold leading-[1.4] tracking-tight text-(--color-text) sm:mt-4 sm:text-3xl md:whitespace-nowrap lg:text-[clamp(2.7rem,4.35vw,4.7rem)]">
             الإعلامي محمد الإحيوي
           </h1>
-          <p className="mt-4 text-lg leading-8 text-(--color-secondary-text) sm:text-2xl sm:leading-10">
+          <p className="mt-3 text-sm leading-7 text-(--color-secondary-text) sm:mt-4 sm:text-lg sm:leading-8 lg:text-2xl lg:leading-10">
             إعلامي يوثق التجارب وينقل الواقع ويسعى للتحسين
           </p>
-          <div className="mt-7 flex w-fit divide-x divide-x-reverse divide-(--color-accent)/50 overflow-hidden rounded-[18px] border border-(--color-accent)/75 ">
+          <div className="mt-6 flex w-fit divide-x divide-x-reverse divide-(--color-accent)/50 overflow-hidden rounded-[18px] border border-(--color-accent)/75 sm:mt-7">
             {methods.map(({ label, icon: Icon }) => (
-              <div key={label} className="flex items-center gap-2 px-4 py-3 text-base font-semibold text-(--color-text) sm:px-6 sm:text-xl">
-                <Icon className="size-5 text-(--color-accent) sm:size-6" />
+              <div key={label} className="flex items-center gap-1.5 px-2 py-2 text-sm font-semibold text-(--color-text) sm:gap-2 sm:px-4 sm:py-3 sm:text-sm md:px-6 md:text-base lg:text-xl">
+                <Icon className="size-4 text-(--color-accent) sm:size-5 lg:size-6" />
                 {label}
               </div>
             ))}

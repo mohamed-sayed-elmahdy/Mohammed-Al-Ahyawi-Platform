@@ -45,7 +45,7 @@ export function AboutTimeline() {
           overflow-hidden rounded-[30px]
           border border-(--color-accent)
           
-          px-7 py-11
+          px-6 py-11
           sm:px-12
         "
       >
@@ -56,7 +56,7 @@ export function AboutTimeline() {
             <span
               className="
             h-px
-            w-20
+            w-10 sm:w-20 
             bg-linear-to-r
             from-(--color-accent)
             via-(--color-accent)
@@ -68,13 +68,7 @@ export function AboutTimeline() {
           </div>
 
           {/* Text */}
-          <h2
-            className="
-             font-alexandria text-center text-3xl font-bold
-              text-(--color-accent)
-              sm:text-4xl
-        "
-          >
+          <h2 className="font-alexandria text-center text-lg font-bold text-(--color-accent) sm:text-2xl lg:text-3xl">
             رحلتي في الإعلام والتجارب
           </h2>
 
@@ -85,7 +79,7 @@ export function AboutTimeline() {
             <span
               className="
             h-px
-            w-20
+            w-10 sm:w-20 
             bg-linear-to-l
             from-(--color-accent)
             via-(--color-accent)
@@ -108,7 +102,7 @@ export function AboutTimeline() {
 
           {events.map(({ year, title, text, icon: Icon }) => (
             <article key={year} className="relative z-10 text-center">
-              <p className="text-xl font-bold" dir="ltr">
+              <p className="text-lg font-bold sm:text-xl" dir="ltr">
                 {year}
               </p>
 
@@ -124,13 +118,13 @@ export function AboutTimeline() {
                 <Icon className="size-10 text-(--color-text)" />
               </div>
 
-              <h3 className="text-lg font-bold ">
+              <h3 className="text-base font-bold sm:text-lg">
                 {title}
               </h3>
 
               <p
                 className="
-                  mt-3 text-[15px] leading-7
+                  mt-3 text-sm leading-6 sm:text-[15px] sm:leading-7 lg:text-base
                   text-(--color-secondary-text)
                 "
               >

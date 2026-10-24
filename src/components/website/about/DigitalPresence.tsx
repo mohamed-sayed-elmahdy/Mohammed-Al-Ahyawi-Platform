@@ -10,44 +10,39 @@ const socialChannels = [
     {
         id: "google-maps",
         name: "Google Maps",
-        label: "تجارب موثقة",
         icon: "/social-icons/google-maps.svg",
     },
     {
         id: "tiktok",
         name: "TikTok",
-        label: "تقييم",
         icon: "/social-icons/tiktok.svg",
     },
     {
         id: "instagram",
         name: "Instagram",
-        label: "محتوى إعلامي",
         icon: "/social-icons/instagram.svg",
     },
     {
         id: "snapchat",
         name: "Snapchat",
-        label: "تأثير",
         icon: "/social-icons/snapchat.svg",
     },
     {
         id: "x",
         name: "X",
-        label: "تواصل",
         icon: "/social-icons/x.svg",
     },
 ] as const;
 
 export function DigitalPresence() {
     return (
-        <section className="rounded-[30px] border border-(--color-accent)/45 bg-(--color-surface)/55 p-8 sm:p-10">
-            <h2 className="font-alexandria text-center text-3xl font-bold text-(--color-accent)">
+        <section className="rounded-[30px] border border-(--color-accent)/45 bg-(--color-surface)/55 p-5 sm:p-8 lg:p-10">
+            <h2 className="font-alexandria text-center text-xl font-bold text-(--color-accent) sm:text-2xl lg:text-3xl">
                 حضور إعلامي متكامل
             </h2>
 
-            <div className="mt-9 grid grid-cols-5 gap-5">
-                {socialChannels.map(({ id, name, label, icon }) => (
+            <div className="mt-7 grid grid-cols-3 gap-x-3 gap-y-5 sm:mt-9 sm:grid-cols-5 sm:gap-5">
+                {socialChannels.map(({ id, name, icon }) => (
 
                     <Link target="_blank"
                         rel="noopener noreferrer"
@@ -59,12 +54,12 @@ export function DigitalPresence() {
                             height={40}
                             src={icon}
                             alt=""
-                            className="mx-auto size-10 text-(--color-accent)"
+                            className="mx-auto size-8 text-(--color-accent) sm:size-10"
                         />
 
                         <h3
                             dir="ltr"
-                            className="mt-4 text-sm font-bold sm:text-base"
+                            className="mt-3 text-[13px] font-bold sm:mt-4 sm:text-sm lg:text-base"
                         >
                             {name}
                         </h3>
