@@ -636,7 +636,7 @@ export const reviews: ReviewItem[] = [
     href: "/reviews/jeddah-yacht-club",
     badge: "تجربة مميزة",
   },
-  // new
+ 
   {
     id: "aseeraty-eshq",
     title: "عصيراتي عشق",
@@ -784,6 +784,32 @@ export const reviews: ReviewItem[] = [
     href: "/reviews/u-walk-jeddah",
     badge: "تجربة مميزة",
   },
+  {
+  id: "four-seasons-juices",
+  title: "عصائر الفصول الأربعة",
+  excerpt:
+    "بشكل عام خيار جيد",
+  reviewText:
+    "زيارة مستجدة تتوفر لديهم كوكتيلات وموهيتو وايس كريم واصناف محدودة من الحلى توازن الاضافات جيد اعجبنا الرمان والرمان مع الاناناس باور جوس الفصول الاربعه التغليف ممتاز الخدمة مرضية الاسعار مقبولة مقابل التجربة بشكل عام خيار جيد",
+  rating: 4,
+  categoryId: "juices-drinks",
+  categoryLabel: "عصائر ومشروبات",
+  city: "جدة",
+  country: "السعودية",
+  locationLabel: "جدة · السعودية",
+  dateLabel: "١٥ يوليو ٢٠٢٦",
+  dateISO: "2026-07-15",
+  googleMapsUrl: "https://www.google.com/maps/reviews/@21.5932682,39.2392541,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURibjZMRmFBEAE!2m1!1s0x0:0xafd0583ba9329a57?hl=ar&entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+  images: [
+    "/reviews/four-seasons-juices/cover.jpg",  
+    "/reviews/four-seasons-juices/1.jpg",  
+    "/reviews/four-seasons-juices/2.jpg",  
+    "/reviews/four-seasons-juices/3.jpg",  
+    "/reviews/four-seasons-juices/4.jpg",  
+    "/reviews/four-seasons-juices/5.jpg",  
+  ],
+  href: "/reviews/four-seasons-juices",
+},
 ];
 
 
