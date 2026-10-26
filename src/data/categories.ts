@@ -76,8 +76,8 @@ export const categories: Category[] = [
         href: '/reviews?category=juices-drinks',
         img: '/hero-slider-images/juices-drinks.jpg',
         icon: CupSoda,
-        featured: true,
-        featuredCard: true,
+        featured: false,
+        featuredCard: false,
         featuredCardImage: ""
     },
     
