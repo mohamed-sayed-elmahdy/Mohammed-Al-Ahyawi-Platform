@@ -54,18 +54,7 @@ export const categories: Category[] = [
         featuredCard: true,
         featuredCardImage: ""
     },
-    {
-        id: 'juices-drinks',
-        title: 'عصائر ومشروبات',
-        description: "تجارب متنوعة من العصائر الطازجة والمشروبات الباردة والساخنة.",
-        count: 0,
-        href: '/reviews?category=juices-drinks',
-        img: '/hero-slider-images/juices-drinks.jpg',
-        icon: CupSoda,
-        featured: true,
-        featuredCard: true,
-        featuredCardImage: ""
-    },
+
     {
         id: 'sweets-bakeries',
         title: 'حلويات ومخابز',
@@ -78,6 +67,20 @@ export const categories: Category[] = [
         featuredCard: true,
         featuredCardImage: ""
     },
+
+        {
+        id: 'juices-drinks',
+        title: 'عصائر ومشروبات',
+        description: "تجارب متنوعة من العصائر الطازجة والمشروبات الباردة والساخنة.",
+        count: 0,
+        href: '/reviews?category=juices-drinks',
+        img: '/hero-slider-images/juices-drinks.jpg',
+        icon: CupSoda,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: ""
+    },
+    
     {
         id: 'beaches',
         title: 'شواطئ ومنتجعات',
