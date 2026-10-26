@@ -2,6 +2,7 @@
 import { Category } from "@/types/website";
 import {
     Coffee,
+    CupSoda,
     Croissant,
     FerrisWheel,
     Globe2,
@@ -17,6 +18,7 @@ import {
 // Categories: 
 // restaurants, 
 // cafes, 
+// juices-drinks,
 // sweets-bakeries, 
 // beaches, 
 // hotels, 
@@ -48,6 +50,18 @@ export const categories: Category[] = [
         href: '/reviews?category=cafes',
         img: '/hero-slider-images/cafes.jpg',
         icon: Coffee,
+        featured: true,
+        featuredCard: true,
+        featuredCardImage: ""
+    },
+    {
+        id: 'juices-drinks',
+        title: 'عصائر ومشروبات',
+        description: "تجارب متنوعة من العصائر الطازجة والمشروبات الباردة والساخنة.",
+        count: 0,
+        href: '/reviews?category=juices-drinks',
+        img: '/hero-slider-images/juices-drinks.jpg',
+        icon: CupSoda,
         featured: true,
         featuredCard: true,
         featuredCardImage: ""
