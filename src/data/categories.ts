@@ -68,7 +68,7 @@ export const categories: Category[] = [
         featuredCardImage: ""
     },
 
-        {
+    {
         id: 'juices-drinks',
         title: 'عصائر ومشروبات',
         description: "تجارب متنوعة من العصائر الطازجة والمشروبات الباردة والساخنة.",
@@ -80,7 +80,7 @@ export const categories: Category[] = [
         featuredCard: false,
         featuredCardImage: ""
     },
-    
+
     {
         id: 'beaches',
         title: 'شواطئ ومنتجعات',
