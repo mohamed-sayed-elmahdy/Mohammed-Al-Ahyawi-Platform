@@ -7,13 +7,14 @@ const structuredData = {
       "@type": "Person",
       "@id": `${SITE_ORIGIN}/#person`,
       name: SITE_NAME,
-      alternateName: "Mohammed Al Ahyawi",
+      alternateName: "Mohammad Alehewi",
       url: SITE_ORIGIN,
       image: `${SITE_ORIGIN}/mohamed.png`,
       jobTitle: "إعلامي وصانع محتوى",
       description:
-        "منصة محمد الإحيوي الإعلامية لتوثيق التجارب والجولات والتقييمات داخل المملكة وحول العالم.",
+        "أول منصة رقمية لإعلامي ومرشد سعودي لتوثيق وتقييم تجارب المطاعم والكافيهات والوجهات والجولات داخل المملكة وخارجها على قوقل ماب | منصة الإعلامي محمد الإحيوي",
       sameAs: [
+        "https://www.instagram.com/noon_jeddah_rest_cafe",
         "https://www.tiktok.com/@Alaqari2006",
         "https://www.snapchat.com/add/Alaqari2006",
         "https://x.com/Alaqari2006",

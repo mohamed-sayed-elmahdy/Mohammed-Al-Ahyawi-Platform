@@ -52,6 +52,9 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   publisher: SITE_NAME,
   category: "travel",
+  verification: {
+    google: "X1T3Z0BsRPyFyGGKTVwWqAWos-Vts3yNwT6_3quJpcU"
+  },
   keywords: [
     "محمد الإحيوي",
     "تجارب سياحية",

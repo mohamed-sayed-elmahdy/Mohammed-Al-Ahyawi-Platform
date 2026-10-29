@@ -3,9 +3,9 @@ import Home from "@/components/website/home/Home";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "تجارب وجولات وتقييمات موثقة",
+  title: "الصفحة الرئيسية",
   description:
-    "اكتشف تجارب المطاعم والمقاهي والوجهات، وجولات موثقة داخل المملكة وحول العالم مع الإعلامي محمد الإحيوي.",
+    "أول منصة رقمية لإعلامي ومرشد سعودي لتوثيق وتقييم تجارب المطاعم والكافيهات والوجهات والجولات داخل المملكة وخارجها على قوقل ماب | منصة الإعلامي محمد الإحيوي",
   path: "/",
 });
 
