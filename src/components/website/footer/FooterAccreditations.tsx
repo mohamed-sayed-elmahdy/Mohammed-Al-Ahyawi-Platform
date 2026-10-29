@@ -45,9 +45,6 @@ export default function FooterAccreditations() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <p className="font-alexandria text-sm font-medium text-(--color-accent)">
-            الاعتمادات الرسمية
-          </p>
 
           <div className="mt-2 flex flex-col items-center gap-2 text-sm text-slate-200 sm:flex-row sm:gap-4 lg:justify-end">
             <p>
