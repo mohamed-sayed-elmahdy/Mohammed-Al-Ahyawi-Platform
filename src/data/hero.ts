@@ -1,5 +1,5 @@
 export const heroStats = [
-	{ id: 1, value: '12K', label: 'مساهمة ' },
+	{ id: 1, value: '+13K', label: 'مساهمة ' },
 	{ id: 2, value: '+70M', label: "مشاهدة" },
 	// { id: 3, value: '5+', label: 'دول حول العالم' },
 ];
