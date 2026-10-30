@@ -72,7 +72,7 @@ export const categories: Category[] = [
 
     {
         id: 'chocolate',
-        title: 'الشوكولاته',
+        title: 'شوكولاته',
         description: "تجارب متنوعة لعشاق الشوكولاته والحلويات المصنوعة منها.",
         count: 0,
         href: '/reviews?category=chocolate',
