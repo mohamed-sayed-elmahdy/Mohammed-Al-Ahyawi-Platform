@@ -1,6 +1,7 @@
 
 import { Category } from "@/types/website";
 import {
+    Candy,
     Coffee,
     CupSoda,
     Croissant,
@@ -20,6 +21,7 @@ import {
 // cafes, 
 // juices-drinks,
 // sweets-bakeries, 
+// chocolate,
 // beaches, 
 // hotels, 
 // health-care, 
@@ -65,6 +67,19 @@ export const categories: Category[] = [
         icon: Croissant,
         featured: true,
         featuredCard: true,
+        featuredCardImage: ""
+    },
+
+    {
+        id: 'chocolate',
+        title: 'الشوكولاته',
+        description: "تجارب متنوعة لعشاق الشوكولاته والحلويات المصنوعة منها.",
+        count: 0,
+        href: '/reviews?category=chocolate',
+        img: '/hero-slider-images/sweets-bakeries.jpg',
+        icon: Candy,
+        featured: false,
+        featuredCard: false,
         featuredCardImage: ""
     },
 
