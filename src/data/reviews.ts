@@ -220,6 +220,8 @@ export const reviews: ReviewItem[] = [
     googleMapsUrl: "https://maps.app.goo.gl/4cZ5AxYsdK8WuPsQA?g_st=iw",
     images: [
       "/reviews/best-western/cover.jpg",
+      "/reviews/best-western/1.jpg",
+      "/reviews/best-western/2.jpg",
       "/reviews/best-western/3.jpg",
       "/reviews/best-western/4.jpg",
       "/reviews/best-western/5.jpg",
@@ -227,8 +229,6 @@ export const reviews: ReviewItem[] = [
       "/reviews/best-western/7.jpg",
       "/reviews/best-western/8.jpg",
       "/reviews/best-western/9.jpg",
-      "/reviews/best-western/10.jpg",
-      "/reviews/best-western/11.jpg",
     ],
     href: "/reviews/best-western",
   },
