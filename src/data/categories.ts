@@ -76,7 +76,7 @@ export const categories: Category[] = [
         description: "تجارب متنوعة لعشاق الشوكولاته والحلويات المصنوعة منها.",
         count: 0,
         href: '/reviews?category=chocolate',
-        img: '/hero-slider-images/sweets-bakeries.jpg',
+        img: '/hero-slider-images/chocolate.jpg',
         icon: Candy,
         featured: false,
         featuredCard: false,
